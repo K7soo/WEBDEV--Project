@@ -10,19 +10,19 @@
     <meta content="" name="author">
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400italic,400,300,700">
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Squada+One">
-    <link type="text/css" rel="stylesheet" href="global/plugins/font-awesome/css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="global/plugins/ionicons/css/ionicons.min.css">
-    <link type="text/css" rel="stylesheet" href="global/plugins/simple-line-icons/simple-line-icons.css">
-    <link type="text/css" rel="stylesheet" href="global/plugins/animate.css/animate.css">
-    <link type="text/css" rel="stylesheet" href="global/plugins/iCheck/skins/all.css">
-    <link type="text/css" rel="stylesheet" href="assets/plugins/rickshaw/rickshaw.min.css">
+    <link type="text/css" rel="stylesheet" href="{{ asset('global/plugins/font-awesome/css/font-awesome.min.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ asset('global/plugins/ionicons/css/ionicons.min.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ asset('global/plugins/simple-line-icons/simple-line-icons.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ asset('global/plugins/animate.css/animate.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ asset('global/plugins/iCheck/skins/all.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ asset('assets/plugins/rickshaw/rickshaw.min.css') }}">
 
-    <link type="text/css" rel="stylesheet" href="global/css/style.css">
-    <link type="text/css" rel="stylesheet" href="assets/css/page-demo.css">
-    <link type="text/css" rel="stylesheet" href="resources/css/style-admin.css">
-    <link type="text/css" rel="stylesheet" href="assets/css/style-plugins.css">
-    <link type="text/css" rel="stylesheet" href="assets/css/style-responsive.css">
-    <link type="text/css" rel="stylesheet" href="assets/css/themes/default.css" id="theme-color">
+    <link type="text/css" rel="stylesheet" href="{{ asset('global/css/style.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ asset('assets/css/page-demo.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ asset('assets/css/style-admin.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ asset('assets/css/style-plugins.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ asset('assets/css/style-responsive.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ asset('assets/css/themes/default.css') }}" id="theme-color">
 </head>
 
 <body class="page-header-fixed page-sidebar-fixed">
