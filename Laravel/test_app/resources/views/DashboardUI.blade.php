@@ -30,9 +30,9 @@
         <div class="page-wrapper"><!--BEGIN HEADER-->
             <header class="header">
                 <div class="logo">
-                    <a href="index.html" class="logo-text">
+                    <a href="{{ route('DashboardUI')}}" class="logo-text">
                         <i class="ion-ios7-analytics">
-                        </i> SRAM </a><a href="#" data-toggle="offcanvas" class="sidebar-toggle pull-right"><i
+                        </i>SRAM</a><a href="#" data-toggle="offcanvas" class="sidebar-toggle pull-right"><i
                             class="fa fa-bars"></i></a>
                 </div>
                 <nav role="navigation" class="navbar navbar-static-top">
@@ -40,7 +40,7 @@
                         <div class="input-icon right"><i class="icon-magnifier"></i><input type="text"
                                 placeholder="Enter keyword" class="form-control input-circle input-dark" /></div>
                     </form>
-                    <div class="navbar-right">
+                    <!-- <div class="navbar-right">
                         <ul class="nav navbar-nav">
                             <li class="dropdown dropdown-extra dropdown-messages"><a href="#" data-toggle="dropdown"
                                     class="dropdown-toggle"><i class="icon-envelope-open"></i><span
@@ -111,14 +111,14 @@
                                         class="icon-size-fullscreen"></i></a></li>
                             <li class="hidden-xs"><a href="javascript:;" class="toggle-quick-sidebar"><i
                                         class="icon-settings"></i></a></li>
-                        </ul>
-                    </div>
+                        </ul> 
+                    </div> -->
                 </nav>
             </header><!--END HEADER--><!--BEGIN HORIZONTAL SIDEBAR-->
             <div class="page-horizontal-sidebar hide">
                 <div id="horizontal-sidebar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html"><i class="icon-home"></i><span
+                        <li class="active"><a href="{{ route('DashboardUI')}}"><i class="icon-home"></i><span
                                     class="menu-title">Dashboard</span></a></li>
                         <li class="dropdown"><a href="#" data-hover="dropdown" class="dropdown-toggle"><i
                                     class="icon-layers"></i><span class="menu-title">Sidebar</span></a>
@@ -261,27 +261,29 @@
                 <aside class="page-sidebar sidebar-offcanvas">
                     <section class="sidebar">
                         <ul class="sidebar-menu">
-                            <li class="active"><a href="index.html"><i class="icon-home"></i><span
+                            <li class="active"><a href="{{ route('DashboardUI')}}"><i class="icon-home"></i><span
                                         class="sidebar-text">Dashboard</span></a></li>
-                            <li><a href="widgets.html"><i class="icon-rocket"></i><span
-                                        class="sidebar-text">Widgets</span></a></li>
-                            <li><a href="#"><i class="icon-grid"></i><span class="sidebar-text">Layout
+
+                            <li><a href="{{ route('ApplicantLists')}}"><i class="icon-notebook"></i><span
+                                        class="sidebar-text">Applicant Lists</span></a></li>
+
+                            <!-- <li><a href="#"><i class="icon-grid"></i><span class="sidebar-text">Layout
                                         Options</span></a>
                                 <ul class="nav nav-second-level">
                                     <li><a href="layout_fluid.html">Fluid</a></li>
                                     <li><a href="layout_boxed.html">Boxed</a></li>
                                     <li><a href="layout_full_width.html">Full Width</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li><a href="#"><i class="icon-puzzle"></i><span class="sidebar-text">Form Stuff</span></a>
                                 <ul class="nav nav-second-level">
                                     <li><a href="form_controls.html">Form Controls</a></li>
-                                    <li><a href="form_plugins.html">Form Plugins</a></li>
+                                    <!-- <li><a href="form_plugins.html">Form Plugins</a></li>
                                     <li><a href="form_select.html">Form Select</a></li>
                                     <li><a href="form_layouts.html">Form Layouts</a></li>
                                     <li><a href="form_validation.html">Form Validation</a></li>
                                     <li><a href="form_wizard.html">Form Wizard</a></li>
-                                    <li><a href="form_editors.html">Form Editors</a></li>
+                                    <li><a href="form_editors.html">Form Editors</a></li> -->
                                 </ul>
                             </li>
                             <li><a href="#"><i class="icon-envelope-open"></i><span
@@ -312,7 +314,7 @@
                                 <div class="panel panel-stat stat-primary">
                                     <div class="panel-body">
                                         <div class="row mbxl">
-                                            <div class="BackgroundPicture">
+                                            <!-- <div class="BackgroundPicture">
                                                 <img src="global/images/social/ket.jpg" class="inline-block">
                                                 <style>
                                                     .BackgroundPicture{
@@ -321,7 +323,7 @@
                                                         padding: 25px;
                                                     }
                                                 </style>
-                                            </div>
+                                            </div> -->
                                             <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
                                                 <h2 class="man">118</h2>
                                             </div>
