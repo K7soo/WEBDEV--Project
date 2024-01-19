@@ -23,8 +23,16 @@ Route::get('/', function () {
 });
 
 Route::get('/DashboardUI', [DashboardController::class, 'index'])->name('DashboardUI');
+
+//This is the default route for Applicant Lists Blade File
 Route::get('/ApplicantLists', [ApplicantListsController::class, 'index'])->name('ApplicantLists');
+
+//This is the testing route for viewing the table on ApplicantLists Blade file accessing the database
+Route::get('/ApplicantLists/View', [ApplicantListsController::class, 'viewApplicants'])->name('ApplicantLists');
+
 Route::get('/Courses', [CoursesController::class, 'index'])->name('Courses');
+
 Route::get('/Registration', [RegistrationController::class, 'index'])->name('Registration');
+
 Route::get('/StudRegForms', [StudRegFormsController::class, 'index'])->name('StudRegForms');
 
