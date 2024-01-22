@@ -267,24 +267,11 @@
                             <li><a href="{{ route('ApplicantLists')}}"><i class="icon-notebook"></i><span
                                         class="sidebar-text">Applicant Lists</span></a></li>
 
-                            <!-- <li><a href="#"><i class="icon-grid"></i><span class="sidebar-text">Layout
-                                        Options</span></a>
-                                <ul class="nav nav-second-level">
-                                    <li><a href="layout_fluid.html">Fluid</a></li>
-                                    <li><a href="layout_boxed.html">Boxed</a></li>
-                                    <li><a href="layout_full_width.html">Full Width</a></li>
-                                </ul>
-                            </li> -->
                             <li><a href="#"><i class="icon-puzzle"></i><span class="sidebar-text">Form Stuff</span></a>
                                 <ul class="nav nav-second-level">
                                     <li><a href="form_controls.html">Form Controls</a></li>
-                                    <!-- <li><a href="form_plugins.html">Form Plugins</a></li>
-                                    <li><a href="form_select.html">Form Select</a></li>
-                                    <li><a href="form_layouts.html">Form Layouts</a></li>
-                                    <li><a href="form_validation.html">Form Validation</a></li>
-                                    <li><a href="form_wizard.html">Form Wizard</a></li>
-                                    <li><a href="form_editors.html">Form Editors</a></li> -->
                                 </ul>
+
                             </li>
                             <li><a href="#"><i class="icon-envelope-open"></i><span
                                         class="sidebar-text">Email</span></a>
@@ -296,7 +283,8 @@
                             </li>
                         </ul>
                     </section>
-                </aside><!--END SIDERBAR--><!--BEGIN CONTENT-->
+                </aside>
+                <!--END SIDERBAR--><!--BEGIN CONTENT-->
                 <div class="content">
                     <section class="content-header">
                         <h1 class="pull-left">Admin Dashboard<small>Registration, Admissions and Checking of Students</small></h1>
@@ -308,26 +296,20 @@
                             </ol>
                         </div>
                     </section>
+
                     <section class="main-content">
                         <div class="row">
                             <div class="col-md-12 col-sm-20">
                                 <div class="panel panel-stat stat-primary">
+
                                     <div class="panel-body">
+
                                         <div class="row mbxl">
-                                            <!-- <div class="BackgroundPicture">
-                                                <img src="global/images/social/ket.jpg" class="inline-block">
-                                                <style>
-                                                    .BackgroundPicture{
-                                                        position: relative;
-                                                        opacity: 50%;
-                                                        padding: 25px;
-                                                    }
-                                                </style>
-                                            </div> -->
                                             <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
                                                 <h2 class="man">118</h2>
                                             </div>
                                         </div>
+
                                         <div class="row">
                                             <div class="col-xs-6"><span class="stat-title">New Visitors</span>
                                                 <h4 class="man">46.5%</h4>
@@ -336,62 +318,85 @@
                                                 <h4 class="man">3.7%</h4>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="panel-heading">
-                            <h3 class="panel-title"><strong class="text-uppercase text-info">Alerts</strong>
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="alert alert-success alert-dismissable fade in"><button type="button"
-                                    data-dismiss="alert" aria-hidden="true"
-                                    class="close">&times;</button><strong>Complete!</strong> There are no current on-going
-                                    registrations or admissions to be evaluated.
-                            </div> -->
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><strong class="text-uppercase text-info">Functions</strong>
-                                </h3>
-                            </div>
-                                <div class="panel-body">
-                                    <div class="alert alert-success alert-dismissable fade in"><button type="button"
-                                            data-dismiss="alert" aria-hidden="true"
-                                            class="close">&times;</button><strong>Complete!</strong> There are no current on-going
-                                            registrations or admissions to be evaluated.
-                                    </div>
-                            <!-- <div class="panel-heading">
-                                <h3 class="panel-title"><strong
-                                        class="text-uppercase text-danger">Notes</strong></h3>
-                            </div> -->
-                            <div class="panel-body">
-                                <div class="row-button">
-                                    <div class="note note-primary">
-                                        <h4><b>Student Admissions</b></h4>
-                                        <p>Nisi erat mattis consectetur purus sit amet porttitor ligula, eget
-                                            lacinia odio sem nec elit. Cras mattis consectetur purus sit amet
-                                            fermentum.</p>
-                                        <div class="btn-demo"><button type="button"
-                                            class="btn btn-default">Edit</button>
+                        
+                        <div class="row">
+                            <div class="col-md-12 col-sm-20">
+                                <div class="panel panel-stat stat-success">
+
+                                    <div class="panel-body">
+
+                                        <div class="row mbxl">
+                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
+                                                <h2 class="man">118</h2>
+                                            </div>
                                         </div>
-                                    </div>
-                                <div class="note note-success">
-                                    <h4><b>Registrations</b></h4>
-                                    <p>Nisi erat mattis consectetur purus sit amet porttitor ligula, eget
-                                        lacinia odio sem nec elit. Cras mattis consectetur purus sit amet
-                                        fermentum.</p>
-                                    <div class="btn-demo"><button type="button"
-                                        class="btn btn-default">Edit</button>
+                                        
+                                        <div class="row">
+                                            <div class="col-xs-6"><span class="stat-title">New Visitors</span>
+                                                <h4 class="man">46.5%</h4>
+                                            </div>
+                                            <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
+                                                <h4 class="man">3.7%</h4>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <div class="note note-info">
-                                    <h4><b>Student Masterlist</b></h4>
-                                    <p>Nisi erat mattis consectetur purus sit amet porttitor ligula, eget
-                                        lacinia odio sem nec elit. Cras mattis consectetur purus sit amet
-                                        fermentum.</p>
-                                    <div class="btn-demo"><button type="button"
-                                        class="btn btn-default">Edit</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-20">
+                                <div class="panel panel-stat stat-info">
+
+                                    <div class="panel-body">
+
+                                        <div class="row mbxl">
+                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
+                                                <h2 class="man">118</h2>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-xs-6"><span class="stat-title">New Visitors</span>
+                                                <h4 class="man">46.5%</h4>
+                                            </div>
+                                            <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
+                                                <h4 class="man">3.7%</h4>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-20">
+                                <div class="panel panel-stat stat-warning">
+
+                                    <div class="panel-body">
+
+                                        <div class="row mbxl">
+                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
+                                                <h2 class="man">118</h2>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-xs-6"><span class="stat-title">New Visitors</span>
+                                                <h4 class="man">46.5%</h4>
+                                            </div>
+                                            <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
+                                                <h4 class="man">3.7%</h4>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
