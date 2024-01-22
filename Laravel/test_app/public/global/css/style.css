@@ -1834,7 +1834,7 @@ pre code {
     margin-left: 0%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) { /* Configuration */ 
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
@@ -1857,7 +1857,7 @@ pre code {
     width: 58.33333333%;
   }
   .col-md-6 {
-    width: 50%;
+    width: 20%;
   }
   .col-md-5 {
     width: 41.66666667%;
@@ -6686,18 +6686,24 @@ a.thumbnail.active {
 .alert-danger .alert-link {
   color: #e6e6e6;
 }
+.listpanel {
+  margin-left: 73%;
+  color: #007bff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .note {
   margin: 0 0 20px 0;
   padding: 10px 30px 10px 15px;
   background-color: #f5f5f5;
-  border-left: 2px solid #e5e5e5;
+  border-top: 2px solid #e5e5e5;
   color: #666666;
 }
 .note2 {
   margin: 0 0 20px 0;
   padding: 10px 30px 10px 15px;
   background-color: #FFFFFF;
-  border-left: 2px solid #e5e5e5;
+  border-top: 2px solid #e5e5e5;
   color: #666666;
 }
 .note h1,
@@ -6719,15 +6725,23 @@ a.thumbnail.active {
   margin-bottom: 0;
 }
 .note-primary {
+  width:300px;
+  height:120px;
   border-color: #4e8ef7;
 }
 .note-success {
+  width:300px;
+  height:120px;
   border-color: #68b828;
 }
 .note-warning {
+  width:300px;
+  height:120px;
   border-color: #ffba00;
 }
 .note-info {
+  width:300px;
+  height:120px;
   border-color: #40bbea;
 }
 .note-danger {
