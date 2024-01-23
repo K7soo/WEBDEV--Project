@@ -12,6 +12,7 @@
             <div class="loginContainer">
                 <div class= "logo">
                     <img src= "global/images/PHP/pup.png" >
+
                 </div>
                 <div class= "loginTitle">
                     <h1> Student Registration <h1> 

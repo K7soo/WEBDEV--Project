@@ -8,6 +8,7 @@
 <body>
     <div class="loginPage">
         <div class="rightpicture">
+
             <img src="{{ asset('global/images/PHP/Gate.jpg') }}" alt="Student Left Image">
         </div>
         <div class="loginContainer">
@@ -16,6 +17,7 @@
             </div>
             <div class="loginTitle">
                 <h1>Admin Login</h1>
+
                 <div class="titleDesc">
                     <p>"Unlocking a world of knowledge, one login at a time because your success deserves a
                         password!"</p>
@@ -26,17 +28,21 @@
                     <form action="">
                         <div class="inputField">
                             <label for="studentNumber">Admin Number: </label>
+                            
                         </div><div class="inputField">
                             <input type="text" placeholder="Enter admin number" required>
                         </div>
+                        
                         <div class="inputField">
                             <label for="password">Password: </label>
                         </div><div class="inputField">
                             <input type="password" placeholder="" required>
                         </div>
+                        
                         <div class="loginButtons">
                             <button class="btn" onclick="openAdminDashboard()">Sign in</button>
                         </div>
+                        
                     </form>
                     <br>
                     <h4><a href="#">I forgot my password</a></h4>

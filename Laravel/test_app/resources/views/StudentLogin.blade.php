@@ -7,6 +7,7 @@
 <body>
     <div class="loginPage">
         <div class="rightpicture">
+
             <img src="{{ asset('global/images/PHP/Gate.jpg') }}" alt="Student Left Image">
         </div>
         <div class="loginContainer">
@@ -15,7 +16,6 @@
             </div>
             <div class="loginTitle">
                 <h1>Student Login </h1>
-            
                 <div class="titleDesc">
                     <p>"Unlocking a world of knowledge, one login at a time because your success deserves a
                         password!"</p>
@@ -28,11 +28,13 @@
                             <label for="studentNumber">Student Number: </label>
                         </div><div class="inputField">
                             <input type="text" placeholder="Enter student number " required>
+
                         </div>
                         <div class="inputField">
                             <label for="password">Password: </label>
                         </div><div class="inputField">
                             <input type="password" placeholder="" required>
+
                         </div>
                         <div class="loginButtons">
                             <button class="btn" onclick="openStudentDashboard()">Sign in</button>
