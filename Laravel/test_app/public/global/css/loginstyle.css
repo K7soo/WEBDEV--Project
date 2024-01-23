@@ -19,12 +19,20 @@ body {
 }
 
 .rightpicture img{
-    height: 700px;
-    width: 850px;
+    height: 950px;
+    width: 1400px;
 }
 
 .loginContainer {
-    padding: 1%;
+    min-height: 100vh;
+    min-width: 360px !important;
+    padding: 7vh 0 0 0;
+    overflow: hidden;
+    box-shadow: none !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    right: 0;
+    position: absolute;
 }
 
 .logo img {
