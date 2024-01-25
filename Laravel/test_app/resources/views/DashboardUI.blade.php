@@ -263,6 +263,7 @@
                         <ul class="sidebar-menu">
                             <li class="active"><a href="index.html"><i class="icon-home"></i><span
                                         class="sidebar-text">Dashboard</span></a></li>
+<<<<<<< Updated upstream
                             <li><a href="widgets.html"><i class="icon-rocket"></i><span
                                         class="sidebar-text">Widgets</span></a></li>
                             <li><a href="#"><i class="icon-grid"></i><span class="sidebar-text">Layout
@@ -273,6 +274,18 @@
                                     <li><a href="layout_full_width.html">Full Width</a></li>
                                 </ul>
                             </li>
+=======
+                                        
+                            <li><a href="{{ route('ApplicantLists')}}"><i class="icon-notebook"></i><span
+                                        class="sidebar-text">Applicant Lists</span></a></li>
+
+                            <li><a href="{{ route('CourseList')}}"><i class="icon-notebook"></i><span
+                                        class="sidebar-text">Course List</span></a></li>
+
+                            <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span
+                                        class="sidebar-text">Registrations</span></a></li>
+
+>>>>>>> Stashed changes
                             <li><a href="#"><i class="icon-puzzle"></i><span class="sidebar-text">Form Stuff</span></a>
                                 <ul class="nav nav-second-level">
                                     <li><a href="form_controls.html">Form Controls</a></li>

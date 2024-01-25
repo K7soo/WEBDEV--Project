@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.loginPage {
+    display: flex;
+}
+
+.rightpicture img{
+    height: 950px;
+    width: 1400px;
+}
+
+.loginContainer {
+    min-height: 100vh;
+    min-width: 300px !important;
+    padding: 7vh 0 0 0;
+    overflow: hidden;
+    box-shadow: none !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    right: 0;
+    position: absolute;
+}
+
+.logo img {
+    height: auto;
+    width: auto;
+    max-height: 20vh;
+    padding: 5%;    
+    padding-left: 57%;
+}
+
+.leftSide {
+    padding: 5%;
+    padding-left: 40%;
+    padding-right: 5%;
+}
+
+.loginTitle {
+    text-align: center;
+    padding-left: 40%;
+}
+
+.loginTitle h1 {
+    text-align: center;
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.titleDesc p {
+    font-size: large;
+    padding: 2vh 0;
+    text-align: center;
+    color: #545454;
+}
+
+.fieldsContainer {
+    text-align: center;
+}
+
+.inputField {
+    margin-bottom: 1vh;
+}
+
+.inputField input {
+    width: 90%;
+    padding: 1vh;
+}
+
+.loginButtons .btn {
+    background-color: #3498db;
+    border: 1px solid #2980b9;
+    color: #fff;
+    padding: 2vh 4vh;
+    margin-top: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 30vh;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.loginButtons .btn:hover {
+    background-color: #2980b9;
+    border-color: #1f618d;
+}
+
+.loginFooter p {
+    padding: 2vh 1vh;
+    text-align: center;
+}
