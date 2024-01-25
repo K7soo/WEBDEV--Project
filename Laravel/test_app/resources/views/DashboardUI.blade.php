@@ -35,6 +35,7 @@
                         <a href="#" data-toggle="offcanvas" class="sidebar-toggle pull-right"><i
                             class="fa fa-bars"></i></a>
                 </div>
+
                 <nav role="navigation" class="navbar navbar-static-top">
                     <form action="#" class="search-form navbar-left hidden-xs">
                         <div class="input-icon right"><i class="icon-magnifier"></i><input type="text"
@@ -47,27 +48,35 @@
             <div class="wrapper row-offcanvas row-offcanvas-left"><!--BEGIN SIDEBAR-->
                 <aside class="page-sidebar sidebar-offcanvas">
                     <section class="sidebar">
+                        <!-- Sidebar with routes to different web pages -->
                         <ul class="sidebar-menu">
-                            <li class="active"><a href="{{ route('DashboardUI')}}"><i class="icon-home"></i><span
+
+                            <li class="active"><a href="#"><i class="icon-home"></i><span
                                         class="sidebar-text">Dashboard</span></a></li>
 
                             <li><a href="{{ route('ApplicantLists')}}"><i class="icon-notebook"></i><span
                                         class="sidebar-text">Applicant Lists</span></a></li>
 
+                            <li><a href="{{ route('CourseList')}}"><i class="icon-notebook"></i><span
+                                        class="sidebar-text">Course List</span></a></li>
+
+                            <li><a href="{{ route('CourseList')}}"><i class="icon-notebook"></i><span
+                                        class="sidebar-text">Registrations</span></a></li>
+
                             <li><a href="#"><i class="icon-puzzle"></i><span class="sidebar-text">Form Stuff</span></a>
                                 <ul class="nav nav-second-level">
                                     <li><a href="form_controls.html">Form Controls</a></li>
                                 </ul>
-
                             </li>
-                            <li><a href="#"><i class="icon-envelope-open"></i><span
-                                        class="sidebar-text">Email</span></a>
+
+                            <li><a href="#"><i class="icon-envelope-open"></i><span class="sidebar-text">Email</span></a>
                                 <ul class="nav nav-second-level">
                                     <li><a href="email_inbox.html">Inbox</a></li>
                                     <li><a href="email_compose.html">Compose Mail</a></li>
                                     <li><a href="email_view.html">View Mail</a></li>
                                 </ul>
                             </li>
+
                         </ul>
                     </section>
                 </aside>
@@ -191,6 +200,7 @@
                     </section>
                 </div><!--END CONTENT-->
             </div><!--END WRAPPER--><!--BEGIN PAGE QUICK SIDEBAR-->
+
             <div class="page-quick-sidebar-wrapper">
                 <div class="page-quick-sidebar-content">
                     <div id="admin-setting">
