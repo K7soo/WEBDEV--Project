@@ -31,7 +31,6 @@ return new class extends Migration
             $table->foreign('ApprovalID')->references('ApprovalID')->on('approval')->onDelete('cascade');
 
             $table->timestamps();
-
         });
     }
 

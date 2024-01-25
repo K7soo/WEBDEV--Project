@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Applicant;
 use Illuminate\Http\Request;
 
 class ApplicantListsController extends Controller
 {
     //standard function to view AppList
     public function index()
-    {
-        return view('ApplicantLists');
+    {   
+        $applicants = Applicant::all();
+        return view('ApplicantLists', ['applicants'=>$applicants]);
     }
 
     //test function to view AppList via new testing Route
