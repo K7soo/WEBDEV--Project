@@ -40,19 +40,27 @@
                         </div>
                     </form>
                 </div>
-                </div><!--END HORIZONTAL SIDEBAR--><!--BEGIN WRAPPER-->
+            </div><!--END HORIZONTAL SIDEBAR--><!--BEGIN WRAPPER-->
+
             <div class="wrapper row-offcanvas row-offcanvas-left"><!--BEGIN SIDEBAR-->
                 <aside class="page-sidebar sidebar-offcanvas">
                     <section class="sidebar">
+
                         <ul class="sidebar-menu">
-                            <li><a href="{{ route('DashboardUI')}}"><i class="icon-home"></i><span class="sidebar-text">Dashboard</span></a></li>
+                            <li><a href="{{ route('DashboardUI')}}"><i class="icon-home"></i>
+                                <span class="sidebar-text">Dashboard</span></a></li>
                             
-                            <li class="active"><a href="#"><i class="icon-notebook"></i><span class="sidebar-text">Applicant Lists</span></a>
-                            </li>
+                            <li class="active"><a href="#"><i class="icon-notebook"></i>
+                                <span class="sidebar-text">Applicant Lists</span></a></li>
+
+                            <li><a href="{{ route('CourseList')}}"><i class="icon-notebook">
+                                </i><span class="sidebar-text">Course List</span></a></li>
+
+                                <li><a href="{{ route('CourseList')}}"><i class="icon-notebook"></i><span
+                                        class="sidebar-text">Registrations</span></a></li>
 
                             <li><a href="#"><i class="icon-puzzle"></i><span class="sidebar-text">Form Stuff</span></a>
-                                <ul class="nav nav-second-level">
-                                    <li><a href="form_controls.html">Form Controls</a></li>
+                                <ul class="nav nav-second-level"><li><a href="form_controls.html">Form Controls</a></li>
                                 </ul>
                             </li>
 
@@ -66,6 +74,7 @@
                         </ul>
                     </section>
                 </aside><!--END SIDERBAR--><!--BEGIN CONTENT-->
+
                 <div class="content">
                     <section class="content-header">
                         <h1 class="pull-left">Applicant List</h1>
@@ -179,6 +188,7 @@
                         </div>
                     </section>
                 </div><!--END CONTENT-->
+
             </div><!--END WRAPPER--><!--BEGIN PAGE QUICK SIDEBAR-->
             <div class="page-quick-sidebar-wrapper">
                 <div class="page-quick-sidebar-content">
