@@ -44,6 +44,7 @@
                     <h4><a href=#>I forgot my password</a></h4>
                         <h4><h4><text>Not yet a student? </text>
                         <a href="{{ Route('StudQualify')}}">Create account</a></h4>
+
                 </div>
                 <div class="loginFooter">
                     <p><small>By using this service, you understand and agree to the
@@ -58,10 +59,12 @@
 
     <script>
     
+
     function openStudentPage() {
         // Replace '<?= url('StudHomePage'); ?>' with the actual URL
         var StudHomePageUrl = '<?= url('StudHomePage'); ?>';
         window.location.href = StudHomePageUrl;
+
     }
     </script>
 </body>

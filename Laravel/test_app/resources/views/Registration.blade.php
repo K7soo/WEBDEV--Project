@@ -3,6 +3,7 @@
 
 <head>
     <title>Blank | Pages</title>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <meta content="" name="author">
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400italic,400,300,700">
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Squada+One">
+
     <link type="text/css" rel="stylesheet" href="{{ asset('global/plugins/font-awesome/css/font-awesome.min.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('global/plugins/ionicons/css/ionicons.min.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('global/plugins/simple-line-icons/simple-line-icons.css') }}">
@@ -29,6 +31,7 @@
     <div>
         <div class="page-wrapper"><!--BEGIN HEADER-->
             <header class="header">
+
                 <div class="logo"><a href="index.html" class="logo-text"><i class="ion-ios7-analytics"></i> Rock</a><a
                         href="#" data-toggle="offcanvas" class="sidebar-toggle pull-right"><i
                             class="fa fa-bars"></i></a></div>
@@ -46,10 +49,12 @@
             </header><!--END HEADER--><!--BEGIN HORIZONTAL SIDEBAR-->
             
             <!--END HORIZONTAL SIDEBAR--><!--BEGIN WRAPPER-->
+
             <div class="wrapper row-offcanvas row-offcanvas-left"><!--BEGIN SIDEBAR-->
                 <aside class="page-sidebar sidebar-offcanvas">
                     <section class="sidebar">
                         <ul class="sidebar-menu">
+
                         <li><a href="{{ route('DashboardUI')}}"><i class="icon-home"></i><span
                                         class="sidebar-text">Dashboard</span></a></li>
 
@@ -71,6 +76,7 @@
 
                             <li>
                                 <a href="#"><i class="icon-envelope-open"></i><span class="sidebar-text">Email</span></a>
+
                                 <ul class="nav nav-second-level">
                                     <li><a href="email_inbox.html">Inbox</a></li>
                                     <li><a href="email_compose.html">Compose Mail</a></li>

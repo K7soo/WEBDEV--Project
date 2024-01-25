@@ -1,35 +1,23 @@
 <?php
 
+// List of Controllers
 use Illuminate\Support\Facades\Route;
-<<<<<<< Updated upstream
-=======
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ApplicantListsController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\RegistrationController;
+
 use App\Http\Controllers\StudHomeController;
 use App\Http\Controllers\StudQualController;
 use App\Http\Controllers\StudRegFormsController;
 use App\Http\Controllers\StudViewController;
->>>>>>> Stashed changes
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
+// Default Start-up page
 Route::get('/', function () {
-    return view('DashboardUI');
+    return view('MainLogin');
 });
-<<<<<<< Updated upstream
-=======
 
 Route::get('login', function () {
     return view('MainLogin');
@@ -39,10 +27,13 @@ Route::get('login', function () {
 
 Route::get('/DashboardUI', [DashboardController::class, 'index'])->name('DashboardUI');
 
+
 // Routes for Admin Login Path
+
 Route::get('/ApplicantLists', [ApplicantListsController::class, 'index'])->name('ApplicantLists');
 
 Route::get('/CourseList', [CourseController::class, 'index'])->name('CourseList');
+
 
 Route::get('/CourseListStud', );
 
@@ -69,9 +60,3 @@ Route::get('/StudentLogin', function () {
     return view('StudentLogin');
 });
 
-
-
-
-
-
->>>>>>> Stashed changes

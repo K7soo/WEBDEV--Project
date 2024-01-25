@@ -18,6 +18,7 @@
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/plugins/rickshaw/rickshaw.min.css') }}">
     <link type="text/css" rel="stylesheet" href= "{{ asset('global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css')}}">
 
+
     <link type="text/css" rel="stylesheet" href="{{ asset('global/css/style.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/css/page-demo.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/css/style-admin.css') }}">
@@ -57,7 +58,8 @@
                             <li><a href="{{ route('CourseList')}}"><i class="icon-notebook">
                                 </i><span class="sidebar-text">Course List</span></a></li>
 
-                                <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span
+                            <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span
+
                                         class="sidebar-text">Registrations</span></a></li>
 
                             <li><a href="#"><i class="icon-puzzle"></i><span class="sidebar-text">Form Stuff</span></a>
@@ -137,7 +139,9 @@
 
                                     <!-- Table for applicants -->
                                     <div class="panel-body">
+
                                         <table id="datatables" class="table table-responsive table-striped table-bordered table-hover" >
+
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
@@ -167,7 +171,7 @@
                                                     <td>{{ $applicant->ApprovalID }}</td>
 
                                                     <td>
-                                                        
+                                                       
                                                     </td>
                                                 </tr>
                                                 @endforeach

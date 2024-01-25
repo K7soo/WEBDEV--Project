@@ -57,6 +57,7 @@
                                         class="sidebar-text">Course List</span></a></li>
 
                             <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span
+
                                         class="sidebar-text">Registrations</span></a></li>
 
                             <li>
@@ -122,6 +123,7 @@
                                                             <td></td>
                                                             <td style="text-align:center;">
                                                                     <a href=""
+
                                                                     class="btn btn-sm btn-primary">View</a></td>
                                                         </tr>
                                                         <tr>
