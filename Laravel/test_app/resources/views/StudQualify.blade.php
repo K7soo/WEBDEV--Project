@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Admin | Dashboard</title>
+    <title>Student | Pre Qualifications</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,7 @@
     <meta content="" name="author">
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400italic,400,300,700">
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Squada+One">
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="{{ asset('global/plugins/font-awesome/css/font-awesome.min.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('global/plugins/ionicons/css/ionicons.min.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('global/plugins/simple-line-icons/simple-line-icons.css') }}">
@@ -29,18 +30,7 @@
     <div>
         <div class="page-wrapper"><!--BEGIN HEADER-->
             <header class="header">
-                <div class="logo">
-                    <a href="{{ route('DashboardUI')}}" class="logo-text">
-                        <i></i> SRAM</a>
-                        <a href="#" data-toggle="offcanvas" class="sidebar-toggle pull-right"><i
-                            class="fa fa-bars"></i></a>
-                </div>
-
                 <nav role="navigation" class="navbar navbar-static-top">
-                    <form action="#" class="search-form navbar-left hidden-xs">
-                        <div class="input-icon right"><i class="icon-magnifier"></i><input type="text"
-                                placeholder="Enter keyword" class="form-control input-circle input-dark" /></div>
-                    </form>
                 </nav>
             </header>
             
@@ -52,44 +42,7 @@
                         <ul class="sidebar-menu">
 
                             <li class="active"><a href="#"><i class="icon-home"></i><span
-                                        class="sidebar-text">Dashboard</span></a></li>
-
-                            <li><a href="widgets.html"><i class="icon-rocket"></i><span
-                                        class="sidebar-text">Widgets</span></a></li>
-                            <li><a href="#"><i class="icon-grid"></i><span class="sidebar-text">Layout
-                                        Options</span></a>
-                                <ul class="nav nav-second-level">
-                                    <li><a href="layout_fluid.html">Fluid</a></li>
-                                    <li><a href="layout_boxed.html">Boxed</a></li>
-                                    <li><a href="layout_full_width.html">Full Width</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="{{ route('ApplicantLists')}}"><i class="icon-notebook"></i><span
-                                        class="sidebar-text">Applicant Lists</span></a></li>
-
-                            <li><a href="{{ route('CourseList')}}"><i class="icon-notebook"></i><span
-                                        class="sidebar-text">Course List</span></a></li>
-
-
-                            <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span
-                                        class="sidebar-text">Registrations</span></a></li>
-
-                            <li><a href="{{ route('CourseList')}}"><i class="icon-notebook"></i><span
-                                        class="sidebar-text">Registrations</span></a></li>
-
-
-                            <li><a href="#"><i class="icon-puzzle"></i><span class="sidebar-text">Form Stuff</span></a>
-                                <ul class="nav nav-second-level">
-                                    <li><a href="form_controls.html">Form Controls</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="#"><i class="icon-envelope-open"></i><span class="sidebar-text">Email</span></a>
-                                <ul class="nav nav-second-level">
-                                    <li><a href="email_inbox.html">Inbox</a></li>
-                                    <li><a href="email_compose.html">Compose Mail</a></li>
-                                    <li><a href="email_view.html">View Mail</a></li>
+                                        class="sidebar-text">Home Page</span></a></li>
                                 </ul>
                             </li>
 
@@ -99,120 +52,35 @@
                 <!--END SIDERBAR--><!--BEGIN CONTENT-->
                 <div class="content">
                     <section class="content-header">
-                        <h1 class="pull-left">Admin Dashboard<small>Registration, Admissions and Checking of Students</small></h1>
+                        <h1 class="pull-left">Registration</h1>
                         <div class="pull-right">
                             <ol class="breadcrumb">
                                 <li><a href="#">Home</a></li>
-                                <li><a href="#">Dashboard</a></li>
-                                <li class="active">Dashboard</li>
+                                <li><a href="active">Home Page</a></li>
                             </ol>
                         </div>
                     </section>
 
                     <section class="main-content">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-20">
-                                <div class="panel panel-stat stat-primary">
-
-                                    <div class="panel-body">
-
-                                        <div class="row mbxl">
-                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                <h2 class="man">118</h2>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-xs-6"><span class="stat-title">New Visitors</span>
-                                                <h4 class="man">46.5%</h4>
-                                            </div>
-                                            <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
-                                                <h4 class="man">3.7%</h4>
-                                            </div>
-                                        </div>
-
-                                    </div>
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Welcome to My Website</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal Body -->
+                                <div class="modal-body">
+                                    <p>This is a modal that appears when you enter the website.</p>
+                                </div>
+                                <!-- Modal Footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="row">
-                            <div class="col-md-12 col-sm-20">
-                                <div class="panel panel-stat stat-success">
-
-                                    <div class="panel-body">
-
-                                        <div class="row mbxl">
-                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                <h2 class="man">118</h2>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="row">
-                                            <div class="col-xs-6"><span class="stat-title">New Visitors</span>
-                                                <h4 class="man">46.5%</h4>
-                                            </div>
-                                            <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
-                                                <h4 class="man">3.7%</h4>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-12 col-sm-20">
-                                <div class="panel panel-stat stat-info">
-
-                                    <div class="panel-body">
-
-                                        <div class="row mbxl">
-                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                <h2 class="man">118</h2>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="row">
-                                            <div class="col-xs-6"><span class="stat-title">New Visitors</span>
-                                                <h4 class="man">46.5%</h4>
-                                            </div>
-                                            <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
-                                                <h4 class="man">3.7%</h4>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-12 col-sm-20">
-                                <div class="panel panel-stat stat-warning">
-
-                                    <div class="panel-body">
-
-                                        <div class="row mbxl">
-                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                <h2 class="man">118</h2>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="row">
-                                            <div class="col-xs-6"><span class="stat-title">New Visitors</span>
-                                                <h4 class="man">46.5%</h4>
-                                            </div>
-                                            <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
-                                                <h4 class="man">3.7%</h4>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
                     </section>
                 </div><!--END CONTENT-->
             </div><!--END WRAPPER--><!--BEGIN PAGE QUICK SIDEBAR-->
@@ -265,6 +133,13 @@
             </div><!--END PAGE QUICK SIDEBAR-->
         </div>
     </div>
+
+    <script>
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+    </script>
+    
     <script src="global/js/jquery.js"></script>
     <script src="global/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="global/js/jquery-ui.js"></script>
@@ -298,6 +173,7 @@
     <script src="assets/plugins/rickshaw/extensions.js"></script>
     <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
     <script src="assets/js/index.js"></script>
+    
 </body>
 
 </html>

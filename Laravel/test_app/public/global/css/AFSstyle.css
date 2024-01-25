@@ -19,7 +19,8 @@ body {
 
 .loginContainer {
     min-height: 100vh;
-    min-width: 360px !important;
+    min-width: 300px !important;
+
     padding: 7vh 0 0 0;
     overflow: hidden;
     box-shadow: none !important;

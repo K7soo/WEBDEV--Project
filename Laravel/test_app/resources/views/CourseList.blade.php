@@ -56,7 +56,8 @@
                             <li class="active"><a href="#"><i class="icon-notebook"></i><span
                                         class="sidebar-text">Course List</span></a></li>
 
-                            <li><a href="{{ route('CourseList')}}"><i class="icon-notebook"></i><span
+                            <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span
+
                                         class="sidebar-text">Registrations</span></a></li>
 
                             <li>
@@ -120,8 +121,9 @@
                                                             <td>Bachelor of Science in Information Technology</td>
                                                             <td></td>
                                                             <td></td>
-                                                            <td style="text-align:center;"><a
-                                                                    href="https://survey.pup.edu.ph/apps/ofes/survey/42021-00389-CM-0/106/c21437028f4e11fe709100bee946852b61a84e8a"
+                                                            <td style="text-align:center;">
+                                                                    <a href=""
+
                                                                     class="btn btn-sm btn-primary">View</a></td>
                                                         </tr>
                                                         <tr>

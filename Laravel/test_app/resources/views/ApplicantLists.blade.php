@@ -16,6 +16,8 @@
     <link type="text/css" rel="stylesheet" href="{{ asset('global/plugins/animate.css/animate.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('global/plugins/iCheck/skins/all.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/plugins/rickshaw/rickshaw.min.css') }}">
+    <link type="text/css" rel="stylesheet" href= "{{ asset('global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css')}}">
+
 
     <link type="text/css" rel="stylesheet" href="{{ asset('global/css/style.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/css/page-demo.css') }}">
@@ -56,7 +58,8 @@
                             <li><a href="{{ route('CourseList')}}"><i class="icon-notebook">
                                 </i><span class="sidebar-text">Course List</span></a></li>
 
-                                <li><a href="{{ route('CourseList')}}"><i class="icon-notebook"></i><span
+                            <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span
+
                                         class="sidebar-text">Registrations</span></a></li>
 
                             <li><a href="#"><i class="icon-puzzle"></i><span class="sidebar-text">Form Stuff</span></a>
@@ -136,7 +139,9 @@
 
                                     <!-- Table for applicants -->
                                     <div class="panel-body">
-                                        <table class="table table-responsive table-striped table-bordered table-hover" id="applicant-table">
+
+                                        <table id="datatables" class="table table-responsive table-striped table-bordered table-hover" >
+
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
@@ -166,11 +171,7 @@
                                                     <td>{{ $applicant->ApprovalID }}</td>
 
                                                     <td>
-                                                        <a href="{{ route('applicant.show', $applicant->ApplicantID) }}"
-                                                            class="btn btn-info btn-xs"> View </a>
-                                                        <a href="{{ route('applicant.edit', $applicant->ApplicantID) }}"
-                                                            class="btn btn-primary btn-xs"> Edit </a>
-                                                        <!-- Add more actions as needed... -->
+                                                       
                                                     </td>
                                                 </tr>
                                                 @endforeach
