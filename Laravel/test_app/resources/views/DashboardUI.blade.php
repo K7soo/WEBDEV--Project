@@ -54,30 +54,14 @@
                             <li class="active"><a href="#"><i class="icon-home"></i><span
                                         class="sidebar-text">Dashboard</span></a></li>
 
-                            <li><a href="widgets.html"><i class="icon-rocket"></i><span
-                                        class="sidebar-text">Widgets</span></a></li>
-                            <li><a href="#"><i class="icon-grid"></i><span class="sidebar-text">Layout
-                                        Options</span></a>
-                                <ul class="nav nav-second-level">
-                                    <li><a href="layout_fluid.html">Fluid</a></li>
-                                    <li><a href="layout_boxed.html">Boxed</a></li>
-                                    <li><a href="layout_full_width.html">Full Width</a></li>
-                                </ul>
-                            </li>
-
                             <li><a href="{{ route('ApplicantLists')}}"><i class="icon-notebook"></i><span
                                         class="sidebar-text">Applicant Lists</span></a></li>
 
                             <li><a href="{{ route('CourseList')}}"><i class="icon-notebook"></i><span
                                         class="sidebar-text">Course List</span></a></li>
 
-
                             <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span
                                         class="sidebar-text">Registrations</span></a></li>
-
-                            <li><a href="{{ route('CourseList')}}"><i class="icon-notebook"></i><span
-                                        class="sidebar-text">Registrations</span></a></li>
-
 
                             <li><a href="#"><i class="icon-puzzle"></i><span class="sidebar-text">Form Stuff</span></a>
                                 <ul class="nav nav-second-level">
