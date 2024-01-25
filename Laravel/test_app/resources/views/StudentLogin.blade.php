@@ -42,6 +42,7 @@
                     </form>
                     <br>
                     <h4><a href="#">I forgot my password</a></h4>
+                    <h4><h4><text>Not yet a student? </text><a href="#">Create account</a></h4>
                 </div>
                 <div class="loginFooter">
                     <p><small>By using this service, you understand and agree to the
