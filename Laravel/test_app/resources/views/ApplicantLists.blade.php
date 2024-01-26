@@ -101,7 +101,7 @@
                                             <b><u><button type="button"
                                                 class="btn btn-link"> View Requirements</button></u></b>
                                             <button type="button"
-                                                class="btn btn-primary"> Create Application
+                                                class="btn btn-primary"> View Application
                                             </button>
                                         </div>
 

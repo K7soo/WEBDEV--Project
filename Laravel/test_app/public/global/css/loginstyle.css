@@ -19,8 +19,8 @@ body {
 }
 
 .rightpicture img{
-    height: 950px;
-    width: 1400px;
+    height: 100vh;
+    width: 125%;
 }
 
 .loginContainer {
@@ -31,7 +31,7 @@ body {
     box-shadow: none !important;
     margin: 0 !important;
     border-radius: 0 !important;
-    right: 0;
+    right: 0; 
     position: absolute;
 }
 
@@ -40,18 +40,18 @@ body {
     width: auto;
     max-height: 20vh;
     padding: 5%;    
-    padding-left: 58%;
+    padding-left: 55%;
 }
 
 .leftSide {
     padding: 5%;
-    padding-left: 45%;
+    padding-left: 40%;
     padding-right: 5%;
 }
 
 .loginTitle {
     text-align: center;
-    padding-left: 40%;
+    padding-left: 28%;
 }
 
 .loginTitle h1 {
@@ -103,4 +103,5 @@ body {
 .loginFooter p {
     padding: 2vh 1vh;
     text-align: center;
+    padding-right:1%;
 }
