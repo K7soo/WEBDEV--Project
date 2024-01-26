@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Blank | Pages</title>
+    <title>Admin | Registration</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,7 +32,7 @@
         <div class="page-wrapper"><!--BEGIN HEADER-->
             <header class="header">
 
-                <div class="logo"><a href="index.html" class="logo-text"><i class="ion-ios7-analytics"></i> Rock</a><a
+                <div class="logo"><a href="{{ route('DashboardUI')}}" class="logo-text"><i></i>SRAM</a><a
                         href="#" data-toggle="offcanvas" class="sidebar-toggle pull-right"><i
                             class="fa fa-bars"></i></a></div>
                 <nav role="navigation" class="navbar navbar-static-top">
@@ -66,23 +66,6 @@
 
                             <li class="active"><a href=#><i class="icon-notebook"></i><span
                                         class="sidebar-text">Registrations</span></a></li>
-
-                            <li>
-                                <a href="#"><i class="icon-puzzle"></i><span class="sidebar-text">Form Stuff</span></a>
-                                <ul class="nav nav-second-level">
-                                    <li><a href="form_controls.html">Form Controls</a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="#"><i class="icon-envelope-open"></i><span class="sidebar-text">Email</span></a>
-
-                                <ul class="nav nav-second-level">
-                                    <li><a href="email_inbox.html">Inbox</a></li>
-                                    <li><a href="email_compose.html">Compose Mail</a></li>
-                                    <li><a href="email_view.html">View Mail</a></li>
-                                </ul>
-                            </li>
                         </ul>
                     </section>
                 </aside><!--END SIDERBAR--><!--BEGIN CONTENT-->

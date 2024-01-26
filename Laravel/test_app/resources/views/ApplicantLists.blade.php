@@ -36,11 +36,6 @@
                     <a href="#" data-toggle="offcanvas" class="sidebar-toggle pull-right"><i class="fa fa-bars"></i></a>
                 </div>
                 <nav role="navigation" class="navbar navbar-static-top">
-                    <form action="#" class="search-form navbar-left hidden-xs">
-                        <div class="input-icon right"><i class="icon-magnifier"></i><input type="text"
-                                placeholder="Enter keyword" class="form-control input-circle input-dark" />
-                        </div>
-                    </form>
                 </div>
             </div><!--END HORIZONTAL SIDEBAR--><!--BEGIN WRAPPER-->
 
@@ -59,34 +54,16 @@
                                 </i><span class="sidebar-text">Course List</span></a></li>
 
                             <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span
+                                class="sidebar-text">Registrations</span></a></li>
 
-                                        class="sidebar-text">Registrations</span></a></li>
-
-                            <li><a href="#"><i class="icon-puzzle"></i><span class="sidebar-text">Form Stuff</span></a>
-                                <ul class="nav nav-second-level"><li><a href="form_controls.html">Form Controls</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="#"><i class="icon-envelope-open"></i><span class="sidebar-text">Email</span></a>
-                                <ul class="nav nav-second-level">
-                                    <li><a href="email_inbox.html">Inbox</a></li>
-                                    <li><a href="email_compose.html">Compose Mail</a></li>
-                                    <li><a href="email_view.html">View Mail</a></li>
-                                </ul>
-                            </li>
                         </ul>
                     </section>
                 </aside><!--END SIDERBAR--><!--BEGIN CONTENT-->
 
                 <div class="content">
                     <section class="content-header">
-                        <h1 class="pull-left">Applicant List</h1>
+                        <h1 class="pull-left">Student Applications</h1>
                         <div class="pull-right">
-                            <ol class="breadcrumb">
-                                <li><a href="#">SRAM</a></li>
-                                <li><a href="#">Dashboard</a></li>
-                                <li class="active">Applicant List</li>
-                            </ol>
                         </div>
                     </section>
                     <section class="main-content">
@@ -108,28 +85,28 @@
                                         <div class="row">
                                             <div class="col-md-6 mb-0">
                                                 <div class="note note-primary">
-                                                    <b><h4>100</h4>
+                                                    <b><h4>4</h4>
                                                     <p>All</p></b>
                                                 </div>
                                             </div>
 
                                             <div class="col-md-6 mb-0">
                                                 <div class="note note-success">
-                                                    <b><h4>23</h4>
+                                                    <b><h4>4</h4>
                                                     <p>For Interview</p></b>
                                                 </div>
                                             </div>
 
                                             <div class="col-md-6 mb-0">
                                                 <div class="note note-info">
-                                                    <b><h4>75</h4>
+                                                    <b><h4>0</h4>
                                                     <p>Accepted</p></b>
                                                 </div>
                                             </div>
 
                                             <div class="col-md-6 mb-0">
                                                  <div class="note note-warning">
-                                                     <b><h4 class="box-heading">37</h4>
+                                                     <b><h4 class="box-heading">0</h4>
                                                      <p>Rejected</p></b>
                                                 </div>
                                             </div>
@@ -151,9 +128,9 @@
                                                     <th>Suffix</th>
                                                     <th>Email</th>
                                                     <th>Gender</th>
-                                                    <th>AppChoiceID</th>
-                                                    <th>AppTypeID</th>
-                                                    <th>ApprovalID</th>
+                                                    <th>Choice</th>
+                                                    <th>Applied as</th>
+                                                    <th>Status</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -169,10 +146,6 @@
                                                     <td>{{ $applicant->ApplicantChoiceID }}</td>
                                                     <td>{{ $applicant->ApplicantTypeID }}</td>
                                                     <td>{{ $applicant->ApprovalID }}</td>
-
-                                                    <td>
-                                                       
-                                                    </td>
                                                 </tr>
                                                 @endforeach
                                             </tbody>
