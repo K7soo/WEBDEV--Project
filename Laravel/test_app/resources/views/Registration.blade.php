@@ -89,7 +89,7 @@
             </div><!--END CONTENT-->
             <div class="content">
                 <section class="content-header">
-                    <h1 class="pull-left">Academic Programs</h1>
+                    <h1 class="pull-left">Lists of Registered Applicants<small>View Registrations</small></h1>
                     <div class="pull-right">
                         <ol class="breadcrumb">
                             
@@ -104,7 +104,7 @@
                             <div class="col col-lg-12 col-md-12">
                                 <div class="card card-primary">
                                     <div class="card-header with-border">
-                                        <h3 class="card-title">BSIT LIST OF STUDENTS</h3>
+                                        <h3 class="card-title">Registered Applicants</h3>
                                     </div>
                                     <div class="card-body table-responsive">
 
@@ -113,55 +113,54 @@
                                                 <table class="table table-bordered" id="table1">
                                                     <thead>
                                                         <tr>
-                                                            <th style="text-align:center;">Student No.</th>
+                                                            <th style="text-align:center;">Student Number</th>
                                                             <th style="text-align:center;">Name</th>
-                                                            <th style="text-align:center;">Units</th>
-                                                            <th style="text-align:center;"></th>
-                                                            <th style="text-align:center;"></th>
+                                                            <th style="text-align:center;">Preferred Course</th>
+                                                            <th style="text-align:center;">Approval</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td style="text-align:center;">BSIT 3-1</td>
+                                                            <td style="text-align:center;">2024-01</td>
                                                             <td>Baledoya, Kyla Keith F.</td>
-                                                            <td></td>
-                                                            <td></td>
+                                                            <td>BSIT</td>
+                                                            <td>PENDING</td>
                                                             <td style="text-align:center;"><a
                                                                     href="file:///C:/HTML/Rock/page_blank.html"
                                                                     class="btn btn-sm btn-primary">View</a></td>
                                                         </tr>
                                                         <tr>
-                                                            <td style="text-align:center;">BSIT 3-1</td>
+                                                            <td style="text-align:center;">2024-02</td>
                                                             <td>Ballera, Jefferson F.</td>
-                                                            <td></td>
-                                                            <td></td>
+                                                            <td>BSIT</td>
+                                                            <td>PENDING</td>
                                                             <td style="text-align:center;"><a
                                                                     href="https://survey.pup.edu.ph/apps/ofes/survey/32021-00389-CM-0/106/1a1f04d1c68c53f186fe66010f262c2145988c4e"
                                                                     class="btn btn-sm btn-primary">View</a></td>
                                                         </tr>
                                                         <tr>
-                                                            <td style="text-align:center;">BSIT 3-1</td>
+                                                            <td style="text-align:center;">2024-03</td>
                                                             <td>Domingo, Kirsten Charles</td>
-                                                            <td></td>
-                                                            <td></td>
+                                                            <td>BSIT</td>
+                                                            <td>PENDING</td>
                                                             <td style="text-align:center;"><a
                                                                     href="https://survey.pup.edu.ph/apps/ofes/survey/12021-00389-CM-0/106/452405be4697445340cdfbd8d4e545f142c6ac0a"
                                                                     class="btn btn-sm btn-primary">View</a></td>
                                                         </tr>
                                                         <tr>
-                                                            <td style="text-align:center;">BSIT 3-1</td>
+                                                            <td style="text-align:center;">2024-04</td>
                                                             <td>Silvestre, Matillano Jr.</td>
-                                                            <td></td>
-                                                            <td></td>
+                                                            <td>BSIT</td>
+                                                            <td>PENDING</td>
                                                             <td style="text-align:center;"><a
                                                                     href="https://survey.pup.edu.ph/apps/ofes/survey/82021-00389-CM-0/106/f15b62616c775357120355a0b82dce13b622e4f4"
                                                                     class="btn btn-sm btn-primary">View</a></td>
                                                         </tr>
                                                         <tr>
-                                                            <td style="text-align:center;">BSIT 3-1</td>
+                                                            <td style="text-align:center;">2024-05</td>
                                                             <td>Servas, Shane Steven</td>
-                                                            <td></td>
-                                                            <td></td>
+                                                            <td>BSIT</td>
+                                                            <td>PENDING</td>
                                                             <td style="text-align:center;"><a
                                                                     href="https://survey.pup.edu.ph/apps/ofes/survey/62021-00389-CM-0/106/565ccba41d2f876aadace9890fe0e18b5bd2e24c"
                                                                     class="btn btn-sm btn-primary">View</a></td>

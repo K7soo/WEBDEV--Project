@@ -64,7 +64,29 @@
                     </section>
 
                     <section class="main-content">
-                        
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table table-responsive table-striped table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center;">ID</th>
+                                        <th style="text-align:center;">Description</th>
+                                        <th style="text-align:center;">Status</th>
+                                        <th style="text-align:center;">View Application</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align:center;">01</td>
+                                        <td>Application for BSIT Course</td>
+                                        <td>PENDING</td>
+                                        <td style="text-align:center;">
+                                                <a href=""
+
+                                                class="btn btn-sm btn-primary">View</a></td>
+                                    </tr>
+                                </tbody>
+
                     </section>
                 </div><!--END CONTENT-->
             </div><!--END WRAPPER--><!--BEGIN PAGE QUICK SIDEBAR-->

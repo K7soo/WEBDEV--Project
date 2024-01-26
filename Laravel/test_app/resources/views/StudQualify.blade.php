@@ -60,27 +60,196 @@
                             </ol>
                         </div>
                     </section>
-
+                    
                     <section class="main-content">
-                    <div class="modal" id="myModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Welcome to My Website</h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"><strong
+                                             class="text-uppercase text-success">Personal Information</strong></h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <form action="#" class="form-horizontal">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <input type="text" placeholder="Surname" class="form-control" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-3"><input type="text" placeholder="First name"
+                                                            class="form-control" />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="col-md-1"><input type="text" placeholder="M.I."
+                                                                class="form-control" />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="col-md-1"><input type="text" placeholder="Ext."
+                                                                    class="form-control" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="col-md-3">
+                                                    <div class="input-group"><input id="daterangepicker_single"
+                                                            type="text" value="Date Of Birth"
+                                                            class="form-control" /><span class="input-group-addon"><i
+                                                                class="icon-calendar"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-1 control-label">Gender</label>
+                                                    <div class="col-md-4">
+                                                        <label class="radio-inline">
+                                                            <input type="radio" name="gender" value="0" checked />Male
+                                                        </label>
+                                                        <label class="radio-inline">
+                                                            <input type="radio" name="gender" value="1" />Female
+                                                        </label>
+                                                        <label class="radio-inline">
+                                                            <input type="radio" name="gender" value="2" />Others
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-2"><input type="text" placeholder="Birth of Place"
+                                                        class="form-control" /></div>
+                                                <div class="form-group">
+                                                    <div class="col-md-3"><input type="text" placeholder="Nationality"
+                                                            class="form-control" /></div>
+                                                    <div class="form-group">
+                                                        <div class="col-md-3"><select name="color" class="form-control">
+                                                                <option value="">Status</option>
+                                                                <option value="blue">Single</option>
+                                                                <option value="green">Married</option>
+                                                                <option value="red">Divorced</option>
+                                                                <option value="yellow">Others</option>
+                                                            </select></div>
+                                                    </div>
+                                                    <div class="col-md-10">
+                                                        <div class="panel">
+                                                            <div class="panel-heading">
+                                                                <h3 class="panel-title"><strong
+                                                                        class="text-uppercase text-success">Contact
+                                                                        Information</strong></h3>
+                                                            </div>
+                                                            <div class="form-group"></div>
+                                                            <div class="col-md-6"><input type="text"
+                                                                    placeholder="Home Address" class="form-control" />
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="col-md-4"><input type="text"
+                                                                        placeholder="Street" class="form-control" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group"></div>
+                                                            <div class="col-md-4"><input type="text" placeholder="City"
+                                                                    class="form-control" />
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="col-md-4"><input type="text"
+                                                                        placeholder="State/Province"
+                                                                        class="form-control" /></div>
+                                                                <div class="form-group">
+                                                                    <div class="col-md-2"><input type="text"
+                                                                            placeholder="ZIP Code"
+                                                                            class="form-control" /></div>
+                                                                    <div class="form-group"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-5"><input type="text"
+                                                                    placeholder="Phone Number" class="form-control" />
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="col-md-5"><input type="text"
+                                                                        placeholder="Email Address"
+                                                                        class="form-control" /></div>
+                                                            <div class="col-md-10">
+                                                                <div class="panel">
+                                                                    <div class="panel-heading">
+                                                                        <h3 class="panel-title"><strong
+                                                                                class="text-uppercase text-success">Educational Background</strong></h3>
+                                                                    </div>
+                                                                    <div class="form-group"></div>
+                                                                    <div class="col-md-6"><input type="text"
+                                                                            placeholder="Previous School Name"
+                                                                            class="form-control" />
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <div class="col-md-4"><input type="text"
+                                                                                placeholder="Year Graduated"
+                                                                                class="form-control" /></div>
+                                                                    </div>
+                                                                        <div class="form-group"></div>
+                                                                        <div class="col-md-5"><select name="color" class="form-control">
+                                                                            <option value="">Current Educational Level</option>
+                                                                            <option value="blue">Freshmman</option>
+                                                                            <option value="green">College/Tertiary</option>
+                                                                            <option value="red">Masteral</option>
+                                                                            <option value="yellow">Transferee</option>
+                                                                        </select></div>
+                                                            <div class="form-group">
+                                                                <div class="col-md-4"><input type="text"
+                                                                        placeholder="Number of Units" class="form-control" />
+                                                                </div>
+                                                                <div class="col-md-10">
+                                                                    <div class="panel">
+                                                                        <div class="panel-heading">
+                                                                            <h3 class="panel-title"><strong
+                                                                                    class="text-uppercase text-success">Parent/Guardian Information</strong></h3>
+                                                                        </div>
+                                                                        <div class="form-group"></div>
+                                                            <div class="col-md-5"><input type="text" placeholder="Father's Name"
+                                                                    class="form-control" />
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="col-md-4"><input type="text"
+                                                                        placeholder="Number"
+                                                                        class="form-control" /></div>
+                                                                <div class="form-group">
+                                                                    <div class="col-md-3"><input type="text"
+                                                                            placeholder="Work"
+                                                                            class="form-control" /></div>
+                                                                    <div class="form-group"></div>
+                                                                </div>
+                                                            </div>
+                                                                <div class="form-group"></div>
+                                                            <div class="col-md-5"><input type="text" placeholder="Mother's Name"
+                                                                    class="form-control" />
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="col-md-4"><input type="text"
+                                                                        placeholder="Number"
+                                                                        class="form-control" /></div>
+                                                                <div class="form-group">
+                                                                    <div class="col-md-3"><input type="text"
+                                                                            placeholder="Work"
+                                                                            class="form-control" /></div>
+                                                                    <div class="form-group"></div>
+                                                                    <div class="form-group"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-5"><input type="text" placeholder="Guardian's Name"
+                                                                    class="form-control" />
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="col-md-4"><input type="text"
+                                                                        placeholder="Number"
+                                                                        class="form-control" /></div>
+                                                                <div class="form-group">
+                                                                    <div class="col-md-3"><input type="text"
+                                                                            placeholder="Work"
+                                                                            class="form-control" />
+                                                                    </div>
+                                                                <div class="form-group">
+                                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
-                                <!-- Modal Body -->
-                                <div class="modal-body">
-                                    <p>This is a modal that appears when you enter the website.</p>
-                                </div>
-                                <!-- Modal Footer -->
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     </section>
                 </div><!--END CONTENT-->
             </div><!--END WRAPPER--><!--BEGIN PAGE QUICK SIDEBAR-->
