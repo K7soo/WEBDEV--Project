@@ -57,25 +57,7 @@
                                         class="sidebar-text">Course List</span></a></li>
 
                             <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span
-
                                         class="sidebar-text">Registrations</span></a></li>
-
-                            <li>
-                                <a href="#"><i class="icon-puzzle"></i><span class="sidebar-text">Form Stuff</span></a>
-                                <ul class="nav nav-second-level">
-                                    <li><a href="form_controls.html">Form Controls</a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="#"><i class="icon-envelope-open"></i><span class="sidebar-text">Email</span></a>
-                                <ul class="nav nav-second-level">
-                                    <li><a href="email_inbox.html">Inbox</a></li>
-                                    <li><a href="email_compose.html">Compose Mail</a></li>
-                                    <li><a href="email_view.html">View Mail</a></li>
-                                </ul>
-                            </li>
-
                         </ul>
                     </section>
                 </aside><!--END SIDERBAR--><!--BEGIN CONTENT-->
@@ -83,11 +65,6 @@
                 <section class="content-header">
                     <h1 class="pull-left">Course List<small>View Courses</small></h1>
                     <div class="pull-right">
-                        <ol class="breadcrumb">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Courses</a></li>
-                            <li class="active">Course List</li>
-                        </ol>
                     </div>
                 </section>
 

@@ -38,8 +38,6 @@
 
                 <nav role="navigation" class="navbar navbar-static-top">
                     <form action="#" class="search-form navbar-left hidden-xs">
-                        <div class="input-icon right"><i class="icon-magnifier"></i><input type="text"
-                                placeholder="Enter keyword" class="form-control input-circle input-dark" /></div>
                     </form>
                 </nav>
             </header>
@@ -48,9 +46,9 @@
             <div class="wrapper row-offcanvas row-offcanvas-left"><!--BEGIN SIDEBAR-->
                 <aside class="page-sidebar sidebar-offcanvas">
                     <section class="sidebar">
+
                         <!-- Sidebar with routes to different web pages -->
                         <ul class="sidebar-menu">
-
                             <li class="active"><a href="#"><i class="icon-home"></i><span
                                         class="sidebar-text">Dashboard</span></a></li>
 
@@ -62,21 +60,6 @@
 
                             <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span
                                         class="sidebar-text">Registrations</span></a></li>
-
-                            <li><a href="#"><i class="icon-puzzle"></i><span class="sidebar-text">Form Stuff</span></a>
-                                <ul class="nav nav-second-level">
-                                    <li><a href="form_controls.html">Form Controls</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="#"><i class="icon-envelope-open"></i><span class="sidebar-text">Email</span></a>
-                                <ul class="nav nav-second-level">
-                                    <li><a href="email_inbox.html">Inbox</a></li>
-                                    <li><a href="email_compose.html">Compose Mail</a></li>
-                                    <li><a href="email_view.html">View Mail</a></li>
-                                </ul>
-                            </li>
-
                         </ul>
                     </section>
                 </aside>
@@ -86,9 +69,6 @@
                         <h1 class="pull-left">Admin Dashboard<small>Registration, Admissions and Checking of Students</small></h1>
                         <div class="pull-right">
                             <ol class="breadcrumb">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Dashboard</a></li>
-                                <li class="active">Dashboard</li>
                             </ol>
                         </div>
                     </section>
@@ -96,22 +76,19 @@
                     <section class="main-content">
                         <div class="row">
                             <div class="col-md-12 col-sm-20">
-                                <div class="panel panel-stat stat-primary">
+                                <div class="panel panel-stat stat-warning">
 
                                     <div class="panel-body">
 
                                         <div class="row mbxl">
                                             <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                <h2 class="man">118</h2>
+                                                <h2 class="man">5</h2>
                                             </div>
                                         </div>
 
                                         <div class="row">
-                                            <div class="col-xs-6"><span class="stat-title">New Visitors</span>
-                                                <h4 class="man">46.5%</h4>
-                                            </div>
-                                            <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
-                                                <h4 class="man">3.7%</h4>
+                                            <div class="col-xs-6"><span class="stat-title">Passing Rate</span>
+                                                <h4 class="man">100%</h4>
                                             </div>
                                         </div>
 
@@ -127,17 +104,20 @@
                                     <div class="panel-body">
 
                                         <div class="row mbxl">
-                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                <h2 class="man">118</h2>
+                                            <div class="col-xs-8"><span class="stat-title">Incoming Applicants</span>
+                                                <h2 class="man">5</h2>
                                             </div>
                                         </div>
                                         
                                         <div class="row">
-                                            <div class="col-xs-6"><span class="stat-title">New Visitors</span>
-                                                <h4 class="man">46.5%</h4>
+                                            <div class="col-xs-6"><span class="stat-title">Incoming Students</span>
+                                                <h4 class="man">2</h4>
                                             </div>
-                                            <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
-                                                <h4 class="man">3.7%</h4>
+                                            <div class="col-xs-6"><span class="stat-title">Transferee Students</span>
+                                                <h4 class="man">2</h4>
+                                            </div>
+                                            <div class="col-xs-6"><span class="stat-title">Returnee Students</span>
+                                                <h4 class="man">1</h4>
                                             </div>
                                         </div>
 
@@ -153,20 +133,10 @@
                                     <div class="panel-body">
 
                                         <div class="row mbxl">
-                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                <h2 class="man">118</h2>
+                                            <div class="col-xs-8"><span class="stat-title">Pending Evaluations</span>
+                                                <h2 class="man">0</h2>
                                             </div>
                                         </div>
-                                        
-                                        <div class="row">
-                                            <div class="col-xs-6"><span class="stat-title">New Visitors</span>
-                                                <h4 class="man">46.5%</h4>
-                                            </div>
-                                            <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
-                                                <h4 class="man">3.7%</h4>
-                                            </div>
-                                        </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -174,22 +144,19 @@
 
                         <div class="row">
                             <div class="col-md-12 col-sm-20">
-                                <div class="panel panel-stat stat-warning">
+                                <div class="panel panel-stat stat-primary">
 
                                     <div class="panel-body">
 
                                         <div class="row mbxl">
-                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                <h2 class="man">118</h2>
+                                            <div class="col-xs-8"><span class="stat-title">Denied Applications</span>
+                                                <h2 class="man">0</h2>
                                             </div>
                                         </div>
                                         
                                         <div class="row">
-                                            <div class="col-xs-6"><span class="stat-title">New Visitors</span>
-                                                <h4 class="man">46.5%</h4>
-                                            </div>
-                                            <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
-                                                <h4 class="man">3.7%</h4>
+                                            <div class="col-xs-6"><span class="stat-title">Failing Rate</span>
+                                                <h4 class="man">0%</h4>
                                             </div>
                                         </div>
 
