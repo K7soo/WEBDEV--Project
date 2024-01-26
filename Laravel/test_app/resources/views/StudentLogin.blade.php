@@ -2,7 +2,7 @@
 <html lang="en">
 
         <head>
-            <link rel="stylesheet" href="{{ asset('global/css/loginstyle.css') }}">
+            <link rel="stylesheet" href="{{ asset('global/css/AFSstyle.css') }}">
         </head>
 <body>
     <div class="loginPage">

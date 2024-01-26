@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Blank | Pages</title>
+    <title>Admin | Courses</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,7 +81,7 @@
                 </aside><!--END SIDERBAR--><!--BEGIN CONTENT-->
                 <div class="content">
                 <section class="content-header">
-                    <h1 class="pull-left">Admin Dashboard<small>Registration, Admissions and Checking of Students</small></h1>
+                    <h1 class="pull-left">Course List<small>View Courses</small></h1>
                     <div class="pull-right">
                         <ol class="breadcrumb">
                             <li><a href="#">Home</a></li>
@@ -103,6 +103,12 @@
                                     </div>
                                     <div class="card-body table-responsive">
 
+                                        <div class="listpanel">
+                                            <button type="button"
+                                                class="btn btn-warning"> Add New Course
+                                            </button>
+                                        </div>
+
                                         <div class="row">
                                             <div class="col-12">
                                                 <table class="table table-bordered" id="table1">
@@ -110,57 +116,51 @@
                                                         <tr>
                                                             <th style="text-align:center;">Course Code</th>
                                                             <th style="text-align:center;">Description</th>
-                                                            <th style="text-align:center;">Units</th>
-                                                            <th style="text-align:center;">Lab</th>
-                                                            <th style="text-align:center;">List of Student</th>
+                                                            <th style="text-align:center;">Units Per Sem</th>
+                                                            <th style="text-align:center;">Option</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
                                                             <td style="text-align:center;">BSIT</td>
                                                             <td>Bachelor of Science in Information Technology</td>
-                                                            <td></td>
-                                                            <td></td>
+                                                            <td>23</td>
                                                             <td style="text-align:center;">
                                                                     <a href=""
 
-                                                                    class="btn btn-sm btn-primary">View</a></td>
+                                                                    class="btn btn-sm btn-primary">Remove</a></td>
                                                         </tr>
                                                         <tr>
                                                             <td style="text-align:center;">BSENTREP</td>
                                                             <td>Bachelor of Science in Entrepreneurship</td>
-                                                            <td></td>
-                                                            <td></td>
+                                                            <td>23</td>
                                                             <td style="text-align:center;"><a
                                                                     href="https://survey.pup.edu.ph/apps/ofes/survey/32021-00389-CM-0/106/1a1f04d1c68c53f186fe66010f262c2145988c4e"
-                                                                    class="btn btn-sm btn-primary">View</a></td>
+                                                                    class="btn btn-sm btn-primary">Remove</a></td>
                                                         </tr>
                                                         <tr>
                                                             <td style="text-align:center;">BSBA-MM</td>
                                                             <td>Bachelor of Science in Business Administration major in Marketing Management</td>
-                                                            <td></td>
-                                                            <td></td>
+                                                            <td>23</td>
                                                             <td style="text-align:center;"><a
                                                                     href="https://survey.pup.edu.ph/apps/ofes/survey/12021-00389-CM-0/106/452405be4697445340cdfbd8d4e545f142c6ac0a"
-                                                                    class="btn btn-sm btn-primary">View</a></td>
+                                                                    class="btn btn-sm btn-primary">Remove</a></td>
                                                         </tr>
                                                         <tr>
                                                             <td style="text-align:center;">BPAPFM</td>
                                                             <td>Bachelor of Public Administration major in Public Financial Management</td>
-                                                            <td></td>
-                                                            <td></td>
+                                                            <td>23</td>
                                                             <td style="text-align:center;"><a
                                                                     href="https://survey.pup.edu.ph/apps/ofes/survey/82021-00389-CM-0/106/f15b62616c775357120355a0b82dce13b622e4f4"
-                                                                    class="btn btn-sm btn-primary">View</a></td>
+                                                                    class="btn btn-sm btn-primary">Remove</a></td>
                                                         </tr>
                                                         <tr>
                                                             <td style="text-align:center;">BSBAHRM</td>
                                                             <td>Bachelor of Science in Business Administration major in Human Resource Management</td>
-                                                            <td></td>
-                                                            <td></td>
+                                                            <td>23</td>
                                                             <td style="text-align:center;"><a
                                                                     href="https://survey.pup.edu.ph/apps/ofes/survey/62021-00389-CM-0/106/565ccba41d2f876aadace9890fe0e18b5bd2e24c"
-                                                                    class="btn btn-sm btn-primary">View</a></td>
+                                                                    class="btn btn-sm btn-primary">Remove</a></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
