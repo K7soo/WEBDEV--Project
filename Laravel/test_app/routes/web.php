@@ -8,6 +8,11 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\StudRegFormsController;
+<<<<<<< Updated upstream
+=======
+use App\Http\Controllers\StudViewController;
+use App\Models\Course;
+>>>>>>> Stashed changes
 
 // Default Start-up page
 Route::get('/', function () {
@@ -25,8 +30,20 @@ Route::get('/DashboardUI', [DashboardController::class, 'index'])->name('Dashboa
 //This is the default route for Applicant Lists Blade File
 Route::get('/ApplicantLists', [ApplicantListsController::class, 'index'])->name('ApplicantLists');
 
+
+// 
 Route::get('/CourseList', [CourseController::class, 'index'])->name('CourseList');
 
+<<<<<<< Updated upstream
+=======
+Route::post('/CourseList', [CourseController::class, 'AddCourse'])->name('course.AddCourse');
+
+
+
+
+Route::get('/CourseListStud', );
+
+>>>>>>> Stashed changes
 Route::get('/Registration', [RegistrationController::class, 'index'])->name('Registration');
 
 Route::get('/StudRegForms', [StudRegFormsController::class, 'index'])->name('StudRegForms');
