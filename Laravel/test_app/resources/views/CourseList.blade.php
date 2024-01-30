@@ -79,11 +79,8 @@
                                         <h3 class="card-title">List of Course/Programs</h3>
                                     </div>
                                     <div class="card-body table-responsive">
-
                                         <div class="listpanel">
-                                            <button type="button"
-                                                class="btn btn-warning"> Add New Course
-                                            </button>
+                                            <button type="button"class="btn btn-warning" onclick="AddCourseModal()"> Add New Course</button>
                                         </div>
 
                                         <div class="row">
@@ -91,54 +88,23 @@
                                                 <table class="table table-bordered" id="table1">
                                                     <thead>
                                                         <tr>
+                                                            <th style="text-align:center;">Course ID</th>
+                                                            <th style="text-align:center;">Course Name</th>
                                                             <th style="text-align:center;">Course Code</th>
-                                                            <th style="text-align:center;">Description</th>
-                                                            <th style="text-align:center;">Units Per Sem</th>
-                                                            <th style="text-align:center;">Option</th>
+                                                            <th style="text-align:center;">Units</th>
+                                                            <th style="text-align:center;">Remove</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr>
-                                                            <td style="text-align:center;">BSIT</td>
-                                                            <td>Bachelor of Science in Information Technology</td>
-                                                            <td>23</td>
-                                                            <td style="text-align:center;">
-                                                                    <a href=""
-
-                                                                    class="btn btn-sm btn-primary">Remove</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="text-align:center;">BSENTREP</td>
-                                                            <td>Bachelor of Science in Entrepreneurship</td>
-                                                            <td>23</td>
-                                                            <td style="text-align:center;"><a
-                                                                    href="https://survey.pup.edu.ph/apps/ofes/survey/32021-00389-CM-0/106/1a1f04d1c68c53f186fe66010f262c2145988c4e"
-                                                                    class="btn btn-sm btn-primary">Remove</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="text-align:center;">BSBA-MM</td>
-                                                            <td>Bachelor of Science in Business Administration major in Marketing Management</td>
-                                                            <td>23</td>
-                                                            <td style="text-align:center;"><a
-                                                                    href="https://survey.pup.edu.ph/apps/ofes/survey/12021-00389-CM-0/106/452405be4697445340cdfbd8d4e545f142c6ac0a"
-                                                                    class="btn btn-sm btn-primary">Remove</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="text-align:center;">BPAPFM</td>
-                                                            <td>Bachelor of Public Administration major in Public Financial Management</td>
-                                                            <td>23</td>
-                                                            <td style="text-align:center;"><a
-                                                                    href="https://survey.pup.edu.ph/apps/ofes/survey/82021-00389-CM-0/106/f15b62616c775357120355a0b82dce13b622e4f4"
-                                                                    class="btn btn-sm btn-primary">Remove</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="text-align:center;">BSBAHRM</td>
-                                                            <td>Bachelor of Science in Business Administration major in Human Resource Management</td>
-                                                            <td>23</td>
-                                                            <td style="text-align:center;"><a
-                                                                    href="https://survey.pup.edu.ph/apps/ofes/survey/62021-00389-CM-0/106/565ccba41d2f876aadace9890fe0e18b5bd2e24c"
-                                                                    class="btn btn-sm btn-primary">Remove</a></td>
-                                                        </tr>
+                                                    @foreach($courses as $course)
+                                                    <tr>
+                                                        <td style="text-align:left;">{{ $course->CourseID }}</td>
+                                                        <td style="text-align:left;">{{ $course->CourseName }}</td>
+                                                        <td style="text-align:left;">{{ $applicant->CourseCode }}</td>
+                                                        <td style="text-align:left;">{{ $applicant->TotalCredits }}</td>
+                                                        <td style="text-align:left;"><a class="btn btn-sm btn-primary">View</a></td>
+                                                    </tr>
+                                                    @endforeach
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -202,39 +168,115 @@
                 </div>
             </div>
 
-        <script src="global/js/jquery.js"></script>
-        <script src="global/js/jquery-migrate-1.2.1.min.js"></script>
-        <script src="global/js/jquery-ui.js"></script>
-        <script src="global/plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
-        <script src="global/js/html5shiv.js"></script>
-        <script src="global/js/respond.min.js"></script>
-        <script src="global/plugins/slimScroll/jquery.slimscroll.js"></script>
-        <script src="global/plugins/iCheck/icheck.min.js"></script>
-        <script src="global/plugins/iCheck/custom.min.js"></script>
-        <script src="assets/plugins/jquery-metisMenu/jquery.menu.min.js"></script>
-        <script src="assets/plugins/jquery.blockUI.js"></script>
-        <script src="global/js/app.js"></script>
-        <script src="assets/js/quick-sidebar.js"></script>
-        <script src="assets/js/admin-setting.js"></script>
-        <script src="assets/js/layout.js"></script>
-        <script src="assets/plugins/flot-chart/jquery.flot.js"></script>
-        <script src="assets/plugins/flot-chart/jquery.flot.animator.min.js"></script>
-        <script src="assets/plugins/flot-chart/jquery.flot.resize.min.js"></script>
-        <script src="assets/plugins/flot-chart/jquery.flot.time.min.js"></script>
-        <script src="assets/plugins/rickshaw/vendor/d3.v3.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.Class.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.Compat.ClassList.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.Area.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.HoverDetail.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.Legend.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.Fixtures.RandomData.js"></script>
-        <script src="assets/plugins/rickshaw/extensions.js"></script>
-        <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
-        <script src="assets/js/index.js"></script>
+            <!-- Add Course Modal -->
+            <div id="addCourseModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Add New Course</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form id="addCourseForm" action="{{ route('course.AddCourse') }}" method="POST">
+                                <div class="form-group">
+                                    <label for="courseName">Course Name:</label>
+                                    <input type="text" class="form-control" id="courseName" name="CourseName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="courseCode">Course Code:</label>
+                                    <input type="text" class="form-control" id="courseCode" name="CourseCode">
+                                </div>
+                                <div class="form-group">
+                                    <label for="units">Total Units:</label>
+                                    <input type="number" class="form-control" id="units" name="TotalCredits">
+                                </div>
+                                    <button type="submit" class="btn btn-primary">Add Course</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Delete Course Modal -->
+            <div id="deleteCourseModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Delete Course</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Are you sure you want to delete this course?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- Button to delete course -->
+                            <button type="button" class="btn btn-danger" onclick="deleteCourse()">Delete</button>
+                            <!-- Button to close the modal -->
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<script>
+    // Function to display the Add Course modal
+    function AddCourseModal() {
+        $('#addCourseModal').modal('show');
+    }
+
+    // Function to display the Delete Course modal
+    function DeleteCourseModal(courseId) {
+        // You can customize this function to display the delete course modal
+        // For now, let's assume the modal is already defined in the HTML
+        $('#deleteCourseModal').modal('show');
+    }
+
+    // Event listener for the Add New Course button
+    $(document).on('click', '.btn-add-course', function() {
+        AddCourseModal();
+    });
+
+    // Event listener for the View button
+    $(document).on('click', '.btn-view-course', function() {
+        var courseId = $(this).data('course-id');
+        DeleteCourseModal(courseId);
+    });
+</script>
+
+<script src="global/js/jquery.js"></script>
+<script src="global/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="global/js/jquery-ui.js"></script>
+<script src="global/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+<script src="global/js/html5shiv.js"></script>
+<script src="global/js/respond.min.js"></script>
+<script src="global/plugins/slimScroll/jquery.slimscroll.js"></script>
+<script src="global/plugins/iCheck/icheck.min.js"></script>
+<script src="global/plugins/iCheck/custom.min.js"></script>
+<script src="assets/plugins/jquery-metisMenu/jquery.menu.min.js"></script>
+<script src="assets/plugins/jquery.blockUI.js"></script>
+<script src="global/js/app.js"></script>
+<script src="assets/js/quick-sidebar.js"></script>
+<script src="assets/js/admin-setting.js"></script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/plugins/flot-chart/jquery.flot.js"></script>
+<script src="assets/plugins/flot-chart/jquery.flot.animator.min.js"></script>
+<script src="assets/plugins/flot-chart/jquery.flot.resize.min.js"></script>
+<script src="assets/plugins/flot-chart/jquery.flot.time.min.js"></script>
+<script src="assets/plugins/rickshaw/vendor/d3.v3.js"></script>
+<script src="assets/plugins/rickshaw/src/js/Rickshaw.js"></script>
+<script src="assets/plugins/rickshaw/src/js/Rickshaw.Class.js"></script>
+<script src="assets/plugins/rickshaw/src/js/Rickshaw.Compat.ClassList.js"></script>
+<script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.js"></script>
+<script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.js"></script>
+<script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.Area.js"></script>
+<script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.HoverDetail.js"></script>
+<script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.Legend.js"></script>
+<script src="assets/plugins/rickshaw/src/js/Rickshaw.Fixtures.RandomData.js"></script>
+<script src="assets/plugins/rickshaw/extensions.js"></script>
+<script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+<script src="assets/js/index.js"></script>
+
 </body>
 
 </html>

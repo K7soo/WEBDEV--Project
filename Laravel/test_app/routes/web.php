@@ -11,8 +11,9 @@ use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\StudHomeController;
 use App\Http\Controllers\StudQualController;
 use App\Http\Controllers\StudRegFormsController;
-use App\Http\Controllers\StudViewController;
 
+use App\Http\Controllers\StudViewController;
+use App\Models\Course;
 
 // Default Start-up page
 Route::get('/', function () {
@@ -32,10 +33,15 @@ Route::get('/DashboardUI', [DashboardController::class, 'index'])->name('Dashboa
 
 Route::get('/ApplicantLists', [ApplicantListsController::class, 'index'])->name('ApplicantLists');
 
+
+// 
 Route::get('/CourseList', [CourseController::class, 'index'])->name('CourseList');
+
+Route::post('/CourseList', [CourseController::class, 'AddCourse'])->name('course.AddCourse');
 
 
 Route::get('/CourseListStud', );
+
 
 Route::get('/Registration', [RegistrationController::class, 'index'])->name('Registration');
 
