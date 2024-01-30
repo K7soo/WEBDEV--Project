@@ -89,20 +89,22 @@
                                                     <th>Remove</th>
                                                 </thead>
                                                 <tbody>
-                                                    @foreach($courses as $course)
-                                                    <tr row-id="row-{{ $course->id }}">
+                                                @foreach($courses as $course)
+                                                    <tr row-id="row-{{ $course->CourseID }}">
                                                         <td>{{ $course->CourseID }}</td>
                                                         <td>{{ $course->CourseName }}</td>
                                                         <td>{{ $course->CourseCode }}</td>
                                                         <td>
-                                                            <form action="{{ route('course.DeleteCourse', ['id' => $course->CourseID]) }}" method="POST">
+                                                            <form 
+                                                                action="{{ route('course.DeleteCourse', ['id' => $course->CourseID]) }}" 
+                                                                method="POST">
                                                                 @csrf
-                                                                @method('DELETE')
-                                                                <button type="submit" class="btn btn-sm btn-danger">Remove</button>
+                                                                @method('delete')
+                                                                <button type="submit" class="btn btn-sm btn-danger" data-confirmm-delete="true">Remove</button>
                                                             </form>
                                                         </td>
                                                     </tr>
-                                                    @endforeach
+                                                @endforeach
                                                 </tbody>
                                             </table>
 
@@ -205,13 +207,14 @@
                 </div>
                 <div class="modal-footer">
                     <!-- Button to delete course -->
-                    <button type="button" class="btn btn-danger" onclick="deleteCourse()">Delete</button>
+                    <button type="button" class="btn btn-danger" onclick="DeleteCourse()">Delete</button>
                     <!-- Button to close the modal -->
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="global/js/jquery.js"></script>
     <script src="assets/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
     <script src="assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
@@ -257,20 +260,32 @@
                 $('#addCourseModal').modal('show');
             }
 
-            // Function to display the Delete Course modal and pass the course ID
-            function DeleteCourseModal(courseId) {
+            function DeleteCourseModal(CourseID) {
                 // Set the course ID in the delete button's data attribute
-                $('#deleteCourseModal').find('.btn-delete-course').attr('data-course-id', courseId);
+                $('#deleteCourseModal').find('.btn-delete-course').attr('data-course-id', CourseID);
                 $('#deleteCourseModal').modal('show');
             }
 
-            // Event listener for the Delete button in the modal
-            $(document).on('click', '.btn-delete-course', function() {
+            // Event listener for the View button
+            $(document).on('click', '.btn-view-course', function() {
                 var courseId = $(this).data('course-id');
-                deleteCourse(courseId);
-                // Close the modal
-                $('#deleteCourseModal').modal('hide');
+                DeleteCourseModal(courseId);
             });
+
+            // Function to display the Delete Course modal and pass the course ID
+            function DeleteCourseModal(CourseID) {
+                // Set the course ID in the delete button's data attribute
+                $('#deleteCourseModal').find('.btn-delete-course').attr('data-course-id', CourseID);
+                $('#deleteCourseModal').modal('show');
+            }
+
+            // // Event listener for the Delete button in the modal
+            // $(document).on('click', '.btn-delete-course', function() {
+            //     var courseId = $(this).data('course-id');
+            //     deleteCourse(courseId);
+            //     // Close the modal
+            //     $('#deleteCourseModal').modal('hide');
+            // });
 
             // Event listener for the Add New Course button
             $(document).on('click', '.btn-add-course', function() {
@@ -279,30 +294,30 @@
 
             $('')
 
-            // Event listener for the View button
-            $(document).on('click', '.btn-view-course', function() {
-                var courseId = $(this).data('course-id');
-                DeleteCourseModal(courseId);
-            });
+            // // Event listener for the View button
+            // $(document).on('click', '.btn-view-course', function() {
+            //     var courseId = $(this).data('course-id');
+            //     DeleteCourseModal(courseId);
+            // });
 
             // Function to delete the course
-            function deleteCourse(courseId) {
-                $.ajax({
-                    url: '{{ url("/courses/delete") }}/' + courseId,
-                    type: 'DELETE',
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    },
-                    success: function(response) {
-                        // Handle success, e.g., remove the row from the table
-                        $('#row-' + courseId).remove();
-                    },
-                    error: function(error) {
-                        // Handle error
-                        console.error('Error deleting course:', error);
-                    }
-                });
-            }
+            // function deleteCourse(courseId) {
+            //     $.ajax({
+            //         url: '{{ url("/courses/delete") }}/' + courseId,
+            //         type: 'DELETE',
+            //         headers: {
+            //             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            //         },
+            //         success: function(response) {
+            //             // Handle success, e.g., remove the row from the table
+            //             $('#row-' + courseId).remove();
+            //         },
+            //         error: function(error) {
+            //             // Handle error
+            //             console.error('Error deleting course:', error);
+            //         }
+            //     });
+            // }
     </script>
 
 </body>

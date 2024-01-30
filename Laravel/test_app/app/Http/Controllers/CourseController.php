@@ -33,6 +33,6 @@ class CourseController extends Controller
         $course = Course::findOrFail($id);
         $course->delete();
 
-        return redirect()->route('course.DeleteCourse')->with('success', 'Course Removed!');
+        return redirect()->route('CourseList')->with('success', 'Course Removed!');
     }
 }

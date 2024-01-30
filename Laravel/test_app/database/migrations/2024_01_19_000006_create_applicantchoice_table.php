@@ -11,7 +11,7 @@ return new class extends Migration
         Schema::create('applicantchoice', function (Blueprint $table) {
             $table->id('ApplicantChoiceID');
             
-            $table->unsignedBigInteger('CourseID');
+            $table->unsignedBigInteger('CourseID')->nullable();
             $table->foreign('CourseID')->references('CourseID')->on('course')->onDelete('cascade');
 
             $table->timestamps();
