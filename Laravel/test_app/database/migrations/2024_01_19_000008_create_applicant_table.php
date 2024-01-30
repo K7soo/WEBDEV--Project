@@ -23,9 +23,9 @@ return new class extends Migration
             $table->string('Email')->nullable();
             $table->string('Gender')->nullable();
 
-            $table->unsignedBigInteger('ApplicantChoiceID');
+            $table->unsignedBigInteger('ApplicantChoiceID')->nullable();
             $table->foreign('ApplicantChoiceID')->references('ApplicantChoiceID')->on('applicantchoice')->onDelete('cascade');
-            $table->unsignedBigInteger('ApplicantTypeID');
+            $table->unsignedBigInteger('ApplicantTypeID')->nullable();
             $table->foreign('ApplicantTypeID')->references('ApplicantTypeID')->on('applicanttype')->onDelete('cascade');
             $table->unsignedBigInteger('ApprovalID')->nullable();
 

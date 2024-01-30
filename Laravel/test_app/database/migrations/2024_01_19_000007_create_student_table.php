@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('StudMiddleName')->nullable();
             $table->string('Suffix')->nullable();
 
-            $table->unsignedBigInteger('CourseID');
+            $table->unsignedBigInteger('CourseID')->nullable();
             $table->foreign('CourseID')->references('CourseID')->on('course')->onDelete('cascade');
             $table->unsignedBigInteger('SectionID')->nullable();
 
