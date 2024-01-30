@@ -12,8 +12,6 @@ return new class extends Migration
             $table->id('CourseID');
             $table->string('CourseCode');
             $table->string('CourseName');
-            $table->integer('TotalCredits');    
-
             $table->timestamps();
         });
     }
