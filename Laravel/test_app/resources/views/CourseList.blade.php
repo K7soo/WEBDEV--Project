@@ -77,72 +77,6 @@
                                             <strong class="text-uppercase"> List of Courses </strong>
                                         </h3>
                                     </div>
-<<<<<<< Updated upstream
-                                    <div class="card-body table-responsive">
-
-                                        <div class="listpanel">
-                                            <button type="button"
-                                                class="btn btn-warning"> Add New Course
-                                            </button>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <table class="table table-bordered" id="table1">
-                                                    <thead>
-                                                        <tr>
-                                                            <th style="text-align:center;">Course Code</th>
-                                                            <th style="text-align:center;">Description</th>
-                                                            <th style="text-align:center;">Units Per Sem</th>
-                                                            <th style="text-align:center;">Option</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="text-align:center;">BSIT</td>
-                                                            <td>Bachelor of Science in Information Technology</td>
-                                                            <td>23</td>
-                                                            <td style="text-align:center;">
-                                                                    <a href=""
-
-                                                                    class="btn btn-sm btn-primary">Remove</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="text-align:center;">BSENTREP</td>
-                                                            <td>Bachelor of Science in Entrepreneurship</td>
-                                                            <td>23</td>
-                                                            <td style="text-align:center;"><a
-                                                                    href="https://survey.pup.edu.ph/apps/ofes/survey/32021-00389-CM-0/106/1a1f04d1c68c53f186fe66010f262c2145988c4e"
-                                                                    class="btn btn-sm btn-primary">Remove</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="text-align:center;">BSBA-MM</td>
-                                                            <td>Bachelor of Science in Business Administration major in Marketing Management</td>
-                                                            <td>23</td>
-                                                            <td style="text-align:center;"><a
-                                                                    href="https://survey.pup.edu.ph/apps/ofes/survey/12021-00389-CM-0/106/452405be4697445340cdfbd8d4e545f142c6ac0a"
-                                                                    class="btn btn-sm btn-primary">Remove</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="text-align:center;">BPAPFM</td>
-                                                            <td>Bachelor of Public Administration major in Public Financial Management</td>
-                                                            <td>23</td>
-                                                            <td style="text-align:center;"><a
-                                                                    href="https://survey.pup.edu.ph/apps/ofes/survey/82021-00389-CM-0/106/f15b62616c775357120355a0b82dce13b622e4f4"
-                                                                    class="btn btn-sm btn-primary">Remove</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="text-align:center;">BSBAHRM</td>
-                                                            <td>Bachelor of Science in Business Administration major in Human Resource Management</td>
-                                                            <td>23</td>
-                                                            <td style="text-align:center;"><a
-                                                                    href="https://survey.pup.edu.ph/apps/ofes/survey/62021-00389-CM-0/106/565ccba41d2f876aadace9890fe0e18b5bd2e24c"
-                                                                    class="btn btn-sm btn-primary">Remove</a></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-=======
 
                                     <div class="panel">
                                         <div class="panel-body">
@@ -171,7 +105,7 @@
                                                     @endforeach
                                                 </tbody>
                                             </table>
->>>>>>> Stashed changes
+
                                         </div>
                                     </div>
                                 </div>
@@ -197,48 +131,6 @@
                                         <li data-color="brown" data-hover="tooltip" title="Brown" class="brown"></li>
                                         <li data-color="light" data-hover="tooltip" title="Light" class="light"></li>
                                     </ul>
-<<<<<<< Updated upstream
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--END PAGE QUICK SIDEBAR-->
-                </div>
-            </div>
-
-        <script src="global/js/jquery.js"></script>
-        <script src="global/js/jquery-migrate-1.2.1.min.js"></script>
-        <script src="global/js/jquery-ui.js"></script>
-        <script src="global/plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
-        <script src="global/js/html5shiv.js"></script>
-        <script src="global/js/respond.min.js"></script>
-        <script src="global/plugins/slimScroll/jquery.slimscroll.js"></script>
-        <script src="global/plugins/iCheck/icheck.min.js"></script>
-        <script src="global/plugins/iCheck/custom.min.js"></script>
-        <script src="assets/plugins/jquery-metisMenu/jquery.menu.min.js"></script>
-        <script src="assets/plugins/jquery.blockUI.js"></script>
-        <script src="global/js/app.js"></script>
-        <script src="assets/js/quick-sidebar.js"></script>
-        <script src="assets/js/admin-setting.js"></script>
-        <script src="assets/js/layout.js"></script>
-        <script src="assets/plugins/flot-chart/jquery.flot.js"></script>
-        <script src="assets/plugins/flot-chart/jquery.flot.animator.min.js"></script>
-        <script src="assets/plugins/flot-chart/jquery.flot.resize.min.js"></script>
-        <script src="assets/plugins/flot-chart/jquery.flot.time.min.js"></script>
-        <script src="assets/plugins/rickshaw/vendor/d3.v3.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.Class.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.Compat.ClassList.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.Area.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.HoverDetail.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.Legend.js"></script>
-        <script src="assets/plugins/rickshaw/src/js/Rickshaw.Fixtures.RandomData.js"></script>
-        <script src="assets/plugins/rickshaw/extensions.js"></script>
-        <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
-        <script src="assets/js/index.js"></script>
-=======
                                 </li>
                                 <li>
                                     <h4>Layout</h4><select class="option layout-option form-control">
@@ -413,8 +305,6 @@
             }
     </script>
 
-
->>>>>>> Stashed changes
 </body>
 
 </html>

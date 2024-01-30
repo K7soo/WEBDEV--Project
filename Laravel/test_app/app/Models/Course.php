@@ -15,12 +15,7 @@ class Course extends Model
 
     protected $fillable = [
         'CourseName',
-<<<<<<< Updated upstream
-        'TotalCredits',
-        'SubjectID',
-=======
         'CourseCode',
->>>>>>> Stashed changes
     ];
 
     public $timestamps = true;

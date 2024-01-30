@@ -2,16 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Course;
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
 {
     public function index()
     {
-<<<<<<< Updated upstream
-        return view('CourseList');
-    }
-=======
         $courses = Course::all();
 
         return view('CourseList', ['courses'=>$courses]);
@@ -22,6 +19,7 @@ class CourseController extends Controller
         $request->validate([
             'CourseName' => 'required|string',
             'CourseCode' => 'required|string',
+
         ]);
 
         Course::create($request->all());
@@ -37,6 +35,4 @@ class CourseController extends Controller
 
         return redirect()->route('course.DeleteCourse')->with('success', 'Course Removed!');
     }
-
->>>>>>> Stashed changes
 }
