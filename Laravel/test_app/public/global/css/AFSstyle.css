@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 body {
-    overflow-y: hidden;
+    overflow-y: hidden; /* Disable the vertical scrollbar */
 }
-
+ 
 .loginPage {
     display: flex;
 }
@@ -18,21 +19,28 @@ body {
 }
 
 .rightpicture img{
-    height: 850px;
-    width: 1000px;
-    filter: blur(2px);
+    height: 100vh;
+    width: 118%;
 }
 
 .loginContainer {
-    padding: 1%;
+    min-height: 100vh;
+    min-width: 360px !important;
+    padding: 4vh 0 0 0;
+    overflow: hidden;
+    box-shadow: none !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    right: 0; 
+    position: absolute;
 }
 
 .logo img {
     height: auto;
     width: auto;
-    max-height: 20vh;
+    max-height: 10vh;
     padding: 5%;    
-    padding-left: 58%;
+    padding-left: 60%;
 }
 
 .leftSide {
@@ -43,7 +51,7 @@ body {
 
 .loginTitle {
     text-align: center;
-    padding-left: 40%;
+    padding-left: 28%;
 }
 
 .loginTitle h1 {
@@ -95,4 +103,5 @@ body {
 .loginFooter p {
     padding: 2vh 1vh;
     text-align: center;
+    padding-right:1%;
 }

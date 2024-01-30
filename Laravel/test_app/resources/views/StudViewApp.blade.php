@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Admin | Dashboard</title>
+    <title>Student | Home</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,16 +29,7 @@
     <div>
         <div class="page-wrapper"><!--BEGIN HEADER-->
             <header class="header">
-                <div class="logo">
-                    <a href="{{ route('DashboardUI')}}" class="logo-text">
-                        <i></i> SRAM</a>
-                        <a href="#" data-toggle="offcanvas" class="sidebar-toggle pull-right"><i
-                            class="fa fa-bars"></i></a>
-                </div>
-
                 <nav role="navigation" class="navbar navbar-static-top">
-                    <form action="#" class="search-form navbar-left hidden-xs">
-                    </form>
                 </nav>
             </header>
             
@@ -46,124 +37,34 @@
             <div class="wrapper row-offcanvas row-offcanvas-left"><!--BEGIN SIDEBAR-->
                 <aside class="page-sidebar sidebar-offcanvas">
                     <section class="sidebar">
-
                         <!-- Sidebar with routes to different web pages -->
                         <ul class="sidebar-menu">
-                            <li class="active"><a href="#"><i class="icon-home"></i><span
-                                        class="sidebar-text">Dashboard</span></a></li>
 
-                            <li><a href="{{ route('ApplicantLists')}}"><i class="icon-notebook"></i><span
-                                        class="sidebar-text">Applicant Lists</span></a></li>
+                            <li><a href="{{ route('StudHomePage')}}"><i class="icon-home"></i><span
+                                        class="sidebar-text">Home Page</span></a></li>
 
-                            <li><a href="{{ route('CourseList')}}"><i class="icon-notebook"></i><span
-                                        class="sidebar-text">Course List</span></a></li>
+                            <li class="active"><a href="#"><i class="icon-notebook"></i><span
+                                        class="sidebar-text">View Application</span></a></li>
+                                </ul>
+                            </li>
 
-                            <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span
-                                        class="sidebar-text">Registrations</span></a></li>
                         </ul>
                     </section>
                 </aside>
                 <!--END SIDERBAR--><!--BEGIN CONTENT-->
                 <div class="content">
                     <section class="content-header">
-                        <h1 class="pull-left">Admin Dashboard<small>Registration, Admissions and Checking of Students</small></h1>
+                        <h1 class="pull-left">Registration</h1>
                         <div class="pull-right">
                             <ol class="breadcrumb">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="active">Home Page</a></li>
                             </ol>
                         </div>
                     </section>
 
                     <section class="main-content">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-20">
-                                <div class="panel panel-stat stat-warning">
-
-                                    <div class="panel-body">
-
-                                        <div class="row mbxl">
-                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                <h2 class="man">5</h2>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-xs-6"><span class="stat-title">Passing Rate</span>
-                                                <h4 class="man">100%</h4>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         
-                        <div class="row">
-                            <div class="col-md-12 col-sm-20">
-                                <div class="panel panel-stat stat-success">
-
-                                    <div class="panel-body">
-
-                                        <div class="row mbxl">
-                                            <div class="col-xs-8"><span class="stat-title">Incoming Applicants</span>
-                                                <h2 class="man">5</h2>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="row">
-                                            <div class="col-xs-6"><span class="stat-title">Incoming Students</span>
-                                                <h4 class="man">2</h4>
-                                            </div>
-                                            <div class="col-xs-6"><span class="stat-title">Transferee Students</span>
-                                                <h4 class="man">2</h4>
-                                            </div>
-                                            <div class="col-xs-6"><span class="stat-title">Returnee Students</span>
-                                                <h4 class="man">1</h4>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-12 col-sm-20">
-                                <div class="panel panel-stat stat-info">
-
-                                    <div class="panel-body">
-
-                                        <div class="row mbxl">
-                                            <div class="col-xs-8"><span class="stat-title">Pending Evaluations</span>
-                                                <h2 class="man">0</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-12 col-sm-20">
-                                <div class="panel panel-stat stat-primary">
-
-                                    <div class="panel-body">
-
-                                        <div class="row mbxl">
-                                            <div class="col-xs-8"><span class="stat-title">Denied Applications</span>
-                                                <h2 class="man">0</h2>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="row">
-                                            <div class="col-xs-6"><span class="stat-title">Failing Rate</span>
-                                                <h4 class="man">0%</h4>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </section>
                 </div><!--END CONTENT-->
             </div><!--END WRAPPER--><!--BEGIN PAGE QUICK SIDEBAR-->

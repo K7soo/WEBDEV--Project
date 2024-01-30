@@ -27,7 +27,8 @@ return new class extends Migration
             $table->foreign('ApplicantChoiceID')->references('ApplicantChoiceID')->on('applicantchoice')->onDelete('cascade');
             $table->unsignedBigInteger('ApplicantTypeID');
             $table->foreign('ApplicantTypeID')->references('ApplicantTypeID')->on('applicanttype')->onDelete('cascade');
-            $table->unsignedBigInteger('ApprovalID');
+            $table->unsignedBigInteger('ApprovalID')->nullable();
+
             $table->foreign('ApprovalID')->references('ApprovalID')->on('approval')->onDelete('cascade');
 
             $table->timestamps();

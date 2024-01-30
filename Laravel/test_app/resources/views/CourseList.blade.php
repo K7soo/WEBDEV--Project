@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Blank | Pages</title>
+    <title>Admin | Courses</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,37 +56,15 @@
                             <li class="active"><a href="#"><i class="icon-notebook"></i><span
                                         class="sidebar-text">Course List</span></a></li>
 
-                            <li><a href="{{ route('CourseList')}}"><i class="icon-notebook"></i><span
+                            <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span
                                         class="sidebar-text">Registrations</span></a></li>
-
-                            <li>
-                                <a href="#"><i class="icon-puzzle"></i><span class="sidebar-text">Form Stuff</span></a>
-                                <ul class="nav nav-second-level">
-                                    <li><a href="form_controls.html">Form Controls</a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="#"><i class="icon-envelope-open"></i><span class="sidebar-text">Email</span></a>
-                                <ul class="nav nav-second-level">
-                                    <li><a href="email_inbox.html">Inbox</a></li>
-                                    <li><a href="email_compose.html">Compose Mail</a></li>
-                                    <li><a href="email_view.html">View Mail</a></li>
-                                </ul>
-                            </li>
-
                         </ul>
                     </section>
                 </aside><!--END SIDERBAR--><!--BEGIN CONTENT-->
                 <div class="content">
                 <section class="content-header">
-                    <h1 class="pull-left">Admin Dashboard<small>Registration, Admissions and Checking of Students</small></h1>
+                    <h1 class="pull-left">Course List<small>View Courses</small></h1>
                     <div class="pull-right">
-                        <ol class="breadcrumb">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Courses</a></li>
-                            <li class="active">Course List</li>
-                        </ol>
                     </div>
                 </section>
 
@@ -101,14 +79,10 @@
                                         <h3 class="card-title">List of Course/Programs</h3>
                                     </div>
                                     <div class="card-body table-responsive">
-
-<<<<<<< Updated upstream
-=======
                                         <div class="listpanel">
                                             <button type="button"class="btn btn-warning" onclick="AddCourseModal()"> Add New Course</button>
                                         </div>
 
->>>>>>> Stashed changes
                                         <div class="row">
                                             <div class="col-12">
                                                 <table class="table table-bordered" id="table1">
@@ -117,60 +91,6 @@
                                                             <th style="text-align:center;">Course ID</th>
                                                             <th style="text-align:center;">Course Name</th>
                                                             <th style="text-align:center;">Course Code</th>
-<<<<<<< Updated upstream
-                                                            <th style="text-align:center;">Description</th>
-                                                            <th style="text-align:center;">Units</th>
-                                                            <th style="text-align:center;">Lab</th>
-                                                            <th style="text-align:center;">List of Student</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="text-align:center;">BSIT</td>
-                                                            <td>Bachelor of Science in Information Technology</td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td style="text-align:center;"><a
-                                                                    href="https://survey.pup.edu.ph/apps/ofes/survey/42021-00389-CM-0/106/c21437028f4e11fe709100bee946852b61a84e8a"
-                                                                    class="btn btn-sm btn-primary">View</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="text-align:center;">BSENTREP</td>
-                                                            <td>Bachelor of Science in Entrepreneurship</td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td style="text-align:center;"><a
-                                                                    href="https://survey.pup.edu.ph/apps/ofes/survey/32021-00389-CM-0/106/1a1f04d1c68c53f186fe66010f262c2145988c4e"
-                                                                    class="btn btn-sm btn-primary">View</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="text-align:center;">BSBA-MM</td>
-                                                            <td>Bachelor of Science in Business Administration major in Marketing Management</td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td style="text-align:center;"><a
-                                                                    href="https://survey.pup.edu.ph/apps/ofes/survey/12021-00389-CM-0/106/452405be4697445340cdfbd8d4e545f142c6ac0a"
-                                                                    class="btn btn-sm btn-primary">View</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="text-align:center;">BPAPFM</td>
-                                                            <td>Bachelor of Public Administration major in Public Financial Management</td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td style="text-align:center;"><a
-                                                                    href="https://survey.pup.edu.ph/apps/ofes/survey/82021-00389-CM-0/106/f15b62616c775357120355a0b82dce13b622e4f4"
-                                                                    class="btn btn-sm btn-primary">View</a></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="text-align:center;">BSBAHRM</td>
-                                                            <td>Bachelor of Science in Business Administration major in Human Resource Management</td>
-                                                            <td></td>
-                                                            <td></td>
-                                                            <td style="text-align:center;"><a
-                                                                    href="https://survey.pup.edu.ph/apps/ofes/survey/62021-00389-CM-0/106/565ccba41d2f876aadace9890fe0e18b5bd2e24c"
-                                                                    class="btn btn-sm btn-primary">View</a></td>
-                                                        </tr>
-=======
                                                             <th style="text-align:center;">Units</th>
                                                             <th style="text-align:center;">Remove</th>
                                                         </tr>
@@ -185,7 +105,6 @@
                                                         <td style="text-align:left;"><a class="btn btn-sm btn-primary">View</a></td>
                                                     </tr>
                                                     @endforeach
->>>>>>> Stashed changes
                                                     </tbody>
                                                 </table>
                                             </div>

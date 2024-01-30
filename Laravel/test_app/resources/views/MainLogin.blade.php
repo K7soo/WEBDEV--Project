@@ -7,11 +7,12 @@
 <body>
         <div class= "loginPage">
             <div class="rightpicture">
-                <img src = "asset/classroom.jpg" >
+                <img src = "global/images/PHP/Gate.jpg" >
             </div>
             <div class="loginContainer">
                 <div class= "logo">
-                    <img src= "asset/logo.png" >
+                    <img src= "global/images/PHP/pup.png" >
+
                 </div>
                 <div class= "loginTitle">
                     <h1> Student Registration <h1> 
@@ -24,7 +25,7 @@
                     <div class= "buttonsContainer">
                         <div class= "loginButtons">
                             <button class= "btn" onclick="openAdmin()">ADMIN</button>
-                            <button class= "btn" onclick="openFaculty()">FACULTY</button>
+                            <button class= "btn" onclick="openStudent()">STUDENT</button>
                             <!-- <button class= "btn" onclick="openStudent()">STUDENT</button> -->
                         </div>
                     </div>

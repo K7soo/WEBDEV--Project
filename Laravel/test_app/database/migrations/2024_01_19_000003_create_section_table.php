@@ -10,6 +10,8 @@ return new class extends Migration
     {
         Schema::create('section', function (Blueprint $table) {
             $table->id('SectionID');
+            $table->string('SectionNo');
+
             $table->timestamps();
         });
     }

@@ -18,7 +18,8 @@ return new class extends Migration
 
             $table->unsignedBigInteger('CourseID');
             $table->foreign('CourseID')->references('CourseID')->on('course')->onDelete('cascade');
-            $table->unsignedBigInteger('SectionID');
+            $table->unsignedBigInteger('SectionID')->nullable();
+
             $table->foreign('SectionID')->references('SectionID')->on('section')->onDelete('cascade');
             $table->string('Status');
 

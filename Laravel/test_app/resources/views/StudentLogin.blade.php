@@ -2,20 +2,20 @@
 <html lang="en">
 
         <head>
-            <link rel="stylesheet" href="css/AFSstyle.css">
+            <link rel="stylesheet" href="{{ asset('global/css/AFSstyle.css') }}">
         </head>
 <body>
     <div class="loginPage">
         <div class="rightpicture">
-            <img src="{{ asset('asset/classroom.jpg') }}" alt="Student Left Image">
+
+            <img src="{{ asset('global/images/PHP/Gate.jpg') }}" alt="Student Left Image">
         </div>
         <div class="loginContainer">
             <div class="logo">
-                <img src="{{ asset('asset/logo.png') }}" alt="Student Logo">
+                <img src="{{ asset('global/images/PHP/pup.png') }}" alt="Student Logo">
             </div>
             <div class="loginTitle">
-                <h1>Student Grade Management</h1>
-                <h2>Student Module</h2>
+                <h1>Student Login </h1>
                 <div class="titleDesc">
                     <p>"Unlocking a world of knowledge, one login at a time because your success deserves a
                         password!"</p>
@@ -27,19 +27,24 @@
                         <div class="inputField">
                             <label for="studentNumber">Student Number: </label>
                         </div><div class="inputField">
-                            <input type="text" placeholder="Ex. " required>
+                            <input type="text" placeholder="Enter student number " required>
+
                         </div>
                         <div class="inputField">
                             <label for="password">Password: </label>
                         </div><div class="inputField">
-                            <input type="password" placeholder="Ex. " required>
+                            <input type="password" placeholder="" required>
+
                         </div>
                         <div class="loginButtons">
-                            <button class="btn" onclick="openStudentDashboard()">Sign in</button>
+                            <button class="btn" onclick="openStudentPage()">Sign in</button>
                         </div>
                     </form>
                     <br>
-                    <h4><a href="#">I forgot my password</a></h4>
+                    <h4><a href=#>I forgot my password</a></h4>
+                        <h4><h4><text>Not yet a student? </text>
+                        <a href="{{ Route('StudQualify')}}">Create account</a></h4>
+
                 </div>
                 <div class="loginFooter">
                     <p><small>By using this service, you understand and agree to the
@@ -54,10 +59,12 @@
 
     <script>
     
-    function openStudentDashboard() {
-        // Replace '<?= url('studentdashboard'); ?>' with the actual URL
-        var studentdashboardUrl = '<?= url('studentdashboard'); ?>';
-        window.location.href = studentdashboardUrl;
+
+    function openStudentPage() {
+        // Replace '<?= url('StudHomePage'); ?>' with the actual URL
+        var StudHomePageUrl = '<?= url('StudHomePage'); ?>';
+        window.location.href = StudHomePageUrl;
+
     }
     </script>
 </body>
