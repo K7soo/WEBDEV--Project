@@ -31,7 +31,7 @@
     <div>
         <div class="page-wrapper"><!--BEGIN HEADER-->
             <header class="header">
-                <div class="logo"><a href="{{ route('ApplicantLists')}}" class="logo-text">
+                <div class="logo"><a href="{{ route('DashboardUI')}}" class="logo-text">
                     <i></i> SRAM </a>
                     <a href="#" data-toggle="offcanvas" class="sidebar-toggle pull-right"><i class="fa fa-bars"></i></a>
                 </div>
@@ -44,17 +44,15 @@
                     <section class="sidebar">
 
                         <ul class="sidebar-menu">
-                            <li><a href="{{ route('DashboardUI')}}"><i class="icon-home"></i>
-                                <span class="sidebar-text">Dashboard</span></a></li>
+                            <li><a href="{{ route('DashboardUI')}}"><i class="icon-home"></i><span class="sidebar-text">Dashboard</span></a></li>
                             
-                            <li class="active"><a href="#"><i class="icon-notebook"></i>
-                                <span class="sidebar-text">Applicant Lists</span></a></li>
+                            <li class="active"><a href="#"><i class="icon-notebook"></i><span class="sidebar-text">Applicant Lists</span></a></li>
 
-                            <li><a href="{{ route('CourseList')}}"><i class="icon-notebook">
-                                </i><span class="sidebar-text">Course List</span></a></li>
+                            <li><a href="{{ route('CourseList')}}"><i class="icon-notebook"></i><span class="sidebar-text">Course List</span></a></li>
 
-                            <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span
-                                class="sidebar-text">Registrations</span></a></li>
+                            <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span class="sidebar-text">Registrations</span></a></li>
+
+                            <li><a href="{{ route('Admission')}}"><i class="icon-notebook"></i><span class="sidebar-text">Admission</span></a></li>
 
                         </ul>
                     </section>
@@ -69,89 +67,89 @@
                     <section class="main-content">
                         <div class="row">
                             <div class="col-md-12">
-
-                                <div class="panel">
+                                <div class="panel panel-primary">
 
                                     <div class="panel-heading">
-
-                                        <div class="listpanel">
-                                            <b><u><button type="button"
-                                                class="btn btn-link"> View Requirements</button></u></b>
-                                            <button type="button"
-                                                class="btn btn-primary"> View Application
-                                            </button>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="col-md-6 mb-0">
-                                                <div class="note note-primary">
-                                                    <b><h4>4</h4>
-                                                    <p>All</p></b>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6 mb-0">
-                                                <div class="note note-success">
-                                                    <b><h4>4</h4>
-                                                    <p>For Interview</p></b>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6 mb-0">
-                                                <div class="note note-info">
-                                                    <b><h4>0</h4>
-                                                    <p>Accepted</p></b>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6 mb-0">
-                                                 <div class="note note-warning">
-                                                     <b><h4 class="box-heading">0</h4>
-                                                     <p>Rejected</p></b>
-                                                </div>
-                                            </div>
-
-                                        </div>
+                                        <h3 class="panel-title"><strong class="text-uppercase">Registration, Admissions and Checking of Students</strong>
+                                        </h3>
                                     </div>
 
-                                    <!-- Table for applicants -->
-                                    <div class="panel-body">
-
-                                        <table id="datatables" class="table table-responsive table-striped table-bordered table-hover" >
-
-                                            <thead>
-                                                <tr>
-                                                    <th>ID</th>
-                                                    <th>Last Name</th>
-                                                    <th>First Name</th>
-                                                    <th>Middle Name</th>
-                                                    <th>Suffix</th>
-                                                    <th>Email</th>
-                                                    <th>Gender</th>
-                                                    <th>Choice</th>
-                                                    <th>Applied as</th>
-                                                    <th>Status</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                            @foreach($applicants as $applicant)
-                                                <tr>
-                                                    <td>{{ $applicant->ApplicantID }}</td>
-                                                    <td>{{ $applicant->AppLastName }}</td>
-                                                    <td>{{ $applicant->AppFirstName }}</td>
-                                                    <td>{{ $applicant->AppMiddleName }}</td>
-                                                    <td>{{ $applicant->Suffix }}</td>
-                                                    <td>{{ $applicant->Email }}</td>
-                                                    <td>{{ $applicant->Gender }}</td>
-                                                    <td>{{ $applicant->ApplicantChoiceID }}</td>
-                                                    <td>{{ $applicant->ApplicantTypeID }}</td>
-                                                    <td>{{ $applicant->ApprovalID }}</td>
-                                                </tr>
-                                                @endforeach
-                                            </tbody>
-                                        </table>
+                                    <div class="listpanel">
+                                        <b><u><button type="button"
+                                            class="btn btn-link"> View Requirements</button></u></b>
+                                        <button type="button"
+                                            class="btn btn-primary"> View Application
+                                        </button>
                                     </div>
-                                
+
+                                    <div class="panel">
+                                        <div class="col-md-6 mb-0">
+                                            <div class="note note-primary">
+                                                <b><h4>4</h4>
+                                                <p>All</p></b>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-0">
+                                            <div class="note note-success">
+                                                <b><h4>4</h4>
+                                                <p>For Interview</p></b>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-0">
+                                            <div class="note note-info">
+                                                <b><h4>0</h4>
+                                                <p>Accepted</p></b>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-0">
+                                                <div class="note note-warning">
+                                                    <b><h4 class="box-heading">0</h4>
+                                                    <p>Rejected</p></b>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <div class="panel">
+                                        <!-- Table for applicants -->
+                                        <div class="panel-body">
+                                            <table id="datatables" class="table table-bordered mbn" >
+                                                <thead>
+                                                    <tr>
+                                                        <th>ID</th>
+                                                        <th>Last Name</th>
+                                                        <th>First Name</th>
+                                                        <th>Middle Name</th>
+                                                        <th>Suffix</th>
+                                                        <th>Email</th>
+                                                        <th>Gender</th>
+                                                        <th>Choice</th>
+                                                        <th>Applied as</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                @foreach($applicants as $applicant)
+                                                    <tr>
+                                                        <td>{{ $applicant->ApplicantID }}</td>
+                                                        <td>{{ $applicant->AppLastName }}</td>
+                                                        <td>{{ $applicant->AppFirstName }}</td>
+                                                        <td>{{ $applicant->AppMiddleName }}</td>
+                                                        <td>{{ $applicant->Suffix }}</td>
+                                                        <td>{{ $applicant->Email }}</td>
+                                                        <td>{{ $applicant->Gender }}</td>
+                                                        <td>{{ $applicant->ApplicantChoiceID }}</td>
+                                                        <td>{{ $applicant->ApplicantTypeID }}</td>
+                                                        <td>{{ $applicant->ApprovalID }}</td>
+                                                    </tr>
+                                                    @endforeach
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                     </div>
                                         <div>
                                         <h3 class="panel-title"></h3>
@@ -215,6 +213,10 @@
 
     <!-- Scripts -->
     <script src="global/js/jquery.js"></script>
+    <script src="assets/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+    <script src="assets/js/table-datatables.js"></script>
+
     <script src="global/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="global/js/jquery-ui.js"></script>
     <script src="global/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -230,9 +232,27 @@
     <script src="assets/js/quick-sidebar.js"></script>
     <script src="assets/js/admin-setting.js"></script>
     <script src="assets/js/layout.js"></script>
-    <script src="assets/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
-    <script src="assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
-    <script src="assets/js/table-datatables.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.animator.min.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.resize.min.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.time.min.js"></script>
+    <script src="assets/plugins/rickshaw/vendor/d3.v3.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.Class.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.Compat.ClassList.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.Area.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.HoverDetail.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.Legend.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.Fixtures.RandomData.js"></script>
+    <script src="assets/plugins/rickshaw/extensions.js"></script>
+    <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <!-- <script src="assets/js/index.js"></script> -->
+    <script>
+            $('#datatables').dataTable();
+    </script>
+
 </body>
 
 </html>
