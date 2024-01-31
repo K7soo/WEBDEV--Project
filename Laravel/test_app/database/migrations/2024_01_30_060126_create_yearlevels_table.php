@@ -11,19 +11,19 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('semesters', function (Blueprint $table) {
-            $table->id('SemesterID');
-            $table->string('SemesterName', 50)->unique();
+        Schema::create('yearlevels', function (Blueprint $table) {
+            $table->id('YearLevelID');
+            $table->string('YearLevelName', 20)->unique();
             
             $table->timestamps();
         });
     }
-
+    
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('semesters');
+        Schema::dropIfExists('yearlevels');
     }
 };
