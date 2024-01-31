@@ -22,6 +22,7 @@ return new class extends Migration
             $table->integer('ContactNo')->nullable();
             $table->string('Email')->nullable();
             $table->string('Gender')->nullable();
+            $table->string('Password');
 
             $table->unsignedBigInteger('ApplicantChoiceID')->nullable();
             $table->foreign('ApplicantChoiceID')->references('ApplicantChoiceID')->on('applicantchoice')->onDelete('cascade');

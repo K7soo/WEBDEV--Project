@@ -12,10 +12,6 @@ return new class extends Migration
             $table->id('SubjectID');
             $table->string('SubjectCode');
             $table->string('SubjectName');
-            $table->unsignedBigInteger('YearLevelID')->nullable();
-            $table->foreign('YearLevelID')->references('YearLevelID')->on('yearlevel')->onDelete('cascade');
-            $table->unsignedBigInteger('SemesterID')->nullable();
-            $table->foreign('YearLevelID')->references('SemesterID')->on('semester')->onDelete('cascade');
             
             $table->timestamps();
         });

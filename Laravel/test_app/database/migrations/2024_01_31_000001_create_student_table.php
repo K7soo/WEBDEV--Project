@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('Status');
 
             $table->unsignedBigInteger('YearLevelID')->nullable();
-            $table->foreign('YearLevelID')->references('YearLevelID')->on('yearlevel')->onDelete('cascade');
+            $table->foreign('YearLevelID')->references('YearLevelID')->on('yearlevels')->onDelete('cascade');
             $table->unsignedBigInteger('CourseID')->nullable();
             $table->foreign('CourseID')->references('CourseID')->on('course')->onDelete('cascade');
             $table->unsignedBigInteger('SectionID')->nullable();
