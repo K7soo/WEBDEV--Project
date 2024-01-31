@@ -15,13 +15,16 @@ return new class extends Migration
             $table->string('StudFirstName');
             $table->string('StudMiddleName')->nullable();
             $table->string('Suffix')->nullable();
+            $table->string('Email'); //Webmail
+            $table->string('Password');
+            $table->string('Status');
 
+            $table->unsignedBigInteger('YearLevelID')->nullable();
+            $table->foreign('YearLevelID')->references('YearLevelID')->on('yearlevel')->onDelete('cascade');
             $table->unsignedBigInteger('CourseID')->nullable();
             $table->foreign('CourseID')->references('CourseID')->on('course')->onDelete('cascade');
             $table->unsignedBigInteger('SectionID')->nullable();
-
             $table->foreign('SectionID')->references('SectionID')->on('section')->onDelete('cascade');
-            $table->string('Status');
 
             $table->timestamps();
         });
