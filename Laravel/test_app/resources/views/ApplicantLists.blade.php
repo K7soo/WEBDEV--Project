@@ -36,8 +36,22 @@
                     <a href="#" data-toggle="offcanvas" class="sidebar-toggle pull-right"><i class="fa fa-bars"></i></a>
                 </div>
                 <nav role="navigation" class="navbar navbar-static-top">
-                </div>
-            </div><!--END HORIZONTAL SIDEBAR--><!--BEGIN WRAPPER-->
+                    <div class="navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown dropdown-user menu-user">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                                    <img src="global/images/PHP/account icon.png" alt="User Image" class="img-circle"/>
+                                        <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="page_user_profile.html"><i class="icon-user"></i>My Profile</a></li>
+                                    <li><a href="page_login.html"><i class="icon-key"></i>Log Out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            <!--END HORIZONTAL SIDEBAR--><!--BEGIN WRAPPER-->
 
             <div class="wrapper row-offcanvas row-offcanvas-left"><!--BEGIN SIDEBAR-->
                 <aside class="page-sidebar sidebar-offcanvas">

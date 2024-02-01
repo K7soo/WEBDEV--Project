@@ -40,8 +40,20 @@
                 </div>
 
                 <nav role="navigation" class="navbar navbar-static-top">
-                    <form action="#" class="search-form navbar-left hidden-xs">
-                    </form>
+                    <div class="navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown dropdown-user menu-user">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                                    <img src="global/images/PHP/account icon.png" alt="User Image" class="img-circle"/>
+                                        <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="page_user_profile.html"><i class="icon-user"></i>My Profile</a></li>
+                                    <li><a href="page_login.html"><i class="icon-key"></i>Log Out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </header><!--END HEADER-->
 

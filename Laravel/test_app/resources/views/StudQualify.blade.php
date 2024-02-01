@@ -52,204 +52,133 @@
                 <!--END SIDERBAR--><!--BEGIN CONTENT-->
                 <div class="content">
                     <section class="content-header">
-                        <h1 class="pull-left">Registration</h1>
-                        <div class="pull-right">
-                            <ol class="breadcrumb">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="active">Home Page</a></li>
-                            </ol>
-                        </div>
+                        <h1 class="pull-left">Pre Qualifications</h1>
+                        <div class="pull-right"></div>
                     </section>
-                    
                     <section class="main-content">
                         <div class="row">
-                            <div class="col-md-10">
+                            <div class="col-md-12">
                                 <div class="panel">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title"><strong
-                                             class="text-uppercase text-success">Personal Information</strong></h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <form action="#" class="form-horizontal">
-                                            <div class="row">
-                                                <div class="col-md-3">
-                                                    <input type="text" placeholder="Surname" class="form-control" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="col-md-3"><input type="text" placeholder="First name"
-                                                            class="form-control" />
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <div class="col-md-1"><input type="text" placeholder="M.I."
-                                                                class="form-control" />
-                                                        </div>
+                                    <div class="panel-body form">
+                                        <form id="wizard-option1" action="" method="post" class="form-horizontal">
+                                            <div class="form-body">
+                                                <ul class="bwizard-steps nav nav-pills mbxl">
+                                                    <li><a href="#tab1" data-toggle="tab"><span
+                                                                class="step-number">1</span><span class="step-desc">Step
+                                                                1<br /><small>Personal Information</small></span></a></li>
+                                                    <li><a href="#tab2" data-toggle="tab"><span
+                                                                class="step-number">2</span><span class="step-desc">Step
+                                                                2<br /><small>Contact Information</small></span></a></li>
+                                                    <li><a href="#tab3" data-toggle="tab"><span
+                                                                class="step-number">3</span><span class="step-desc">Step
+                                                                3<br /><small>Educational Background</small></span></a></li>
+                                                    <li><a href="#tab4" data-toggle="tab"><span
+                                                                class="step-number">4</span><span class="step-desc">Step
+                                                                4<br /><small>Parent/Guardian Information</small></span></a></li>
+                                                </ul>
+                                                <div class="tab-content mbn pan">
+                                                    <div id="tab1" class="tab-pane">
+                                                        <h4 class="mbl">Your Account Information</h4>
                                                         <div class="form-group">
-                                                            <div class="col-md-1"><input type="text" placeholder="Ext."
-                                                                    class="form-control" />
+                                                            <div class="col-md-4"><input type="text" placeholder="username"
+                                                                    class="input-dark form-control" /><label
+                                                                class="control-label col-md-3"><span
+                                                                    class="required">*</span></label>
+                                                                    <span class="help-block">This field is required.</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group last"><label
+                                                                class="control-label col-md-3">Password <span
+                                                                    class="required">*</span></label>
+                                                            <div class="col-md-4"><input type="password" name="password"
+                                                                    class="input-dark form-control" /><span
+                                                                    class="help-block">Provide your password</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tab2" class="tab-pane">
+                                                        <h4 class="mbl">Your Profile Information</h4>
+                                                        <div class="form-group"><label
+                                                                class="control-label col-md-3">Fullname <span
+                                                                    class="required">*</span></label>
+                                                            <div class="col-md-4"><input type="text" name="fullname"
+                                                                    class="input-dark form-control" /><span
+                                                                    class="help-block">Provide your fullname</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group"><label
+                                                                class="control-label col-md-3">Gender <span
+                                                                    class="required">*</span></label>
+                                                            <div class="col-md-4">
+                                                                <div class="radio"><label><input type="radio"
+                                                                            name="gender" value="m" />Male</label></div>
+                                                                <div class="radio"><label><input type="radio"
+                                                                            name="gender" value="f" />Female</label>
+                                                                </div><span class="help-block">Provide your
+                                                                    gender</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group"><label
+                                                                class="control-label col-md-3">Address <span
+                                                                    class="required">*</span></label>
+                                                            <div class="col-md-4"><input type="text" name="address"
+                                                                    class="input-dark form-control" /><span
+                                                                    class="help-block">Provide your street
+                                                                    address</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tab3" class="tab-pane">
+                                                        <h4 class="mbl">Your Billing Information</h4>
+                                                        <div class="form-group"><label
+                                                                class="control-label col-md-3">Card Number <span
+                                                                    class="required">*</span></label>
+                                                            <div class="col-md-4"><input type="text" name="cardnmber"
+                                                                    class="input-dark form-control" /><span
+                                                                    class="help-block">Provide your card number</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group last"><label
+                                                                class="control-label col-md-3">Expiration <span
+                                                                    class="required">*</span></label>
+                                                            <div class="col-md-4"><input type="text" name="expiration"
+                                                                    class="input-dark form-control" /><span
+                                                                    class="help-block">Provide your expiration</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tab4" class="tab-pane">
+                                                        <h4 class="mbl">Finish</h4>
+                                                        <div class="form-group"><label
+                                                                class="control-label col-md-3">Email</label>
+                                                            <div class="col-md-4"><input type="text" name="cardnmber"
+                                                                    class="input-dark form-control" /></div>
+                                                        </div>
+                                                        <div class="form-group"><label
+                                                                class="control-label col-md-3"></label>
+                                                            <div class="col-md-4">
+                                                                <div class="checkbox"><label><input type="checkbox"
+                                                                            name="terms" value="1" />I agree to the
+                                                                        terms of service</label></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <div class="form-group">
-                                                <div class="col-md-3">
-                                                    <div class="input-group"><input id="daterangepicker_single"
-                                                            type="text" value="Date Of Birth"
-                                                            class="form-control" /><span class="input-group-addon"><i
-                                                                class="icon-calendar"></i></span>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-md-1 control-label">Gender</label>
-                                                    <div class="col-md-4">
-                                                        <label class="radio-inline">
-                                                            <input type="radio" name="gender" value="0" checked />Male
-                                                        </label>
-                                                        <label class="radio-inline">
-                                                            <input type="radio" name="gender" value="1" />Female
-                                                        </label>
-                                                        <label class="radio-inline">
-                                                            <input type="radio" name="gender" value="2" />Others
-                                                        </label>
-                                                    </div>
-                                                </div>
+                                            <div class="form-actions">
+                                                <ul class="pager wizard man">
+                                                    <li style="display: none;" class="previous first"><a
+                                                            href="javascript:;">First</a></li>
+                                                    <li class="previous"><a href="javascript:;">Previous</a></li>
+                                                    <li style="display: none;" class="next last"><a
+                                                            href="javascript:;">Last</a></li>
+                                                    <li class="next"><a href="javascript:;">Next</a></li>
+                                                </ul>
                                             </div>
-                                            <div class="form-group">
-                                                <div class="col-md-2"><input type="text" placeholder="Birth of Place"
-                                                        class="form-control" /></div>
-                                                <div class="form-group">
-                                                    <div class="col-md-3"><input type="text" placeholder="Nationality"
-                                                            class="form-control" /></div>
-                                                    <div class="form-group">
-                                                        <div class="col-md-3"><select name="color" class="form-control">
-                                                                <option value="">Status</option>
-                                                                <option value="blue">Single</option>
-                                                                <option value="green">Married</option>
-                                                                <option value="red">Divorced</option>
-                                                                <option value="yellow">Others</option>
-                                                            </select></div>
-                                                    </div>
-                                                    <div class="col-md-10">
-                                                        <div class="panel">
-                                                            <div class="panel-heading">
-                                                                <h3 class="panel-title"><strong
-                                                                        class="text-uppercase text-success">Contact
-                                                                        Information</strong></h3>
-                                                            </div>
-                                                            <div class="form-group"></div>
-                                                            <div class="col-md-6"><input type="text"
-                                                                    placeholder="Home Address" class="form-control" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <div class="col-md-4"><input type="text"
-                                                                        placeholder="Street" class="form-control" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group"></div>
-                                                            <div class="col-md-4"><input type="text" placeholder="City"
-                                                                    class="form-control" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <div class="col-md-4"><input type="text"
-                                                                        placeholder="State/Province"
-                                                                        class="form-control" /></div>
-                                                                <div class="form-group">
-                                                                    <div class="col-md-2"><input type="text"
-                                                                            placeholder="ZIP Code"
-                                                                            class="form-control" /></div>
-                                                                    <div class="form-group"></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-5"><input type="text"
-                                                                    placeholder="Phone Number" class="form-control" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <div class="col-md-5"><input type="text"
-                                                                        placeholder="Email Address"
-                                                                        class="form-control" /></div>
-                                                            <div class="col-md-10">
-                                                                <div class="panel">
-                                                                    <div class="panel-heading">
-                                                                        <h3 class="panel-title"><strong
-                                                                                class="text-uppercase text-success">Educational Background</strong></h3>
-                                                                    </div>
-                                                                    <div class="form-group"></div>
-                                                                    <div class="col-md-6"><input type="text"
-                                                                            placeholder="Previous School Name"
-                                                                            class="form-control" />
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <div class="col-md-4"><input type="text"
-                                                                                placeholder="Year Graduated"
-                                                                                class="form-control" /></div>
-                                                                    </div>
-                                                                        <div class="form-group"></div>
-                                                                        <div class="col-md-5"><select name="color" class="form-control">
-                                                                            <option value="">Current Educational Level</option>
-                                                                            <option value="blue">Freshmman</option>
-                                                                            <option value="green">College/Tertiary</option>
-                                                                            <option value="red">Masteral</option>
-                                                                            <option value="yellow">Transferee</option>
-                                                                        </select></div>
-                                                            <div class="form-group">
-                                                                <div class="col-md-4"><input type="text"
-                                                                        placeholder="Number of Units" class="form-control" />
-                                                                </div>
-                                                                <div class="col-md-10">
-                                                                    <div class="panel">
-                                                                        <div class="panel-heading">
-                                                                            <h3 class="panel-title"><strong
-                                                                                    class="text-uppercase text-success">Parent/Guardian Information</strong></h3>
-                                                                        </div>
-                                                                        <div class="form-group"></div>
-                                                            <div class="col-md-5"><input type="text" placeholder="Father's Name"
-                                                                    class="form-control" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <div class="col-md-4"><input type="text"
-                                                                        placeholder="Number"
-                                                                        class="form-control" /></div>
-                                                                <div class="form-group">
-                                                                    <div class="col-md-3"><input type="text"
-                                                                            placeholder="Work"
-                                                                            class="form-control" /></div>
-                                                                    <div class="form-group"></div>
-                                                                </div>
-                                                            </div>
-                                                                <div class="form-group"></div>
-                                                            <div class="col-md-5"><input type="text" placeholder="Mother's Name"
-                                                                    class="form-control" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <div class="col-md-4"><input type="text"
-                                                                        placeholder="Number"
-                                                                        class="form-control" /></div>
-                                                                <div class="form-group">
-                                                                    <div class="col-md-3"><input type="text"
-                                                                            placeholder="Work"
-                                                                            class="form-control" /></div>
-                                                                    <div class="form-group"></div>
-                                                                    <div class="form-group"></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-5"><input type="text" placeholder="Guardian's Name"
-                                                                    class="form-control" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <div class="col-md-4"><input type="text"
-                                                                        placeholder="Number"
-                                                                        class="form-control" /></div>
-                                                                <div class="form-group">
-                                                                    <div class="col-md-3"><input type="text"
-                                                                            placeholder="Work"
-                                                                            class="form-control" />
-                                                                    </div>
-                                                                <div class="form-group">
-                                                            </div>
                                         </form>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
                     </section>
                 </div><!--END CONTENT-->
             </div><!--END WRAPPER--><!--BEGIN PAGE QUICK SIDEBAR-->

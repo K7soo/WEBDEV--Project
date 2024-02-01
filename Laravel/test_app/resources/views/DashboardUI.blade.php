@@ -36,8 +36,20 @@
                 </div>
 
                 <nav role="navigation" class="navbar navbar-static-top">
-                    <form action="#" class="search-form navbar-left hidden-xs">
-                    </form>
+                    <div class="navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown dropdown-user menu-user">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+                                    <img src="global/images/PHP/account icon.png" alt="User Image" class="img-circle"/>
+                                        <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="page_user_profile.html"><i class="icon-user"></i>My Profile</a></li>
+                                    <li><a href="page_login.html"><i class="icon-key"></i>Log Out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
 
@@ -102,22 +114,22 @@
                                             </div>
                                         </div>
 
-                                        <!-- Second Panel -->
-                                        <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
-                                            <div class="panel panel-stat stat-success">
-                                                <div class="panel-body">
-                                                    <div class="row mbxl">
-                                                        <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                            <h2 class="man">118</h2>
-                                                        </div>
+
+                                    <!-- Second Panel -->
+                                    <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
+                                        <div class="panel panel-stat stat-success">
+                                            <div class="panel-body">
+                                                <div class="row mbxl">
+                                                    <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
+                                                        <h2 class="man">118</h2>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col-xs-6"><span class="stat-title">New Visitors</span>
-                                                            <h4 class="man">46.5%</h4>
-                                                        </div>
-                                                        <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
-                                                            <h4 class="man">3.7%</h4>
-                                                        </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-6"><span class="stat-title"></span>
+                                                        <h4 class="man"></h4>
+                                                    </div>
+                                                    <div class="col-xs-6"><span class="stat-title"></span>
+                                                        <h4 class="man"></h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -141,25 +153,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Fourth Panel -->
-                                        <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
-                                            <div class="panel panel-stat stat-warning">
-                                                <div class="panel-body">
-                                                    <div class="row mbxl">
-                                                        <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                            <h2 class="man">118</h2>
-                                                        </div>
+                                                <div class="row">
+                                                    <div class="col-xs-6"><span class="stat-title"></span>
+                                                        <h4 class="man"></h4>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col-xs-6"><span class="stat-title">New Visitors</span>
-                                                            <h4 class="man">46.5%</h4>
-                                                        </div>
-                                                        <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
-                                                            <h4 class="man">3.7%</h4>
-                                                        </div>
+                                                    <div class="col-xs-6"><span class="stat-title"></span>
+                                                        <h4 class="man"></h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -176,11 +175,11 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-xs-6"><span class="stat-title">New Visitors</span>
-                                                        <h4 class="man">46.5%</h4>
+                                                    <div class="col-xs-6"><span class="stat-title"></span>
+                                                        <h4 class="man"></h4>
                                                     </div>
-                                                    <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
-                                                        <h4 class="man">3.7%</h4>
+                                                    <div class="col-xs-6"><span class="stat-title"></span>
+                                                        <h4 class="man"></h4>
                                                     </div>
                                                 </div>
                                             </div>
