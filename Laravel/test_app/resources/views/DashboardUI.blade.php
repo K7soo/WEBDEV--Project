@@ -187,6 +187,7 @@
                                     </div>
                                     <div class="panel-body">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                                         <!-- First Panel -->
                                         <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
                                             <div class="panel panel-stat stat-primary">
@@ -292,6 +293,8 @@
                                             </div>
                                         </div>
 =======
+=======
+>>>>>>> Stashed changes
                                         <table id="datatables" class="table table-bordered mbn">
                                             <thead>
                                                 <tr>
@@ -317,7 +320,6 @@
                                                 @endforeach
                                             </tbody>
                                         </table>
->>>>>>> Stashed changes
                                     </div>
                                 </div>
                             </div>
