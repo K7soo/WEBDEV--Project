@@ -198,102 +198,6 @@
                                         </h3>
                                     </div>
                                     <div class="panel-body">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                                        <!-- First Panel -->
-                                        <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
-                                            <div class="panel panel-stat stat-primary">
-                                                <div class="panel-body">
-                                                    <div class="row mbxl">
-                                                        <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                            <h2 class="man">118</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-xs-6"><span class="stat-title"></span>
-                                                            <h4 class="man"></h4>
-                                                        </div>
-                                                        <div class="col-xs-6"><span class="stat-title"></span>
-                                                            <h4 class="man"></h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                    <!-- Second Panel -->
-                                    <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
-                                        <div class="panel panel-stat stat-success">
-                                            <div class="panel-body">
-                                                <div class="row mbxl">
-                                                    <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                        <h2 class="man">118</h2>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-xs-6"><span class="stat-title"></span>
-                                                        <h4 class="man"></h4>
-                                                    </div>
-                                                    <div class="col-xs-6"><span class="stat-title"></span>
-                                                        <h4 class="man"></h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Third Panel -->
-                                        <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
-                                            <div class="panel panel-stat stat-info">
-                                                <div class="panel-body">
-                                                    <div class="row mbxl">
-                                                        <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                            <h2 class="man">118</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-xs-6"><span class="stat-title">New Visitors</span>
-                                                            <h4 class="man">46.5%</h4>
-                                                        </div>
-                                                        <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
-                                                            <h4 class="man">3.7%</h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-xs-6"><span class="stat-title"></span>
-                                                        <h4 class="man"></h4>
-                                                    </div>
-                                                    <div class="col-xs-6"><span class="stat-title"></span>
-                                                        <h4 class="man"></h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Fourth Panel -->
-                                    <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
-                                        <div class="panel panel-stat stat-warning">
-                                            <div class="panel-body">
-                                                <div class="row mbxl">
-                                                    <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                        <h2 class="man">118</h2>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-xs-6"><span class="stat-title"></span>
-                                                        <h4 class="man"></h4>
-                                                    </div>
-                                                    <div class="col-xs-6"><span class="stat-title"></span>
-                                                        <h4 class="man"></h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-=======
-=======
->>>>>>> Stashed changes
                                         <table id="datatables" class="table table-bordered mbn">
                                             <thead>
                                                 <tr>
@@ -324,7 +228,6 @@
                             </div>
                         </div>
                     </section>
-
                     
                 </div><!-- END CONTENT -->
             </div><!--END WRAPPER--><!--BEGIN PAGE QUICK SIDEBAR-->
