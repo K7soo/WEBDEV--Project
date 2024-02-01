@@ -85,14 +85,120 @@
                             <div class="col-md-12 col-sm-20">
                                 <div class="panel panel-stat stat-warning">
                                 
+                                <div class="col-md-12">
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title"><strong class="text-uppercase">Registration, Admissions and Checking of Students</strong>
+                                            </h3>
+                                        </div>
+                                        
+                                        <div class="panel-body">
+                                            <!-- First Panel -->
+                                            <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
+                                                <div class="panel panel-stat stat-primary">
+                                                    <div class="panel-body">
+                                                        <div class="row mbxl">
+                                                            <div class="col-xs-8">
+                                                                <span class="stat-title">Number of Students:</span>
+                                                                <span class="stat-title">__________________</span>
+                                                                <h2 class="man">{{ \App\Models\Student::count() }}</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-6"><span class="stat-title"></span>
+                                                                <h4 class="man"></h4>
+                                                            </div>
+                                                            <div class="col-xs-6"><span class="stat-title"></span>
+                                                                <h4 class="man"></h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Second Panel -->
+                                            <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
+                                                <div class="panel panel-stat stat-success">
+                                                    <div class="panel-body">
+                                                        <div class="row mbxl">
+                                                            <div class="col-xs-8">
+                                                                <span class="stat-title">Registrations</span>
+                                                                <span class="stat-title">___________________</span>
+                                                                <h2 class="man">{{ \App\Models\Applicant::count() }}</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-6"><span class="stat-title"></span>
+                                                                <h4 class="man"></h4>
+                                                            </div>
+                                                            <div class="col-xs-6"><span class="stat-title"></span>
+                                                                <h4 class="man"></h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+
+                                            <!-- Third Panel -->
+                                            <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
+                                                <div class="panel panel-stat stat-info">
+                                                    <div class="panel-body">
+                                                        <div class="row mbxl">
+                                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
+                                                                <h2 class="man">118</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-6"><span class="stat-title"></span>
+                                                                <h4 class="man"></h4>
+                                                            </div>
+                                                            <div class="col-xs-6"><span class="stat-title"></span>
+                                                                <h4 class="man"></h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                            </div>
+
+                                            <!-- Fourth Panel -->
+                                            <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
+                                                <div class="panel panel-stat stat-warning">
+                                                    <div class="panel-body">
+                                                        <div class="row mbxl">
+                                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
+                                                                <h2 class="man">118</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-6"><span class="stat-title"></span>
+                                                                <h4 class="man"></h4>
+                                                            </div>
+                                                            <div class="col-xs-6"><span class="stat-title"></span>
+                                                                <h4 class="man"></h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                        
+                        <div class="panel-body">
                             <div class="col-md-12">
-                                <div class="panel panel-primary">
+                                <div class="panel panel-default">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title"><strong class="text-uppercase">Registration, Admissions and Checking of Students</strong>
+                                        <h3 class="panel-title">
+                                            <strong class="text-uppercase">Students</strong>
                                         </h3>
                                     </div>
-                                    
                                     <div class="panel-body">
+<<<<<<< Updated upstream
                                         <!-- First Panel -->
                                         <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
                                             <div class="panel panel-stat stat-primary">
@@ -184,11 +290,40 @@
                                                 </div>
                                             </div>
                                         </div>
+=======
+                                        <table id="datatables" class="table table-bordered mbn">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Student Number</th>
+                                                    <th>Full Name</th>
+                                                    <th>Email</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach($students as $student)
+                                                <tr>
+                                                    <td>{{ $student->StudentID }}</td>
+                                                    <td>{{ $student->StudentNo }}</td>
+                                                    <td>
+                                                        {{ $student->StudLastName }} 
+                                                        {{ $student->StudFirstName }} 
+                                                        {{ $student->StudMiddleName }} 
+                                                        {{ $student->Suffix }}
+                                                    </td>
+                                                    <td>{{ $student->Email }}</td>
+                                                </tr>
+                                                @endforeach
+                                            </tbody>
+                                        </table>
+>>>>>>> Stashed changes
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
+
+                    
                 </div><!-- END CONTENT -->
             </div><!--END WRAPPER--><!--BEGIN PAGE QUICK SIDEBAR-->
 
@@ -243,6 +378,10 @@
     </div>
 
     <script src="global/js/jquery.js"></script>
+    <script src="assets/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+    <script src="assets/js/table-datatables.js"></script>
+
     <script src="global/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="global/js/jquery-ui.js"></script>
     <script src="global/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -274,7 +413,8 @@
     <script src="assets/plugins/rickshaw/src/js/Rickshaw.Fixtures.RandomData.js"></script>
     <script src="assets/plugins/rickshaw/extensions.js"></script>
     <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
-    <script src="assets/js/index.js"></script>
+    <!-- <script src="assets/js/index.js"></script> -->
+    <script> $('#datatables').dataTable(); </script>
 </body>
 
 </html>
