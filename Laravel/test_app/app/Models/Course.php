@@ -16,24 +16,9 @@ class Course extends Model
     protected $fillable = [
         'CourseName',
         'CourseCode',
-        'TotalCredits',
-        'SubjectID',
     ];
 
-    // Define the relationship with Subject
-    public function subject()
-    {
-        return $this->belongsTo(Subject::class, 'SubjectID');
-    }
-
-    // Define the relationship with Student
-    public function students()
-    {
-        return $this->hasMany(Student::class, 'CourseID');
-    }
-
-    public function getStudentsList()
-    {
-        return $this->students()->pluck('StudFirstName', 'StudentID');
-    }
+    public $timestamps = true;
+    // const CREATED_AT = 'created_at';
+    // const UPDATED_AT = 'updated_at';
 }

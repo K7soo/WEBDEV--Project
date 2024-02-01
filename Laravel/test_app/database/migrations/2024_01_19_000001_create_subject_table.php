@@ -10,11 +10,9 @@ return new class extends Migration
     {
         Schema::create('subject', function (Blueprint $table) {
             $table->id('SubjectID');
+            $table->string('SubjectCode');
             $table->string('SubjectName');
-            $table->float('Credits');    
-            $table->integer('RoomNo');    
-            $table->string('Schedule');
-
+            
             $table->timestamps();
         });
     }
