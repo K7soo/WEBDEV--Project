@@ -18,6 +18,7 @@ class Student extends Model
         'StudFirstName',
         'StudMiddleName',
         'Suffix',
+        'YearLevelID',
         'CourseID',
         'SectionID',
         'Status',
@@ -33,5 +34,11 @@ class Student extends Model
     public function section()
     {
         return $this->belongsTo(Section::class, 'SectionID');
+    }
+
+    // Define the relationship with YearLevel
+    public function yearlevel()
+    {
+        return $this->belongsTo(YearLevel::class, 'YearLevelID');
     }
 }
