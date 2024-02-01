@@ -3,6 +3,7 @@
 
 <head>
     <title>Admin | Courses</title>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,10 +70,17 @@
 
                             <li class="active"><a href="#"><i class="icon-notebook"></i><span class="sidebar-text">Course List</span></a></li>
 
+                            <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span
+                                        class="sidebar-text">Registrations</span></a></li>
+
                             <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span class="sidebar-text">Registrations</span></a></li>
+
+                            <li><a href="{{ route('Admission')}}"><i class="icon-notebook"></i><span class="sidebar-text">Admission</span></a></li>
+
                         </ul>
                     </section>
                 </aside><!--END SIDERBAR--><!--BEGIN CONTENT-->
+
                 <div class="content">
                     <section class="content-header">
                         <h1 class="pull-left">Course List<small>View Courses</small></h1>
@@ -82,17 +90,20 @@
 
                     <section class="main-content">
                         <div class="row">
+
                             <div class="col-md-12">
                                 <div class="panel panel-success">
                                     <div class="panel-heading">
-                                        <h3 class="panel-title">
-                                            <strong class="text-uppercase"> List of Courses </strong>
+                                        <h3 class="panel-title"><strong class="text-uppercase"> List of Courses </strong>
                                         </h3>
                                     </div>
 
-                                    <div class="panel">
-                                        <div class="panel-body">
-                                            <button type="button" id=" " class="btn btn-warning" onclick="AddCourseModal()"> Add New Course</button>
+                                    <div class="panel-body">
+                                        <div class="panel">
+                                            <button type="button" id="" class="btn btn-warning" onclick="AddCourseModal()"> Add New Course</button>
+                                        </div>
+
+                                        <div class="panel">
                                             <table id="datatables" class="table table-bordered mbn">
                                                 <thead class="bg-default">
                                                     <th>Course ID</th>

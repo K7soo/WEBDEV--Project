@@ -67,6 +67,8 @@
                             <li><a href="{{ route('CourseList')}}"><i class="icon-notebook"></i><span class="sidebar-text">Course List</span></a></li>
 
                             <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span class="sidebar-text">Registrations</span></a></li>
+
+                            <li><a href="{{ route('Admission')}}"><i class="icon-notebook"></i><span class="sidebar-text">Admission</span></a></li>
                         </ul>
                     </section>
                 </aside>
@@ -78,37 +80,40 @@
                         <div class="pull-right">
                         </div>
                     </section>
-
                     <section class="main-content">
-
-                        <div class="col-md-12">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title"><strong class="text-uppercase">Registration, Admissions and Checking of Students</strong>
-                                    </h3>
-                                </div>
-
-                                <div class="row">
-                                    <!-- First Panel -->
-                                    <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
-                                        <div class="panel panel-stat stat-primary">
-                                            <div class="panel-body">
-                                                <div class="row mbxl">
-                                                    <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                        <h2 class="man">118</h2>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-20">
+                                <div class="panel panel-stat stat-warning">
+                                
+                            <div class="col-md-12">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"><strong class="text-uppercase">Registration, Admissions and Checking of Students</strong>
+                                        </h3>
+                                    </div>
+                                    
+                                    <div class="panel-body">
+                                        <!-- First Panel -->
+                                        <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
+                                            <div class="panel panel-stat stat-primary">
+                                                <div class="panel-body">
+                                                    <div class="row mbxl">
+                                                        <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
+                                                            <h2 class="man">118</h2>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-xs-6"><span class="stat-title"></span>
-                                                        <h4 class="man"></h4>
-                                                    </div>
-                                                    <div class="col-xs-6"><span class="stat-title"></span>
-                                                        <h4 class="man"></h4>
+                                                    <div class="row">
+                                                        <div class="col-xs-6"><span class="stat-title"></span>
+                                                            <h4 class="man"></h4>
+                                                        </div>
+                                                        <div class="col-xs-6"><span class="stat-title"></span>
+                                                            <h4 class="man"></h4>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+
 
                                     <!-- Second Panel -->
                                     <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
@@ -129,15 +134,23 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <!-- Third Panel -->
-                                    <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
-                                        <div class="panel panel-stat stat-info">
-                                            <div class="panel-body">
-                                                <div class="row mbxl">
-                                                    <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                        <h2 class="man">118</h2>
+                                        <!-- Third Panel -->
+                                        <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
+                                            <div class="panel panel-stat stat-info">
+                                                <div class="panel-body">
+                                                    <div class="row mbxl">
+                                                        <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
+                                                            <h2 class="man">118</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-6"><span class="stat-title">New Visitors</span>
+                                                            <h4 class="man">46.5%</h4>
+                                                        </div>
+                                                        <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
+                                                            <h4 class="man">3.7%</h4>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
