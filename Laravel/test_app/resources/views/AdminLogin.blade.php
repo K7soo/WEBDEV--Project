@@ -26,21 +26,18 @@
             <div class="leftSide"> 
                 <div class="fieldsContainer">
                     <form action="">
-                        <div class="inputField">
-                            <label for="studentNumber">Admin Number: </label>
-                            
+                        <div class="inputField">              
                         </div><div class="inputField">
-                            <input type="text" placeholder="Enter admin number" required>
+                            <input type="text" placeholder="Enter Admin Email" required>
                         </div>
                         
                         <div class="inputField">
-                            <label for="password">Password: </label>
                         </div><div class="inputField">
-                            <input type="password" placeholder="" required>
+                            <input type="password" placeholder="Password" required>
                         </div>
                         
                         <div class="loginButtons">
-                            <button class="btn" onclick="openAdminDashboard()">Sign in</button>
+                            <button class="btn btn-primary" onclick="openAdminDashboard()">Sign in</button>
                         </div>
                         
                     </form>
@@ -52,7 +49,9 @@
                             <br>PUP Online Services <a href="https://www.pup.edu.ph/terms/"
                                 style="color:#0D7CFE;" target="_blank">Terms of Use</a> and <a
                                 href="https://www.pup.edu.ph/privacy/" style="color:#0D7CFE;" target="_blank">Privacy
-                                Statement</a></small></p>
+                                Statement</a>
+                            </small>
+                        </p>
                 </div>
             </div>
         </div>

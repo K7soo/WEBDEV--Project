@@ -44,8 +44,7 @@
                                         <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="page_user_profile.html"><i class="icon-user"></i>My Profile</a></li>
-                                    <li><a href="page_login.html"><i class="icon-key"></i>Log Out</a></li>
+                                    <li><a href=""><i class="icon-key"></i>Log Out</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -69,6 +68,8 @@
                             <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span class="sidebar-text">Registrations</span></a></li>
 
                             <li><a href="{{ route('Admission')}}"><i class="icon-notebook"></i><span class="sidebar-text">Admission</span></a></li>
+
+                            <li><a href="{{ route('Students')}}"><i class="icon-notebook"></i><span class="sidebar-text">Students</span></a></li>
                         </ul>
                     </section>
                 </aside>
@@ -83,8 +84,9 @@
                     <section class="main-content">
                         <div class="row">
                             <div class="col-md-12 col-sm-20">
-                                <div class="panel panel-stat stat-warning">
+                                <div class="panel panel-stat ">
                                 
+<<<<<<< Updated upstream
                             <div class="col-md-12">
                                 <div class="panel panel-primary">
                                     <div class="panel-heading">
@@ -183,11 +185,116 @@
                                                     </div>
                                                 </div>
                                             </div>
+=======
+                                <div class="col-md-12">
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title"><strong class="text-uppercase">Registration, Admissions and Checking of Students</strong>
+                                            </h3>
+                                        </div>
+                                        
+                                        <div class="panel-body">
+                                            <!-- First Panel -->
+                                            <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
+                                                <div class="panel panel-stat stat-primary">
+                                                    <div class="panel-body">
+                                                        <div class="row mbxl">
+                                                            <div class="col-xs-8">
+                                                                <span class="stat-title">Student Count:</span>
+                                                                <span class="stat-title">__________________</span>
+                                                                <h2 class="man">{{ \App\Models\Student::count() }}</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-6"><span class="stat-title"></span>
+                                                                <h4 class="man"></h4>
+                                                            </div>
+                                                            <div class="col-xs-6"><span class="stat-title"></span>
+                                                                <h4 class="man"></h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Second Panel -->
+                                            <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
+                                                <div class="panel panel-stat stat-success">
+                                                    <div class="panel-body">
+                                                        <div class="row mbxl">
+                                                            <div class="col-xs-8">
+                                                                <span class="stat-title">No. of Registrations</span>
+                                                                <span class="stat-title">___________________</span>
+                                                                <h2 class="man">{{ \App\Models\Applicant::count() }}</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-6"><span class="stat-title"></span>
+                                                                <h4 class="man"></h4>
+                                                            </div>
+                                                            <div class="col-xs-6"><span class="stat-title"></span>
+                                                                <h4 class="man"></h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+
+                                            <!-- Third Panel -->
+                                            <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
+                                                <div class="panel panel-stat stat-info">
+                                                    <div class="panel-body">
+                                                        <div class="row mbxl">
+                                                            <div class="col-xs-8"><span class="stat-title">Transferees: </span>
+                                                            <span class="stat-title">__________________</span>
+                                                                <h2 class="man">0</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-6"><span class="stat-title"></span>
+                                                                <h4 class="man"></h4>
+                                                            </div>
+                                                            <div class="col-xs-6"><span class="stat-title"></span>
+                                                                <h4 class="man"></h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                            </div>
+
+                                            <!-- Fourth Panel -->
+                                            <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
+                                                <div class="panel panel-stat stat-warning">
+                                                    <div class="panel-body">
+                                                        <div class="row mbxl">
+                                                            <div class="col-xs-8"><span class="stat-title">Admissions:</span>
+                                                            <span class="stat-title">__________________</span>
+                                                                <h2 class="man">5</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-6"><span class="stat-title"></span>
+                                                                <h4 class="man"></h4>
+                                                            </div>
+                                                            <div class="col-xs-6"><span class="stat-title"></span>
+                                                                <h4 class="man"></h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+>>>>>>> Stashed changes
                                         </div>
                                     </div>
                                 </div>
                             </div>
+<<<<<<< Updated upstream
                         </div>
+=======
+                        </div> 
+>>>>>>> Stashed changes
                     </section>
                 </div><!-- END CONTENT -->
             </div><!--END WRAPPER--><!--BEGIN PAGE QUICK SIDEBAR-->

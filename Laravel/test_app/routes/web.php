@@ -13,6 +13,7 @@ use App\Http\Controllers\AdmissionController;
 use App\Http\Controllers\StudQualController;
 use App\Http\Controllers\StudRegFormsController;
 use App\Http\Controllers\StudViewController;
+use App\Http\Controllers\StudentsController;
 
 
 /*      <-- Login Routes -->        */
@@ -57,6 +58,9 @@ Route::get('/Registration', [RegistrationController::class, 'index'])->name('Reg
 // Admission
 Route::get('/Admission', [AdmissionController::class, 'index'])->name('Admission');
 
+//
+Route::get('/Students', [StudentsController::class, 'index'])->name('Students');
+Route::post('/Students', [StudentsController::class, 'AddStudent'])->name('student.AddStudent');
 
 
 /*      <-- Student Side -->        */

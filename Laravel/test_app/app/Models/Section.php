@@ -13,6 +13,11 @@ class Section extends Model
 
     protected $primaryKey = 'SectionID';
 
+    protected $fillable = [
+        'SectionName',
+        'CourseCode',
+    ];
+
     // Define the relationship with Student
     public function students()
     {

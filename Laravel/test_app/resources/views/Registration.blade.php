@@ -19,6 +19,7 @@
     <link type="text/css" rel="stylesheet" href="{{ asset('global/plugins/iCheck/skins/all.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/plugins/rickshaw/rickshaw.min.css') }}">
 
+
     <link type="text/css" rel="stylesheet" href="{{ asset('global/css/style.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/css/page-demo.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/css/style-admin.css') }}">
@@ -70,6 +71,8 @@
                             <li class="active"><a href=#><i class="icon-notebook"></i><span class="sidebar-text">Registrations</span></a></li>
 
                             <li><a href="{{ route('Admission')}}"><i class="icon-notebook"></i><span class="sidebar-text">Admission</span></a></li>
+
+                            <li><a href="{{ route('Students')}}"><i class="icon-notebook"></i><span class="sidebar-text">Students</span></a></li>
                         </ul>
                     </section>
                 </aside><!--END SIDERBAR--><!--BEGIN CONTENT-->
@@ -97,57 +100,41 @@
                                         </div>
 
                                         <div class="panel">
+                                        <!-- Table for applicants -->
                                             <div class="panel-body">
-                                                <div class="col-12">
-                                                    <table class="table table-bordered" id="table1">
-                                                        <thead>
-                                                            <tr>
-                                                                <th style="text-align:center;">Student Number</th>
-                                                                <th style="text-align:center;">Name</th>
-                                                                <th style="text-align:center;">Preferred Course</th>
-                                                                <th style="text-align:center;">Approval</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td style="text-align:center;">2024-01</td>
-                                                                <td>Baledoya, Kyla Keith F.</td>
-                                                                <td>BSIT</td>
-                                                                <td>PENDING</td>
-                                                                <td style="text-align:center;"><a href="file:///C:/HTML/Rock/page_blank.html" class="btn btn-sm btn-primary">View</a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td style="text-align:center;">2024-02</td>
-                                                                <td>Ballera, Jefferson F.</td>
-                                                                <td>BSIT</td>
-                                                                <td>PENDING</td>
-                                                                <td style="text-align:center;"><a href="https://survey.pup.edu.ph/apps/ofes/survey/32021-00389-CM-0/106/1a1f04d1c68c53f186fe66010f262c2145988c4e" class="btn btn-sm btn-primary">View</a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td style="text-align:center;">2024-03</td>
-                                                                <td>Domingo, Kirsten Charles</td>
-                                                                <td>BSIT</td>
-                                                                <td>PENDING</td>
-                                                                <td style="text-align:center;"><a href="https://survey.pup.edu.ph/apps/ofes/survey/12021-00389-CM-0/106/452405be4697445340cdfbd8d4e545f142c6ac0a" class="btn btn-sm btn-primary">View</a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td style="text-align:center;">2024-04</td>
-                                                                <td>Silvestre, Matillano Jr.</td>
-                                                                <td>BSIT</td>
-                                                                <td>PENDING</td>
-                                                                <td style="text-align:center;"><a href="https://survey.pup.edu.ph/apps/ofes/survey/82021-00389-CM-0/106/f15b62616c775357120355a0b82dce13b622e4f4" class="btn btn-sm btn-primary">View</a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td style="text-align:center;">2024-05</td>
-                                                                <td>Servas, Shane Steven</td>
-                                                                <td>BSIT</td>
-                                                                <td>PENDING</td>
-                                                                <td style="text-align:center;"><a href="https://survey.pup.edu.ph/apps/ofes/survey/62021-00389-CM-0/106/565ccba41d2f876aadace9890fe0e18b5bd2e24c" class="btn btn-sm btn-primary">View</a></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            
+                                                <table id="datatables" class="table table-bordered mbn" >
+                                                    <thead>
+                                                        <tr>
+                                                            <th></th>
+                                                            <th>Last Name</th>
+                                                            <th>First Name</th>
+                                                            <th>Middle Name</th>
+                                                            <th>Suffix</th>
+                                                            <th>Email</th>
+                                                            <th>Gender</th>
+                                                            <th>Choice</th>
+                                                            <th>Applied as</th>
+                                                            <th>Status</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    @foreach($applicants as $applicant)
+                                                        <tr>
+                                                            <td>{{ $applicant->ApplicantID }}</td>
+                                                            <td>{{ $applicant->AppLastName }}</td>
+                                                            <td>{{ $applicant->AppFirstName }}</td>
+                                                            <td>{{ $applicant->AppMiddleName }}</td>
+                                                            <td>{{ $applicant->Suffix }}</td>
+                                                            <td>{{ $applicant->Email }}</td>
+                                                            <td>{{ $applicant->Gender }}</td>
+                                                            <td>{{ $applicant->ApplicantChoiceID }}</td>
+                                                            <td>{{ $applicant->ApplicantTypeID }}</td>
+                                                            <td>{{ $applicant->ApprovalID }}</td>
+                                                        </tr>
+                                                        @endforeach
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>    
@@ -210,6 +197,10 @@
            
         
     <script src="global/js/jquery.js"></script>
+    <script src="assets/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="assets/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+    <script src="assets/js/table-datatables.js"></script>
+
     <script src="global/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="global/js/jquery-ui.js"></script>
     <script src="global/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -225,6 +216,24 @@
     <script src="assets/js/quick-sidebar.js"></script>
     <script src="assets/js/admin-setting.js"></script>
     <script src="assets/js/layout.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.animator.min.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.resize.min.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.time.min.js"></script>
+    <script src="assets/plugins/rickshaw/vendor/d3.v3.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.Class.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.Compat.ClassList.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.Area.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.HoverDetail.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.Graph.Legend.js"></script>
+    <script src="assets/plugins/rickshaw/src/js/Rickshaw.Fixtures.RandomData.js"></script>
+    <script src="assets/plugins/rickshaw/extensions.js"></script>
+    <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <!-- <script src="assets/js/index.js"></script> -->
+    <script> $('#datatables').dataTable(); </script>
 </body>
 
 </html>

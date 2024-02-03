@@ -14,14 +14,33 @@ class Student extends Model
     protected $primaryKey = 'StudentID';
 
     protected $fillable = [
+        'StudentNo',
         'StudLastName',
         'StudFirstName',
         'StudMiddleName',
         'Suffix',
+<<<<<<< Updated upstream
+=======
+        'Gender',
+
+        'StatusID',
+        'AccountID',
+        'YearLevelID',
+>>>>>>> Stashed changes
         'CourseID',
         'SectionID',
-        'Status',
     ];
+
+    public function status()
+    {
+        return $this->belongsTo(Status::class, 'StatusID');
+    }
+
+    // Define the relationship with Account
+    public function account()
+    {
+        return $this->belongsTo(Account::class, 'AccountID');
+    }
 
     // Define the relationship with Course
     public function course()
@@ -34,4 +53,13 @@ class Student extends Model
     {
         return $this->belongsTo(Section::class, 'SectionID');
     }
+<<<<<<< Updated upstream
+=======
+
+    // Define the relationship with YearLevel
+    public function yearlevels()
+    {
+        return $this->belongsTo(YearLevel::class, 'YearLevelID');
+    }
+>>>>>>> Stashed changes
 }

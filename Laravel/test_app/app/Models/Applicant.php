@@ -19,16 +19,32 @@ class Applicant extends Model
         'AppMiddleName',
         'Suffix',
         'Birthday',
-        'Address',
-        'Grades',
-        'EducAttainment',
-        'ContactNo',
-        'Email',
         'Gender',
+
+        'ContactsID',
+        'EducID',
+        'AccountID',   
+   
         'ApplicantChoiceID',
         'ApplicantTypeID',
         'ApprovalID',
     ];
+
+    public function contacts()
+    {
+        return $this->belongsTo(Contacts::class, 'ContactsID');
+    }
+
+    public function education()
+    {
+        return $this->belongsTo(education::class, 'EducID');
+    }
+
+    public function account()
+    {
+        return $this->belongsTo(Account::class, 'AccountID');
+    }
+
 
     // Define the relationship with ApplicantChoice
     public function applicantChoice()
