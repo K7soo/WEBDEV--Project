@@ -19,14 +19,10 @@ class Student extends Model
         'StudFirstName',
         'StudMiddleName',
         'Suffix',
-<<<<<<< Updated upstream
-=======
         'Gender',
-
         'StatusID',
         'AccountID',
         'YearLevelID',
->>>>>>> Stashed changes
         'CourseID',
         'SectionID',
     ];
@@ -53,13 +49,10 @@ class Student extends Model
     {
         return $this->belongsTo(Section::class, 'SectionID');
     }
-<<<<<<< Updated upstream
-=======
 
     // Define the relationship with YearLevel
     public function yearlevels()
     {
         return $this->belongsTo(YearLevel::class, 'YearLevelID');
     }
->>>>>>> Stashed changes
 }
