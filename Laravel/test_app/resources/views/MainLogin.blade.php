@@ -30,12 +30,8 @@
                         </div>
                     </div>
                     <div class= "loginFooter">
-                        <p>
-                        <small> By using this service, you understood and agree to the 
-                        <br>PUP Online Services <a href="https://www.pup.edu.ph/terms/" 
-                        style="color:#0D7CFE;" target="_blank">Terms of Use</a> and <a href="https://www.pup.edu.ph/privacy/" style="color:#0D7CFE;" target="_blank">Privacy Statement</a>
-                        <small>
-                        </p>
+                        <p><small> By using this service, you understood and agree to the 
+                        PUP Online Services <a href="https://www.pup.edu.ph/terms/" style="color:#0D7CFE;" target="_blank">Terms of Use</a> and <a href="https://www.pup.edu.ph/privacy/" style="color:#0D7CFE;" target="_blank">Privacy Statement</a><small></p>
                     </div>
                 </div>
             </div>

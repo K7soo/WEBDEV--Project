@@ -88,7 +88,7 @@ body {
     color: #fff;
     padding: 2vh 4vh;
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 1.2em;
     cursor: pointer;
     width: 45vh;
     display: inline-block;
@@ -105,4 +105,3 @@ body {
     text-align: center;
     padding-right:1%;
 }
-

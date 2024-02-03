@@ -25,13 +25,15 @@
                 <div class="fieldsContainer">
                     <form action="">
                         <div class="inputField">
+                            <label for="studentNumber">Student Number: </label>
                         </div><div class="inputField">
-                            <input type="text" placeholder="Enter Student Email" required>
+                            <input type="text" placeholder="Enter student number " required>
 
                         </div>
                         <div class="inputField">
+                            <label for="password">Password: </label>
                         </div><div class="inputField">
-                            <input type="password" placeholder="Password" required>
+                            <input type="password" placeholder="" required>
 
                         </div>
                         <div class="loginButtons">

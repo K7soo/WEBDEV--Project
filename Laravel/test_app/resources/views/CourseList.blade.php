@@ -74,8 +74,6 @@
 
                             <li><a href="{{ route('Admission')}}"><i class="icon-notebook"></i><span class="sidebar-text">Admission</span></a></li>
 
-                            <li><a href="{{ route('Students')}}"><i class="icon-notebook"></i><span class="sidebar-text">Students</span></a></li>
-
                         </ul>
                     </section>
                 </aside><!--END SIDERBAR--><!--BEGIN CONTENT-->
@@ -105,7 +103,7 @@
                                         <div class="panel">
                                             <table id="datatables" class="table table-bordered mbn">
                                                 <thead class="bg-default">
-                                                    <!-- <th>Course ID</th> -->
+                                                    <th>Course ID</th>
                                                     <th>Course Name</th>
                                                     <th>Course Code</th>
                                                     <th>Remove</th>
@@ -113,7 +111,7 @@
                                                 <tbody>
                                                 @foreach($courses as $course)
                                                     <tr row-id="row-{{ $course->CourseID }}">
-                                                        <!-- <td>{{ $course->CourseID }}</td> -->
+                                                        <td>{{ $course->CourseID }}</td>
                                                         <td>{{ $course->CourseName }}</td>
                                                         <td>{{ $course->CourseCode }}</td>
                                                         <td>

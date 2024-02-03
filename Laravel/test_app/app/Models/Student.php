@@ -14,7 +14,6 @@ class Student extends Model
     protected $primaryKey = 'StudentID';
 
     protected $fillable = [
-        'StudentNo',
         'StudLastName',
         'StudFirstName',
         'StudMiddleName',
@@ -26,17 +25,6 @@ class Student extends Model
         'CourseID',
         'SectionID',
     ];
-
-    public function status()
-    {
-        return $this->belongsTo(Status::class, 'StatusID');
-    }
-
-    // Define the relationship with Account
-    public function account()
-    {
-        return $this->belongsTo(Account::class, 'AccountID');
-    }
 
     // Define the relationship with Course
     public function course()
