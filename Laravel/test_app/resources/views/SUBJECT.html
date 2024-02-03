@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Timeline | Pages</title>
+    <title>Nestable List | UI</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
     <link type="text/css" rel="stylesheet" href="global/plugins/simple-line-icons/simple-line-icons.css">
     <link type="text/css" rel="stylesheet" href="global/plugins/animate.css/animate.css">
     <link type="text/css" rel="stylesheet" href="global/plugins/iCheck/skins/all.css">
-    <link type="text/css" rel="stylesheet" href="assets/css/pages/timeline.css">
+    <link type="text/css" rel="stylesheet" href="assets/plugins/jquery-nestable/nestable.css">
     <link type="text/css" rel="stylesheet" href="global/css/style.css">
     <link type="text/css" rel="stylesheet" href="assets/css/page-demo.css">
     <link type="text/css" rel="stylesheet" href="assets/css/style-admin.css">
@@ -32,7 +32,6 @@
                         href="#" data-toggle="offcanvas" class="sidebar-toggle pull-right"><i
                             class="fa fa-bars"></i></a></div>
                 <nav role="navigation" class="navbar navbar-static-top">
-                    <div class="navbar-right">
                 </nav>
             </header><!--END HEADER--><!--BEGIN HORIZONTAL SIDEBAR-->
             <div class="page-horizontal-sidebar hide">
@@ -54,10 +53,10 @@
                                             Sidebar</span></a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="#" data-hover="dropdown" class="dropdown-toggle"><i
+                        <li class="dropdown active"><a href="#" data-hover="dropdown" class="dropdown-toggle"><i
                                     class="icon-badge"></i><span class="menu-title">UI Elements</span><span
                                     class="badge pink">9</span></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu in">
                                 <li><a href="ui_buttons.html"><span class="submenu-title">Buttons</span></a></li>
                                 <li><a href="ui_components.html"><span class="submenu-title">Components</span></a></li>
                                 <li><a href="ui_typography.html"><span class="submenu-title">Typography</span></a></li>
@@ -67,7 +66,8 @@
                                 <li><a href="ui_tabs_accordions.html"><span class="submenu-title">Tabs &
                                             Accordions</span></a></li>
                                 <li><a href="ui_grids.html"><span class="submenu-title">Grids</span></a></li>
-                                <li><a href="ui_nestable.html"><span class="submenu-title">Nestable</span></a></li>
+                                <li class="active"><a href="ui_nestable.html"><span
+                                            class="submenu-title">Nestable</span></a></li>
                                 <li><a href="ui_treeview.html"><span class="submenu-title">Treeview</span></a></li>
                             </ul>
                         </li>
@@ -104,9 +104,9 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="dropdown active"><a href="#" data-hover="dropdown" class="dropdown-toggle"><i
+                        <li class="dropdown"><a href="#" data-hover="dropdown" class="dropdown-toggle"><i
                                     class="icon-book-open"></i><span class="menu-title">Pages</span></a>
-                            <ul class="dropdown-menu in">
+                            <ul class="dropdown-menu">
                                 <li><a href="page_coming_soon.html"><span class="submenu-title">Coming Soon</span></a>
                                 </li>
                                 <li><a href="page_invoice.html"><span class="submenu-title">Invoice</span></a></li>
@@ -116,8 +116,7 @@
                                 <li><a href="page_register.html"><span class="submenu-title">Register</span></a></li>
                                 <li><a href="page_lockscreen.html"><span class="submenu-title">Lock Screen</span></a>
                                 </li>
-                                <li class="active"><a href="page_timeline.html"><span
-                                            class="submenu-title">Timeline</span></a></li>
+                                <li><a href="page_timeline.html"><span class="submenu-title">Timeline</span></a></li>
                                 <li><a href="page_faq.html"><span class="submenu-title">FAQ</span></a></li>
                                 <li><a href="page_search_results.html"><span class="submenu-title">Search
                                             Results</span></a></li>
@@ -211,8 +210,9 @@
                                     <li><a href="quick_sidebar_content_over.html">Over Sidebar Content</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#"><i class="icon-badge"></i><span class="sidebar-text">UI Elements</span></a>
-                                <ul class="nav nav-second-level">
+                            <li class="active"><a href="#"><i class="icon-badge"></i><span class="sidebar-text">UI
+                                        Elements</span></a>
+                                <ul class="nav nav-second-level in">
                                     <li><a href="ui_buttons.html">Buttons</a></li>
                                     <li><a href="ui_components.html">Components</a></li>
                                     <li><a href="ui_typography.html">Typography</a></li>
@@ -220,7 +220,7 @@
                                     <li><a href="ui_panels.html">Panels</a></li>
                                     <li><a href="ui_tabs_accordions.html">Tabs & Accordions</a></li>
                                     <li><a href="ui_grids.html">Grids</a></li>
-                                    <li><a href="ui_nestable.html">Nestable</a></li>
+                                    <li class="active"><a href="ui_nestable.html">Nestable</a></li>
                                     <li><a href="ui_treeview.html">Treeview</a></li>
                                 </ul>
                             </li>
@@ -249,16 +249,15 @@
                                     <li><a href="table_datatables.html">DataTables</a></li>
                                 </ul>
                             </li>
-                            <li class="active"><a href="#"><i class="icon-book-open"></i><span
-                                        class="sidebar-text">Pages</span></a>
-                                <ul class="nav nav-second-level in">
+                            <li><a href="#"><i class="icon-book-open"></i><span class="sidebar-text">Pages</span></a>
+                                <ul class="nav nav-second-level">
                                     <li><a href="page_coming_soon.html">Coming Soon</a></li>
                                     <li><a href="page_invoice.html">Invoice</a></li>
                                     <li><a href="page_user_profile.html">User Profile</a></li>
                                     <li><a href="page_login.html">Login</a></li>
                                     <li><a href="page_register.html">Register</a></li>
                                     <li><a href="page_lockscreen.html">Lock Screen</a></li>
-                                    <li class="active"><a href="page_timeline.html">Timeline</a></li>
+                                    <li><a href="page_timeline.html">Timeline</a></li>
                                     <li><a href="page_faq.html">FAQ</a></li>
                                     <li><a href="page_search_results.html">Search Results</a></li>
                                     <li><a href="page_fullcalendar.html">Full Calendar</a></li>
@@ -339,112 +338,86 @@
                 </aside><!--END SIDERBAR--><!--BEGIN CONTENT-->
                 <div class="content">
                     <section class="content-header">
-                        <h1 class="pull-left">Admin Dashboard</h1>
+                        <h1 class="pull-left">Course Subjects</h1>
                         <div class="pull-right">
-                            <ol class="breadcrumb">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Dashboard</a></li>
-                                <li class="active">Dashboard</li>
-                            </ol>
                         </div>
                     </section>
                     <section class="main-content">
                         <div class="row">
-                            <div class="row">
-                                <div class="col-md-11 mx-auto">
-                                    <div class="panel panel-danger">
-                                        <div class="panel-heading">
-                                            <h3 class="panel-title"><strong class="text-uppercase">Registration, Admissions and Checking of Students</strong>
-                                            </h3>
-                                            <div class="actions"><a href="javascript:;"></a><a
-                                                    href="javascript:;"></a></div>
-                                        </div>
-                            <!-- First Panel -->
-                            <div class="container-fluid">
-                                <section class="panel-wrapper">
-                            <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
-                                <div class="panel panel-stat stat-primary">
-                                    <div class="panel-body">
-                                        <div class="row mbxl">
-                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                <h2 clas s="man">118</h2></div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-6"><span class="stat-title">New Visitors</span>
-                                                <h4 class="man">46.5%</h4>
-                                            </div>
-                                            <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
-                                                <h4 class="man">3.7%</h4>
-                                            </div>
+                            <div class="col-md-12">
+                                <div class="panel panel-warning">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">
+                                            <strong class="text-uppercase">List of Subjects</strong>
+                                        </h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <table class="table table-bordered" id="table1">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="text-align:center;">SUBJECT CODE</th>
+                                                        <th style="text-align:center;">SUBJECT TITLE</th>
+                                                        <th style="text-align:center;">UNITS</th>
+                                                        <th style="text-align:center;">FINAL GRADE</th>
+                                                        <th style="text-align:center;">STATUS</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="text-align:center;">ACOO 20213</td>
+                                                        <td>Acoounting Principles</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                        <td style="text-align:center;"><a
+                                                                href="https://survey.pup.edu.ph/apps/ofes/survey/42021-00389-CM-0/106/c21437028f4e11fe709100bee946852b61a84e8a"
+                                                                class="btn btn-sm btn-primary">View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align:center;">COMP 20023</td>
+                                                        <td>Computer Programming 1</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                        <td style="text-align:center;"><a
+                                                                href="https://survey.pup.edu.ph/apps/ofes/survey/32021-00389-CM-0/106/1a1f04d1c68c53f186fe66010f262c2145988c4e"
+                                                                class="btn btn-sm btn-primary">View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align:center;">GEED 10053</td>
+                                                        <td>Mathematics in the Modern World</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                        <td style="text-align:center;"><a
+                                                                href="https://survey.pup.edu.ph/apps/ofes/survey/12021-00389-CM-0/106/452405be4697445340cdfbd8d4e545f142c6ac0a"
+                                                                class="btn btn-sm btn-primary">View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align:center;">COMP 20013</td>
+                                                        <td>Introduction to Computing</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                        <td style="text-align:center;"><a
+                                                                href="https://survey.pup.edu.ph/apps/ofes/survey/82021-00389-CM-0/106/f15b62616c775357120355a0b82dce13b622e4f4"
+                                                                class="btn btn-sm btn-primary">View</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align:center;">COMP 20043</td>
+                                                        <td>Discrete Structures 1</td>
+                                                        <td>3</td>
+                                                        <td></td>
+                                                        <td style="text-align:center;"><a
+                                                                href="https://survey.pup.edu.ph/apps/ofes/survey/62021-00389-CM-0/106/565ccba41d2f876aadace9890fe0e18b5bd2e24c"
+                                                                class="btn btn-sm btn-primary">View</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
-                            <!-- Second Panel -->
-                            <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
-                                <div class="panel panel-stat stat-success">
-                                    <div class="panel-body">
-                                        <div class="row mbxl">
-                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                <h2 class="man">118</h2>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-6"><span class="stat-title">New Visitors</span>
-                                                <h4 class="man">46.5%</h4>
-                                            </div>
-                                            <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
-                                                <h4 class="man">3.7%</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Third Panel -->
-                            <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
-                                <div class="panel panel-stat stat-info">
-                                    <div class="panel-body">
-                                        <div class="row mbxl">
-                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                <h2 class="man">118</h2>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-6"><span class="stat-title">New Visitors</span>
-                                                <h4 class="man">46.5%</h4>
-                                            </div>
-                                            <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
-                                                <h4 class="man">3.7%</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Fourth Panel -->
-                            <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
-                                <div class="panel panel-stat stat-warning">
-                                    <div class="panel-body">
-                                        <div class="row mbxl">
-                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                <h2 class="man">118</h2>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-6"><span class="stat-title">New Visitors</span>
-                                                <h4 class="man">46.5%</h4>
-                                            </div>
-                                            <div class="col-xs-6"><span class="stat-title">Bounce Rate</span>
-                                                <h4 class="man">3.7%</h4>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div><!-- END CONTENT -->
-                
+        </section>
+    </div><!--END CONTENT-->
             </div><!--END WRAPPER--><!--BEGIN PAGE QUICK SIDEBAR-->
             <div class="page-quick-sidebar-wrapper">
                 <div class="page-quick-sidebar-content">
@@ -510,6 +483,8 @@
     <script src="assets/js/quick-sidebar.js"></script>
     <script src="assets/js/admin-setting.js"></script>
     <script src="assets/js/layout.js"></script>
+    <script src="assets/plugins/jquery-nestable/jquery.nestable.js"></script>
+    <script src="assets/js/ui-nestable.js"></script>
 </body>
 
 </html>

@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Student;
 
 class DashboardController extends Controller
 {
     public function index()
     {
-        return view('DashboardUI');
+        $students = Student::all();
+        return view('DashboardUI', ['students'=>$students]);
     }
 }

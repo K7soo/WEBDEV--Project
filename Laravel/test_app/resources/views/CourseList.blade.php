@@ -70,9 +70,6 @@
 
                             <li class="active"><a href="#"><i class="icon-notebook"></i><span class="sidebar-text">Course List</span></a></li>
 
-                            <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span
-                                        class="sidebar-text">Registrations</span></a></li>
-
                             <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span class="sidebar-text">Registrations</span></a></li>
 
                             <li><a href="{{ route('Admission')}}"><i class="icon-notebook"></i><span class="sidebar-text">Admission</span></a></li>
@@ -94,7 +91,7 @@
                         <div class="row">
 
                             <div class="col-md-12">
-                                <div class="panel panel-success">
+                                <div class="panel panel-primary">
                                     <div class="panel-heading">
                                         <h3 class="panel-title"><strong class="text-uppercase"> List of Courses </strong>
                                         </h3>
