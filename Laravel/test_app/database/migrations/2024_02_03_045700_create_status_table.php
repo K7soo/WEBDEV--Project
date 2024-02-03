@@ -1,3 +1,4 @@
+
 <?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -11,18 +12,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('account', function (Blueprint $table) {
-            $table->id('AccountID');
-            $table->string('Email'); // webmail of student dictated by admin
-            $table->string('Password');
-            $table->string('accountType');
-
+        Schema::create('status', function (Blueprint $table) {
+            $table->id('StatusID');
+            $table->string('Status');
             $table->timestamps();
         });
     }
 
+    /**
+     * Reverse the migrations.
+     */
     public function down(): void
     {
-        Schema::dropIfExists('account');
+        Schema::dropIfExists('status');
     }
 };

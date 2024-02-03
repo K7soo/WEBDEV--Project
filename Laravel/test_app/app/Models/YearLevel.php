@@ -22,4 +22,3 @@ class YearLevel extends Model
         return $this->hasOne(Student::class, 'YearLevelID', 'YearLevelName');
     }
 }
-

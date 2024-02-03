@@ -1,3 +1,4 @@
+@ -1,28 +0,0 @@
 <?php
 
 use Illuminate\Database\Migrations\Migration;
@@ -11,20 +12,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('educationbg', function (Blueprint $table) {
-            $table->id('EducID');
-            $table->float('Grades');
-            $table->string('EducAttainment');
-            $table->string('School');
+        Schema::create('account', function (Blueprint $table) {
+            $table->id('AccountID');
+            $table->string('Email'); // webmail of student dictated by admin
+            $table->string('Password');
+            $table->string('accountType');
+
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
-        Schema::dropIfExists('educationbg');
+        Schema::dropIfExists('account');
     }
 };

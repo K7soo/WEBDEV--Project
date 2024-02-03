@@ -44,7 +44,8 @@
                                         <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href=""><i class="icon-key"></i>Log Out</a></li>
+                                    <li><a href="page_user_profile.html"><i class="icon-user"></i>My Profile</a></li>
+                                    <li><a href="page_login.html"><i class="icon-key"></i>Log Out</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -68,8 +69,6 @@
                             <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span class="sidebar-text">Registrations</span></a></li>
 
                             <li><a href="{{ route('Admission')}}"><i class="icon-notebook"></i><span class="sidebar-text">Admission</span></a></li>
-
-                            <li><a href="{{ route('Students')}}"><i class="icon-notebook"></i><span class="sidebar-text">Students</span></a></li>
                         </ul>
                     </section>
                 </aside>
@@ -84,7 +83,7 @@
                     <section class="main-content">
                         <div class="row">
                             <div class="col-md-12 col-sm-20">
-                                <div class="panel panel-stat ">
+                                <div class="panel panel-stat stat-warning">
                                 
                             <div class="col-md-12">
                                 <div class="panel panel-primary">
@@ -184,6 +183,7 @@
                                                     </div>
                                                 </div>
                                             </div>
+<<<<<<< HEAD
 
                                 <div class="col-md-12">
                                     <div class="panel panel-primary">
@@ -283,10 +283,13 @@
                                                     </div>
                                                 </div>
                                             </div>
+=======
+>>>>>>> parent of 48a6ff4 (Update)
                                         </div>
                                     </div>
                                 </div>
                             </div>
+<<<<<<< HEAD
                         </div> 
                         
                         <div class="panel-body">
@@ -326,6 +329,9 @@
                                     </div>
                                 </div>
                             </div>
+=======
+                        </div>
+>>>>>>> parent of 48a6ff4 (Update)
                     </section>
                     
                 </div><!-- END CONTENT -->
