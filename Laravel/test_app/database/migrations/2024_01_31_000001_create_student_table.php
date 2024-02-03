@@ -15,9 +15,10 @@ return new class extends Migration
             $table->string('StudFirstName');
             $table->string('StudMiddleName')->nullable();
             $table->string('Suffix')->nullable();
-            $table->string('Email'); //Webmail
-            $table->string('Password');
-            $table->string('Status');
+
+            $table->unsignedBigInteger('AccountID')->nullable();
+            $table->foreign('AccountID')->references('AccountID')->on('account')->onDelete('cascade');
+            
 
             $table->unsignedBigInteger('YearLevelID')->nullable();
             $table->foreign('YearLevelID')->references('YearLevelID')->on('yearlevels')->onDelete('cascade');

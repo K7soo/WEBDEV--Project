@@ -24,11 +24,7 @@
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/css/style-responsive.css') }}">
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/css/themes/default.css') }}" id="theme-color">
 </head>
-<<<<<<< Updated upstream
 
-=======
-// edit
->>>>>>> Stashed changes
 <body class="page-header-fixed page-sidebar-fixed">
     <div>
         <div class="page-wrapper"><!--BEGIN HEADER-->

@@ -16,13 +16,20 @@ return new class extends Migration
             $table->string('Suffix')->nullable();
 
             $table->date('Birthday');
-            $table->string('Address')->nullable();
-            $table->float('Grades');
-            $table->string('EducAttainment');
-            $table->integer('ContactNo')->nullable();
-            $table->string('Email')->nullable();
-            $table->string('Gender')->nullable();
-            $table->string('Password');
+            // $table->string('Address')->nullable();
+            // $table->float('Grades');
+            // $table->string('EducAttainment');
+            // $table->integer('ContactNo')->nullable();
+            // $table->string('Email')->nullable();
+            $table->string('Gender');
+            // $table->string('Password');
+            $table->unsignedBigInteger('ContactID')->nullable();
+            $table->foreign('ContactID')->references('ContactID')->on('contacts')->onDelete('cascade');
+            $table->unsignedBigInteger('EducID')->nullable();
+            $table->foreign('EducID')->references('EducID')->on('educationbg')->onDelete('cascade');
+            $table->unsignedBigInteger('AccountID')->nullable();
+            $table->foreign('AccountID')->references('AccountID')->on('account')->onDelete('cascade');
+
 
             $table->unsignedBigInteger('ApplicantChoiceID')->nullable();
             $table->foreign('ApplicantChoiceID')->references('ApplicantChoiceID')->on('applicantchoice')->onDelete('cascade');
