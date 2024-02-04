@@ -16,9 +16,9 @@ return new class extends Migration
             $table->id('ContactsID');
             $table->string('Address')->nullable();
             $table->string('Email');
-            $table->integer('ContactNo');
-            $table->integer('Parents/Guardian');
-            $table->integer('P_ContactNo')->nullable();
+            $table->integer('ContactNo')->unique(20);
+            $table->string('Parents/Guardian');
+            $table->integer('P_ContactNo')->nullable(20);
             $table->timestamps();
         });
     }
