@@ -2,15 +2,18 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\Student;
 use App\Models\Account;
 use Illuminate\Http\Request;
+
 
 class StudentsController extends Controller
 {
     public function index()
     {
         $students = Student::all();
+
         return view('Students', ['students' => $students]);
     }
 
@@ -49,3 +52,4 @@ class StudentsController extends Controller
         return redirect()->route('/Students')->with('success', 'Student Added Successfully!');
     }
 }
+

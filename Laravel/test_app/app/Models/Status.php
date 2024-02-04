@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+
 class Status extends Model
 {
     use HasFactory;
@@ -21,4 +22,6 @@ class Status extends Model
     {
         return $this->hasOne(Status::class, 'StatusID', 'Status');
     }
+
 }
+

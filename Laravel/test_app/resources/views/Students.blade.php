@@ -25,6 +25,8 @@
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/css/themes/default.css') }}" id="theme-color">
 </head>
 
+
+
 <body class="page-header-fixed page-sidebar-fixed">
     <div>
         <div class="page-wrapper"><!--BEGIN HEADER-->
@@ -106,8 +108,10 @@
                                                         <th>Year</th>
                                                         <th>Section</th>
                                                         <th>Status</th>
+
                                                         <th>Edit</th>
                                                         <th>Delete</th>
+
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -127,6 +131,7 @@
                                                         <td>{{ $student->section->SectionNo }}</td>
                                                         <td>{{ $student->status->Status }}</td>
                                                         <td>
+
                                                             <div>
                                                                 <button type="button" class="btn btn-sm btn-warning btn-edit-student" data-student-id="{{ $student->StudentID }}">Edit</button>
                                                             </div>
@@ -135,6 +140,7 @@
                                                             <div>
                                                                 <button type="button" class="btn btn-sm btn-danger btn-delete-student" data-student-id="{{ $student->StudentID }}">Delete</button>
                                                             </div>
+
                                                         </td>
                                                     </tr>
                                                     @endforeach
@@ -223,7 +229,9 @@
                             </tr>
                         </thead>
                         <tbody id="studentDetailsTableBody">
+
                             @foreach($students as $student)
+
                             <td>{{ $student->StudentNo }}</td>
                             <td>
                                 {{ $student->StudLastName }},
@@ -236,7 +244,9 @@
                             <td>{{ $student->yearlevels->YearLevelName }}</td>
                             <td>{{ $student->section->SectionNo }}</td>
                             <td>{{ $student->status->Status }}</td>
+
                             @endforeach
+
                         </tbody>
                     </table>
                 </div>
@@ -256,6 +266,7 @@
                     <h4 class="modal-title">Add Student</h4>
                 </div>
                 <div class="modal-body">
+
                     <form id="addStudentForm" action="" method="POST">
                         @csrf
 
@@ -337,6 +348,7 @@
                         <button type="submit" class="btn btn-success">Add Student</button>
                     </form>
 
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -387,6 +399,8 @@
 
         function viewStudentDetails(studentId) {
 
+
+
             var studentDetails = getStudentDetails(StudentID);
 
             $('#studentDetailsTableBody').html(studentDetails);
@@ -395,11 +409,15 @@
         }
 
 
+
+
         function getStudentDetails(studentId) {
             var details = ''; // Replace this with actual details
 
             $.ajax({
+
                 url: '/api/students/' + studentId,
+
                 method: 'GET',
                 async: false, // Synchronous for simplicity, consider async in production
                 success: function(response) {
@@ -415,6 +433,7 @@
         }
 
         function openAddStudentModal() {
+
             // Clear the form fields when opening the modal
             $('#addStudentForm')[0].reset();
             $('#addStudentModal').modal('show');
@@ -441,6 +460,7 @@
                 }
             });
         }
+
     </script>
 </body>
 
