@@ -25,7 +25,8 @@
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/css/themes/default.css') }}" id="theme-color">
 </head>
 
-// edit
+
+
 <body class="page-header-fixed page-sidebar-fixed">
     <div>
         <div class="page-wrapper"><!--BEGIN HEADER-->
@@ -107,7 +108,10 @@
                                                         <th>Year</th>
                                                         <th>Section</th>
                                                         <th>Status</th>
-                                                        <th>Actions</th>
+
+                                                        <th>Edit</th>
+                                                        <th>Delete</th>
+
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -127,9 +131,16 @@
                                                         <td>{{ $student->section->SectionNo }}</td>
                                                         <td>{{ $student->status->Status }}</td>
                                                         <td>
-                                                            <button type="button" class="btn btn-sm btn-primary" onclick="viewStudentDetails({{ $student->StudentID }})">Details</button>
-                                                            <button type="button" class="btn btn-sm btn-warning btn-edit-student" data-student-id="{{ $student->StudentID }}">Edit</button>
-                                                            <button type="button" class="btn btn-sm btn-danger btn-delete-student" data-student-id="{{ $student->StudentID }}">Delete</button>
+
+                                                            <div>
+                                                                <button type="button" class="btn btn-sm btn-warning btn-edit-student" data-student-id="{{ $student->StudentID }}">Edit</button>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div>
+                                                                <button type="button" class="btn btn-sm btn-danger btn-delete-student" data-student-id="{{ $student->StudentID }}">Delete</button>
+                                                            </div>
+
                                                         </td>
                                                     </tr>
                                                     @endforeach
@@ -218,7 +229,9 @@
                             </tr>
                         </thead>
                         <tbody id="studentDetailsTableBody">
-                        @foreach($students as $student)
+
+                            @foreach($students as $student)
+
                             <td>{{ $student->StudentNo }}</td>
                             <td>
                                 {{ $student->StudLastName }},
@@ -231,7 +244,9 @@
                             <td>{{ $student->yearlevels->YearLevelName }}</td>
                             <td>{{ $student->section->SectionNo }}</td>
                             <td>{{ $student->status->Status }}</td>
-                        @endforeach 
+
+                            @endforeach
+
                         </tbody>
                     </table>
                 </div>
@@ -251,86 +266,88 @@
                     <h4 class="modal-title">Add Student</h4>
                 </div>
                 <div class="modal-body">
-                <form id="addStudentForm" action="{{ route('student.AddStudent') }}" method="POST">
-                    @csrf
-                    
-                    <div class="form-group">
-                        <label for="StudentNo">Student Number:</label>
-                        <input type="text" class="form-control" id="StudentNo" name="StudentNo">
-                    </div>
 
-                    <div class="form-group">
-                        <label for="StudLastName">Last Name:</label>
-                        <input type="text" class="form-control" id="StudLastName" name="StudLastName">
+                    <form id="addStudentForm" action="" method="POST">
+                        @csrf
 
-                        <label for="StudFirstName">First Name:</label>
-                        <input type="text" class="form-control" id="StudFirstName" name="StudFirstName">
+                        <div class="form-group">
+                            <label for="StudentNo">Student Number:</label>
+                            <input type="text" class="form-control" id="StudentNo" name="StudentNo">
+                        </div>
 
-                        <label for="StudMiddleName">Middle Name:</label>
-                        <input type="text" class="form-control" id="StudMiddleName" name="StudMiddleName">
+                        <div class="form-group">
+                            <label for="StudLastName">Last Name:</label>
+                            <input type="text" class="form-control" id="StudLastName" name="StudLastName">
 
-                        <label for="Suffix">Suffix:</label>
-                        <input type="text" class="form-control" id="Suffix" name="Suffix">
-                    </div>
+                            <label for="StudFirstName">First Name:</label>
+                            <input type="text" class="form-control" id="StudFirstName" name="StudFirstName">
 
-                    <div class="form-group">
-                        <label for="Gender">Gender:</label>
-                        <select class="form-control" id="Gender" name="Gender">
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                        </select>
-                    </div>
+                            <label for="StudMiddleName">Middle Name:</label>
+                            <input type="text" class="form-control" id="StudMiddleName" name="StudMiddleName">
 
-                    <div class="form-group">
-                        <label for="StatusID">Status:</label>
-                        <select class="form-control" id="StatusID" name="StatusID">
-                            <option value="Regular">Regular</option>
-                            <option value="Irregular">Irregular</option>
-                            <option value="Transferee">Transferee</option>
-                        </select>
-                    </div>
+                            <label for="Suffix">Suffix:</label>
+                            <input type="text" class="form-control" id="Suffix" name="Suffix">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="Email">Account Email:</label>
-                        <input class="form-control" id="Email" name="Email">
+                        <div class="form-group">
+                            <label for="Gender">Gender:</label>
+                            <select class="form-control" id="Gender" name="Gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
 
-                        <label for="Password">Account Password:</label>
-                        <input class="form-control" id="Password" name="Password">
+                        <div class="form-group">
+                            <label for="StatusID">Status:</label>
+                            <select class="form-control" id="StatusID" name="StatusID">
+                                <option value="Regular">Regular</option>
+                                <option value="Irregular">Irregular</option>
+                                <option value="Transferee">Transferee</option>
+                            </select>
+                        </div>
 
-                        <label for="accountType">Account for:</label>
-                        <select class="form-control" id="accountType" name="accountType">
-                            <option value="Student" selected>Student</option>
-                        </select>
-                    </div>
+                        <div class="form-group">
+                            <label for="Email">Account Email:</label>
+                            <input class="form-control" id="Email" name="Email">
 
-                    <div class="form-group">
-                        <label for="YearLevelID">Year Level:</label>
-                        <select class="form-control" id="YearLevelID" name="YearLevelID">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
+                            <label for="Password">Account Password:</label>
+                            <input class="form-control" id="Password" name="Password">
 
-                    <div class="form-group">
-                        <label for="CourseID">Course:</label>
-                        <select class="form-control" id="CourseID" name="CourseID">
-                            <option value="1">Bachelor of Science in Information Technology</option>
-                            
-                        </select>
-                    </div>
+                            <label for="accountType">Account for:</label>
+                            <select class="form-control" id="accountType" name="accountType">
+                                <option value="Student" selected>Student</option>
+                            </select>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="SectionID">Section:</label>
-                        <select class="form-control" id="SectionID" name="SectionID">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                        </select>
-                    </div>
+                        <div class="form-group">
+                            <label for="YearLevelID">Year Level:</label>
+                            <select class="form-control" id="YearLevelID" name="YearLevelID">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
 
-                    <button type="submit" class="btn btn-success">Add Student</button>
-                </form>
+                        <div class="form-group">
+                            <label for="CourseID">Course:</label>
+                            <select class="form-control" id="CourseID" name="CourseID">
+                                <option value="1">Bachelor of Science in Information Technology</option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="SectionID">Section:</label>
+                            <select class="form-control" id="SectionID" name="SectionID">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-success">Add Student</button>
+                    </form>
+
 
                 </div>
                 <div class="modal-footer">
@@ -381,7 +398,9 @@
         $('#datatables').dataTable();
 
         function viewStudentDetails(studentId) {
-            
+
+
+
             var studentDetails = getStudentDetails(StudentID);
 
             $('#studentDetailsTableBody').html(studentDetails);
@@ -389,12 +408,16 @@
             $('#viewStudentModal').modal('show');
         }
 
-        
+
+
+
         function getStudentDetails(studentId) {
             var details = ''; // Replace this with actual details
 
             $.ajax({
-                url: '/api/students/' + studentId, 
+
+                url: '/api/students/' + studentId,
+
                 method: 'GET',
                 async: false, // Synchronous for simplicity, consider async in production
                 success: function(response) {
@@ -410,32 +433,34 @@
         }
 
         function openAddStudentModal() {
-        // Clear the form fields when opening the modal
-        $('#addStudentForm')[0].reset();
-        $('#addStudentModal').modal('show');
-    }
 
-    function submitAddStudentForm() {
-        // Collect form data
-        var formData = $('#addStudentForm').serialize();
+            // Clear the form fields when opening the modal
+            $('#addStudentForm')[0].reset();
+            $('#addStudentModal').modal('show');
+        }
 
-        // Make an AJAX request to add the student to the database
-        $.ajax({
-            url: '/api/students', // Update with your API endpoint for adding students
-            method: 'POST',
-            data: formData,
-            success: function(response) {
-                // Handle success, e.g., close the modal and refresh the student list
-                $('#addStudentModal').modal('hide');
-                // You might want to reload the student list or perform other actions
-            },
-            error: function(error) {
-                // Handle error, e.g., display an error message
-                console.error('Error adding student:', error);
-                // You might want to show an error message to the user
-            }
-        });
-    }
+        function submitAddStudentForm() {
+            // Collect form data
+            var formData = $('#addStudentForm').serialize();
+
+            // Make an AJAX request to add the student to the database
+            $.ajax({
+                url: '/api/students', // Update with your API endpoint for adding students
+                method: 'POST',
+                data: formData,
+                success: function(response) {
+                    // Handle success, e.g., close the modal and refresh the student list
+                    $('#addStudentModal').modal('hide');
+                    // You might want to reload the student list or perform other actions
+                },
+                error: function(error) {
+                    // Handle error, e.g., display an error message
+                    console.error('Error adding student:', error);
+                    // You might want to show an error message to the user
+                }
+            });
+        }
+
     </script>
 </body>
 

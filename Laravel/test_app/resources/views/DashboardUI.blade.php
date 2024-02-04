@@ -69,6 +69,8 @@
                             <li><a href="{{ route('Registration')}}"><i class="icon-notebook"></i><span class="sidebar-text">Registrations</span></a></li>
 
                             <li><a href="{{ route('Admission')}}"><i class="icon-notebook"></i><span class="sidebar-text">Admission</span></a></li>
+
+                            <li><a href="{{ route('Students')}}"><i class="icon-notebook"></i><span class="sidebar-text">Students</span></a></li>
                         </ul>
                     </section>
                 </aside>
@@ -85,13 +87,12 @@
                             <div class="col-md-12 col-sm-20">
                                 <div class="panel panel-stat stat-warning">
                                 
-                                <div class="col-md-12">
-                                    <div class="panel panel-primary">
-                                        <div class="panel-heading">
-                                            <h3 class="panel-title"><strong class="text-uppercase">Registration, Admissions and Checking of Students</strong>
-                                            </h3>
-                                        </div>
-                                        
+                            <div class="col-md-12">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"><strong class="text-uppercase">Registration, Admissions and Checking of Students</strong>
+                                        </h3>
+                                    </div>
                                         <div class="panel-body">
                                             <!-- First Panel -->
                                             <div class="col-md-3 col-sm-6" style="margin-top: 20px;">
@@ -99,7 +100,7 @@
                                                     <div class="panel-body">
                                                         <div class="row mbxl">
                                                             <div class="col-xs-8">
-                                                                <span class="stat-title">Number of Students:</span>
+                                                                <span class="stat-title">Students:</span>
                                                                 <span class="stat-title">__________________</span>
                                                                 <h2 class="man">{{ \App\Models\Student::count() }}</h2>
                                                             </div>
@@ -123,7 +124,7 @@
                                                     <div class="panel-body">
                                                         <div class="row mbxl">
                                                             <div class="col-xs-8">
-                                                                <span class="stat-title">Registrations</span>
+                                                                <span class="stat-title">Registrations:</span>
                                                                 <span class="stat-title">___________________</span>
                                                                 <h2 class="man">{{ \App\Models\Applicant::count() }}</h2>
                                                             </div>
@@ -145,8 +146,9 @@
                                                 <div class="panel panel-stat stat-info">
                                                     <div class="panel-body">
                                                         <div class="row mbxl">
-                                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                                <h2 class="man">118</h2>
+                                                            <div class="col-xs-8"><span class="stat-title">Transferees: </span>
+                                                            <span class="stat-title">__________________</span>
+                                                                <h2 class="man">0</h2>
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -166,8 +168,9 @@
                                                 <div class="panel panel-stat stat-warning">
                                                     <div class="panel-body">
                                                         <div class="row mbxl">
-                                                            <div class="col-xs-8"><span class="stat-title">Registrations for this Semester</span>
-                                                                <h2 class="man">118</h2>
+                                                            <div class="col-xs-8"><span class="stat-title">Admissions:</span>
+                                                            <span class="stat-title">__________________</span>
+                                                                <h2 class="man">5</h2>
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -181,48 +184,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                        
-                        
-                        <div class="panel-body">
-                            <div class="col-md-12">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">
-                                            <strong class="text-uppercase">Students</strong>
-                                        </h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <table id="datatables" class="table table-bordered mbn">
-                                            <thead>
-                                                <tr>
-                                                    <th>ID</th>
-                                                    <th>Student Number</th>
-                                                    <th>Full Name</th>
-                                                    <th>Email</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                @foreach($students as $student)
-                                                <tr>
-                                                    <td>{{ $student->StudentID }}</td>
-                                                    <td>{{ $student->StudentNo }}</td>
-                                                    <td>
-                                                        {{ $student->StudLastName }} 
-                                                        {{ $student->StudFirstName }} 
-                                                        {{ $student->StudMiddleName }} 
-                                                        {{ $student->Suffix }}
-                                                    </td>
-                                                    <td>{{ $student->Email }}</td>
-                                                </tr>
-                                                @endforeach
-                                            </tbody>
-                                        </table>
                                     </div>
                                 </div>
                             </div>

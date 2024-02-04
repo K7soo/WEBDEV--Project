@@ -54,6 +54,7 @@
 
                     <li class="active"><a href="#"><i class="icon-notebook"></i><span class="sidebar-text">Admission</span></a></li>
 
+                    <li><a href="{{ route('Students')}}"><i class="icon-notebook"></i><span class="sidebar-text">Students</span></a></li>
                 </ul>
             </section>
         </aside><!--END SIDERBAR--><!--BEGIN CONTENT-->
@@ -92,31 +93,21 @@
                                         <tr>
                                             <td>{{ $applicant->ApplicantID }}</td>
                                             <td>
-                                                {{ $applicant->AppLastName }} 
+                                                {{ $applicant->AppLastName }},
                                                 {{ $applicant->AppFirstName }} 
                                                 {{ $applicant->AppMiddleName }} 
                                                 {{ $applicant->Suffix }}
                                             </td>
-
-                                            <td>{{ $applicant->Email }}</td>
+                                            <td>{{ $applicant->ContactID }}</td>
                                             <td>{{ $applicant->applicantchoice->CourseID }}</td>
                                             <td>{{ $applicant->applicanttype->TypeOfStudent }}</td>
-                                            <td>
-                                                <form 
-                                                    action="{{ route('course.DeleteCourse', ['id' => $course->CourseID]) }}" 
-                                                    method="POST">
-                                                    @csrf
-                                                    @method('delete')
-                                                    <button type="submit" class="btn btn-sm btn-danger" data-confirmm-delete="true">Remove</button>
-                                                </form>
-                                            </td>
                                         </tr>
                                         @endforeach
                                     </tbody>
                                 </table>
                                 <div class="panel-body"> 
                                     <div class="btn-demo text-center">
-                                        <button type="button" class="btn btn-warning">Validate</button>
+                                        <!-- <button type="button" class="btn btn-warning">Validate</button> -->
                                     </div>
                                 </div>
                             </div>

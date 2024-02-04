@@ -70,6 +70,8 @@
                             <li class="active"><a href=#><i class="icon-notebook"></i><span class="sidebar-text">Registrations</span></a></li>
 
                             <li><a href="{{ route('Admission')}}"><i class="icon-notebook"></i><span class="sidebar-text">Admission</span></a></li>
+
+                            <li><a href="{{ route('Students')}}"><i class="icon-notebook"></i><span class="sidebar-text">Students</span></a></li>
                         </ul>
                     </section>
                 </aside><!--END SIDERBAR--><!--BEGIN CONTENT-->

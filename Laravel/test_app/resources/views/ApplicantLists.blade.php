@@ -68,6 +68,7 @@
 
                             <li><a href="{{ route('Admission')}}"><i class="icon-notebook"></i><span class="sidebar-text">Admission</span></a></li>
 
+                            <li><a href="{{ route('Students')}}"><i class="icon-notebook"></i><span class="sidebar-text">Students</span></a></li>
                         </ul>
                     </section>
                 </aside><!--END SIDERBAR--><!--BEGIN CONTENT-->
@@ -89,31 +90,27 @@
                                     </div>
 
                                     <div class="listpanel">
-                                        <b><u><button type="button"
-                                            class="btn btn-link"> View Requirements</button></u></b>
-                                        <button type="button"
-                                            class="btn btn-primary"> View Application
-                                        </button>
+                                        <!--  -->
                                     </div>
 
                                     <div class="panel">
                                         <div class="col-md-6 mb-0">
                                             <div class="note note-primary">
-                                                <b><h4>4</h4>
+                                                <b><h4>{{ \App\Models\Applicant::count() }}</h4>
                                                 <p>All</p></b>
                                             </div>
                                         </div>
 
                                         <div class="col-md-6 mb-0">
                                             <div class="note note-success">
-                                                <b><h4>4</h4>
+                                                <b><h4>{{ \App\Models\Applicant::where('ApprovalID', 2)->count() }}</h4>
                                                 <p>For Interview</p></b>
                                             </div>
                                         </div>
 
                                         <div class="col-md-6 mb-0">
                                             <div class="note note-info">
-                                                <b><h4>0</h4>
+                                                <b><h4>{{ \App\Models\Applicant::where('ApprovalID', 1)->count() }}</h4>
                                                 <p>Accepted</p></b>
                                             </div>
                                         </div>
@@ -133,7 +130,7 @@
                                             <table id="datatables" class="table table-bordered mbn" >
                                                 <thead>
                                                     <tr>
-                                                        <th>ID</th>
+                                                        <!-- <th>ID</th> -->
                                                         <th>Last Name</th>
                                                         <th>First Name</th>
                                                         <th>Middle Name</th>
@@ -148,7 +145,7 @@
                                                 <tbody>
                                                 @foreach($applicants as $applicant)
                                                     <tr>
-                                                        <td>{{ $applicant->ApplicantID }}</td>
+                                                        <!-- <td>{{ $applicant->ApplicantID }}</td> -->
                                                         <td>{{ $applicant->AppLastName }}</td>
                                                         <td>{{ $applicant->AppFirstName }}</td>
                                                         <td>{{ $applicant->AppMiddleName }}</td>

@@ -9,12 +9,16 @@ class YearLevel extends Model
 {
     use HasFactory;
 
-    protected $table = 'yearlevel';
+    protected $table = 'yearlevels';
 
     protected $primaryKey = 'YearLevelID';
 
     protected $fillable = [
         'YearLevelName',
     ];
-}
 
+    public function students()
+    {
+        return $this->hasOne(Student::class, 'YearLevelID', 'YearLevelName');
+    }
+}

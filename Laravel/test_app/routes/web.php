@@ -8,7 +8,7 @@ use App\Http\Controllers\ApplicantListsController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\RegistrationController;
 
-use App\Http\Controllers\StudHomeController;
+use App\Http\Controllers\StudentsController;
 use App\Http\Controllers\AdmissionController;
 use App\Http\Controllers\StudQualController;
 use App\Http\Controllers\StudRegFormsController;
@@ -34,6 +34,8 @@ Route::get('/StudentLogin', function () {
     return view('StudentLogin');
 });
 
+Route::post('/student.index');
+
 
 /*      <-- Admin Side -->        */
 
@@ -57,7 +59,8 @@ Route::get('/Registration', [RegistrationController::class, 'index'])->name('Reg
 // Admission
 Route::get('/Admission', [AdmissionController::class, 'index'])->name('Admission');
 
-
+Route::get('/Students', [StudentsController::class, 'index'])->name('Students');
+Route::post('/Students', [StudentsController::class, 'AddStudent'])->name('students.AddStudents');
 
 /*      <-- Student Side -->        */
 
